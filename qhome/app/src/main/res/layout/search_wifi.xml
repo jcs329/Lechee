@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSubTitle"
+        android:visibility="gone"
+        android:textColor="@color/color_pinkish_grey"
+        android:textSize="@dimen/main_page_text_title_desc_size"
+        android:text="@string/change_wifi_choose" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitle"
+        android:textColor="@color/color_pinkish_grey"
+        android:textSize="@dimen/main_page_text_title_desc_size"
+        android:text="@string/search_title" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSearch"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/main_page_text_title_desc_size"
+            android:text="@string/search_str"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+        <ImageView
+            android:id="@+id/imgRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_refresh"
+            android:layout_marginRight="@dimen/wifi_list_refresh_margin_bottom"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_color"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:cacheColorHint="@color/white_mask"
+        android:listSelector="@drawable/listitem_selector"
+        android:id="@+id/lstWifi" />
+</LinearLayout>

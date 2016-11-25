@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lampsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="0dip"
+        android:paddingBottom="0dip" >
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/allseen_logo"
+            android:layout_gravity="left|top" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dip"
+            android:text="Lighting Service"
+            android:gravity="center_vertical|left"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#FF6DBF13" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dip"
+        android:background="#FF6DBF13" />
+
+    <LinearLayout
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="128dp"
+        android:paddingRight="128dp"
+        android:paddingTop="10dp" >
+
+        <Space
+            android:id="@+id/loadingSpace1"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/loadingText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="__nothing found yet__" />
+
+        <Space
+            android:id="@+id/loadingSpace2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/loadingText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:bufferType="spannable"
+            android:text="__searching for stuff...__" />
+
+        <Space
+            android:id="@+id/loadingSpace3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <ProgressBar
+            android:id="@+id/loadingProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:id="@+id/loadingSpace4"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_weight="5" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lampsView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/lampsTable"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ebebebeb"
+            tools:layout="@layout/lamps_table_fragment" >
+        </FrameLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#989898" />
+
+        <FrameLayout
+            android:id="@+id/lampsInfo"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            tools:layout="@layout/lamps_info_fragment" >
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

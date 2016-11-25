@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '23.0.3'
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/gson-2.2.3.jar')
+    compile files('libs/asmack-android-17-0.8.10.jar')
+    compile files('libs/httpmime-4.2.3.jar')
+    compile files('libs/org.eclipse.paho.client.mqttv3-1.1.0.jar')
+	compile files('libs/org.eclipse.paho.android.service-1.0.3.jar')
+    compile 'com.android.support:support-v4:23.3.0'
+    compile files('libs/alljoyn-sources.jar')
+    compile files('libs/alljoyn.jar')
+    compile files('libs/alljoyn_about.jar')
+    compile files('libs/alljoyn_onboarding.jar')
+    compile files('libs/alljoyn_onboarding_manager.jar')
+    compile files('libs/alljoyn_test.jar')
+}

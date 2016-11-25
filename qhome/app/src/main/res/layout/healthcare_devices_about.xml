@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/determine_pair_font_size"
+        android:text="@string/dev_name"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_people_btn_height"
+        android:background="@drawable/room_hub_item_selector"
+        android:layout_marginTop="@dimen/wifi_setup_title_gap">
+        <TextView
+            android:id="@+id/txt_dev_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:text="@string/ac_models"
+            android:textSize="@dimen/sensor_info_font_size"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+        <Button
+            android:id="@+id/btn_rename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/change_nickname_txt_selector"
+            android:textSize="@dimen/onboarding_setup_info_text_rename_size"
+            android:text="@string/rename"
+            android:background="@drawable/transparent"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

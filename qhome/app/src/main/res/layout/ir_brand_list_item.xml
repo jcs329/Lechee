@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="@dimen/ir_brand_list_margin_top"
+        android:layout_marginLeft="@dimen/ir_brand_list_margin_left"
+        android:layout_marginBottom="@dimen/ir_brand_list_margin_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/ir_brand_list_text_size"
+        android:id="@+id/brand" />
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_title"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/btn_color"
+        android:textSize="@dimen/main_page_text_main_title_size"
+        android:layout_marginTop="@dimen/onboarding_setup_image_margin"
+        android:id="@+id/txtTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_desc"
+        android:textColor="@color/color_white"
+        android:id="@+id/txtDesc"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/main_page_text_title_desc_size"
+        android:layout_marginTop="@dimen/onboarding_setup_title_margin_bottom"
+        android:layout_marginBottom="@dimen/onboarding_setup_title_margin"
+        android:layout_below="@id/txtTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRoomhub"
+        android:textColor="@color/color_white"
+        android:text="@string/onboarding_roomhub"
+        android:textSize="@dimen/onboarding_setup_info_text_rename_size"
+        android:layout_below="@id/txtDesc"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line"
+        android:layout_marginTop="@dimen/wifi_setup_title_gap"
+        android:layout_below="@id/txtRoomhub"
+        android:background="@color/btn_color" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onboarding_setup_roomhub_list_height"
+        android:divider="@null"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@drawable/transparent"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"
+        android:layout_marginRight="@dimen/onboarding_setup_roomhub_margin"
+        android:layout_marginTop="@dimen/onboarding_setup_roomhub_list_top"
+        android:id="@+id/lstRoomhub" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRoomhubFailed"
+        android:textColor="@color/color_white"
+        android:text="@string/onboarding_roomhub_failed"
+        android:textSize="@dimen/onboarding_setup_info_text_rename_size"
+        android:layout_below="@id/lstRoomhub"
+        android:layout_marginTop="@dimen/onboarding_setup_roomhub_list_top"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line_failed"
+        android:layout_marginTop="@dimen/wifi_setup_title_gap"
+        android:layout_below="@id/txtRoomhubFailed"
+        android:background="@color/btn_color" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onboarding_setup_roomhub_failed_list_height"
+        android:divider="@null"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@drawable/transparent"
+        android:layout_below="@id/line_failed"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"
+        android:layout_marginRight="@dimen/onboarding_setup_roomhub_margin"
+        android:layout_marginTop="@dimen/onboarding_setup_roomhub_list_top"
+        android:id="@+id/lstRoomhubFailed" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onboarding_setup_button_height"
+        android:textSize="@dimen/onboarding_setup_button_text_size"
+        android:background="@color/btn_color"
+        android:textColor="@color/color_white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/onboarding_setup_title_margin"
+        android:layout_marginTop="@dimen/onboarding_setup_button_margin"
+        android:text="@string/next_str" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"
+        android:layout_above="@id/btnNext">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_info"
+            android:layout_marginRight="@dimen/onboarding_setup_info_margin"
+            android:src="@drawable/icon_info"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/onboarding_setup_info_text_size"
+            android:text="@string/info_str2" />
+    </LinearLayout>
+</RelativeLayout>

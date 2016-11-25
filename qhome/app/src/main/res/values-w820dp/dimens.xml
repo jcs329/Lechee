@@ -1,0 +1,181 @@
+<resources>
+
+    <!-- For RoomHubList Item -->
+    <dimen name="room_hub_list_header_height">72dp</dimen>
+    <dimen name="room_hub_list_width">540dp</dimen>
+    <dimen name="room_hub_list_height">230dp</dimen>
+    <dimen name="room_hub_list_verticalspacing">10.05dp</dimen>
+    <dimen name="dev_name_width">500dp</dimen>
+    <dimen name="dev_name_font_size">43sp</dimen>
+    <dimen name="sensor_info_font_size">30sp</dimen>
+    <dimen name="select_pair_font_size">24sp</dimen>
+    <dimen name="select_pair_btn_width">300dp</dimen>
+    <dimen name="select_pair_btn_height">150dp</dimen>
+    <dimen name="determine_pair_font_size">35sp</dimen>
+    <dimen name="determine_pair_btn_width">105dp</dimen>
+    <dimen name="funmode_icon_size">40dp</dimen>
+    <dimen name="next_schedule_font_size">19.95sp</dimen>
+    <dimen name="next_schedule_txt_width">540dp</dimen>
+    <dimen name="schedule_icon_width">50dp</dimen>
+    <dimen name="schedule_icon_height">71dp</dimen>
+
+    <!-- For RoomHub Controller-->
+    <dimen name="controller_header_height">72dp</dimen>
+    <dimen name="controller_devname_width">600dp</dimen>
+    <dimen name="controller_funmode_width">150dp</dimen>
+    <dimen name="controller_funmode_height">100dp</dimen>
+    <dimen name="controller_type_font_size">45sp</dimen>
+    <dimen name="controller_temp_font_size">250sp</dimen>
+    <dimen name="controller_temp_left_margin">150dp</dimen>
+    <dimen name="controller_temp_top_margin">-22.5dp</dimen>
+    <dimen name="controller_degrees_font_size">140sp</dimen>
+    <dimen name="controller_degrees_top_margin">18dp</dimen>
+    <dimen name="controller_lower_btn_size">90dp</dimen>
+    <dimen name="controller_temp_lower_margin_left">260dp</dimen>
+    <dimen name="controller_dehum_width">750dp</dimen>
+    <dimen name="controller_dehum_height">600dp</dimen>
+    <dimen name="controller_dehum_iv_width">136.05dp</dimen>
+    <dimen name="controller_dehum_iv_height">143.55dp</dimen>
+    <dimen name="controller_fan_iv_width">145.65dp</dimen>
+    <dimen name="controller_fan_iv_height">142.95dp</dimen>
+    <dimen name="controller_suggest_size">85dp</dimen>
+    <dimen name="controller_suggest_left_margin">410dp</dimen>
+    <dimen name="controller_suggest_top_margin">-25.5dp</dimen>
+    <dimen name="controller_bottom_height">180dp</dimen>
+    <dimen name="controller_power_btn_size">100dp</dimen>
+    <dimen name="controller_temp_gap">50dp</dimen>
+
+    <!-- Schedule -->
+    <dimen name="schedule_line_width">780dp</dimen>
+    <dimen name="schedule_add_btn_width">360dp</dimen>
+    <dimen name="schedule_add_btn_height">80dp</dimen>
+    <dimen name="schedule_mode">28sp</dimen>
+    <dimen name="schedule_time_title">16sp</dimen>
+    <dimen name="schedule_time">21sp</dimen>
+    <dimen name="schedule_week">20sp</dimen>
+    <dimen name="time_settings_title">40sp</dimen>
+    <dimen name="schedule_mode_icon_width">80dp</dimen>
+    <dimen name="schedule_mode_icon_height">180dp</dimen>
+    <dimen name="schedule_mode_icon_size">50dp</dimen>
+    <dimen name="schedule_txt_mode_width">500dp</dimen>
+    <dimen name="schedule_switch_off_width">70.95dp</dimen>
+    <dimen name="schedule_switch_off_height">49.95dp</dimen>
+    <dimen name="schedule_time_table_width">460dp</dimen>
+    <dimen name="schedule_time_width">155dp</dimen>
+    <dimen name="schedule_time_height">26dp</dimen>
+    <dimen name="schedule_week_btn_size">50dp</dimen>
+    <dimen name="schedule_setting_week_font_size">30sp</dimen>
+    <dimen name="schedule_setting_week_btn_size">90dp</dimen>
+    <dimen name="schedule_menu_btn_size">35dp</dimen>
+    <dimen name="schedule_setting_text_width">350dp</dimen>
+    <dimen name="schedule_setting_text_height">75dp</dimen>
+    <dimen name="schedule_setting_mode_btn_width">160dp</dimen>
+    <dimen name="schedule_setting_mode_btn_height">109dp</dimen>
+    <dimen name="schedule_setting_week_margin_right">18dp</dimen>
+
+    <!-- Advance -->
+    <dimen name="advance_timer_btn_size">66dp</dimen>
+    <dimen name="advance_item_height">140dp</dimen>
+    <dimen name="advance_warning_font_size">20sp</dimen>
+    <dimen name="advance_fan_bar_width">520dp</dimen>
+    <dimen name="advance_fan_bar_height">70dp</dimen>
+    <dimen name="advance_fan_bar_max_width">550dp</dimen>
+    <dimen name="advance_fan_bar_max_height">70dp</dimen>
+    <dimen name="advance_fan_bar_title_width">155dp</dimen>
+    <dimen name="advance_fankey_btn_width">140dp</dimen>
+    <dimen name="advance_fankey_btn_height">70dp</dimen>
+    <dimen name="advance_clear_btn_width">111dp</dimen>
+    <dimen name="advance_clear_btn_height">47.55dp</dimen>
+    <dimen name="advance_number_picker_dialog_height">350dp</dimen>
+
+    <!-- share hub -->
+    <dimen name="share_people_title_font_size">27.45sp</dimen>
+    <dimen name="share_people_title_name_width">730dp</dimen>
+    <dimen name="exist_people_title_font_size">24sp</dimen>
+    <dimen name="add_people_button_margin_top">350dp</dimen>
+    <dimen name="add_people_button_margin_left">150dp</dimen>
+    <dimen name="edit_people_button_margin_left">30dp</dimen>
+    <dimen name="my_list_height">600dp</dimen>
+    <dimen name="my_list_del_btn_size">50dp</dimen>
+    <dimen name="add_people_height">175dp</dimen>
+    <dimen name="add_people_btn_width">760dp</dimen>
+    <dimen name="add_people_btn_height">69dp</dimen>
+    <dimen name="add_people_margin_top">20dp</dimen>
+    <dimen name="hub_owner_title_font_size">34.95sp</dimen>
+    <dimen name="hub_owner_font_size">25.05sp</dimen>
+    <dimen name="share_list_font_size">19.95sp</dimen>
+    <dimen name="share_info_width">495dp</dimen>
+    <dimen name="share_info_height">193dp</dimen>
+    <dimen name="share_title_width">620dp</dimen>
+
+    <!-- Notice Setting -->
+    <dimen name="notice_desc_font_size">18sp</dimen>
+    <dimen name="notice_item_height">176dp</dimen>
+    <dimen name="notice_lower_size">81.4dp</dimen>
+    <dimen name="notice_delta_font_size">53.4sp</dimen>
+    <dimen name="notice_item_set_width">275dp</dimen>
+    <dimen name="notice_item_set_height">128.64dp</dimen>
+    <dimen name="notice_gap">27dp</dimen>
+    <dimen name="notice_gap1">20dp</dimen>
+
+    <!-- FAN Controller -->
+    <dimen name="fan_controller_btn_size">110dp</dimen>
+
+    <!-- FAN Controller V2-->
+    <dimen name="fan_controller_v2_mode_width">160dp</dimen>
+    <dimen name="fan_controller_v2_speed_margin_top">160dp</dimen>
+    <dimen name="fan_swing_btn_bg_width">246.6dp</dimen>
+    <dimen name="fan_swing_btn_bg_height">117.4dp</dimen>
+    <dimen name="fan_swing_btn_size">93.4dp</dimen>
+    <dimen name="fan_swing_toggle_btn_size">110dp</dimen>
+    <dimen name="fan_speed_switch_btn_size">142.6dp</dimen>
+    <dimen name="fan_swing_btn_bg_size">113.4dp</dimen>
+
+    <!-- License -->
+    <dimen name="license_title_font_size">36.6sp</dimen>
+    <dimen name="license_btn_width">323.4dp</dimen>
+    <dimen name="license_btn_height">73.4dp</dimen>
+    <dimen name="license_btn_font_size">40sp</dimen>
+    <dimen name="license_btn_gap">27.4dp</dimen>
+    <dimen name="license_btn_gap_1">53.4dp</dimen>
+    <dimen name="license_content_width">730dp</dimen>
+    <dimen name="license_content_height">888dp</dimen>
+
+    <!-- Start guide -->
+    <dimen name="start_guide_page_width">220dp</dimen>
+    <dimen name="start_guide_page_height">20dp</dimen>
+    <dimen name="start_guide_margin">150dp</dimen>
+
+    <!-- Blood Pressure -->
+    <dimen name="bp_margin_top">93.4dp</dimen>
+    <dimen name="bp_measure_time_font_size">29.4sp</dimen>
+    <dimen name="bp_item_height">180dp</dimen>
+    <dimen name="bp_item_vertical_gap">6.6dp</dimen>
+    <dimen name="bp_item_horizontal_gap">38dp</dimen>
+    <dimen name="bp_item_content_width">200dp</dimen>
+    <dimen name="bp_item_unit_width">104dp</dimen>
+    <dimen name="bp_history_data_font_size">66.6sp</dimen>
+    <dimen name="bp_history_heartrate_img_width">29.4dp</dimen>
+    <dimen name="bp_history_heartrate_img_height">26.6dp</dimen>
+    <dimen name="bp_history_heartrate_width">140dp</dimen>
+
+    <!-- PM2.5-->
+    <dimen name="title_font_size">46.6sp</dimen>
+    <dimen name="air_quality_font_size">33.4sp</dimen>
+    <dimen name="air_quality_status_font_size">106.67sp</dimen>
+    <dimen name="update_time_font_size">24sp</dimen>
+    <dimen name="update_time_margin_top">83dp</dimen>
+    <dimen name="bottom_height">200dp</dimen>
+    <dimen name="air_quality_bg_size">525.4dp</dimen>
+    <dimen name="battery_width">73.8dp</dimen>
+    <dimen name="battery_height">34dp</dimen>
+    <dimen name="reload_btn_size">146.6dp</dimen>
+
+    <!-- Air Purifier -->
+    <dimen name="air_btn_power_size">146.6dp</dimen>
+    <dimen name="air_btn_size">160.6dp</dimen>
+    <dimen name="air_fan_btn_size">136.6dp</dimen>
+    <dimen name="air_fan_speed_size">86.6dp</dimen>
+    <dimen name="air_btn_text_size">22sp</dimen>
+
+</resources>

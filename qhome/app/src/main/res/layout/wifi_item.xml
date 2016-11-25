@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/btn_height"
+    android:paddingLeft="@dimen/main_page_margin_bottom_reg_left"
+    android:paddingRight="@dimen/wifi_list_refresh_margin_bottom"
+    android:background="@drawable/listitem_selector">
+
+    <TextView
+        android:id="@+id/txtWifiSSID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/main_page_text_title_desc_size"
+        android:text="wifi1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+    <ImageView
+        android:id="@+id/img_wifi_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_wifi_okay"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:id="@+id/img_wifi_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_wifilock"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/img_wifi_icon"/>
+</RelativeLayout>

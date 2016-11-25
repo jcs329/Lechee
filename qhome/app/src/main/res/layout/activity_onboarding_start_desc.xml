@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:background="@color/white_mask"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/onboarding_start_desc_text_size"
+            android:text="@string/onboarding_desc_step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/onboarding_start_desc_next_margin"
+        android:layout_marginBottom="@dimen/onboarding_start_desc_next_margin"
+        android:layout_gravity="center"
+        android:src="@drawable/shape_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_weight="3"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical"
+        android:background="@color/white_mask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/onboarding_start_desc_text_size"
+            android:text="@string/onboarding_desc_step2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View android:layout_width="match_parent"
+            android:layout_height="25dp" />
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/shape_step_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/onboarding_start_desc_next_margin"
+        android:layout_marginBottom="@dimen/onboarding_start_desc_next_margin"
+        android:layout_gravity="center"
+        android:src="@drawable/shape_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:background="@color/white_mask"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="@dimen/onboarding_start_desc_text_size"
+            android:textColor="@color/color_white"
+            android:text="@string/onboarding_desc_step3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/onboarding_start_desc_next_margin"
+        android:layout_marginBottom="@dimen/onboarding_start_desc_next_margin"
+        android:layout_gravity="center"
+        android:src="@drawable/shape_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@color/white_mask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/icon_success"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="@dimen/onboarding_start_desc_text_size"
+                android:textColor="@color/color_white"
+                android:text="@string/onboarding_desc_success"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="@dimen/onboarding_start_desc_next_margin" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_onboarding_failed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="@dimen/onboarding_start_desc_text_size"
+                android:textColor="@color/color_white"
+                android:text="@string/onboarding_desc_fail"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStartAdd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onboarding_setup_button_height"
+        android:background="@drawable/salmon_background_selector"
+        android:textSize="@dimen/onboarding_setup_button_text_size"
+        android:textColor="@color/color_white"
+        android:layout_alignParentBottom="true"
+        android:text="@string/onboarding_desc_startadd" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wifi_signal">
+        <item msgid="2245412278046491293">"差"</item>
+        <item msgid="5615082285463430971">"可"</item>
+        <item msgid="3565079809875324621">"良好"</item>
+        <item msgid="5702329417707689835">"優"</item>
+    </string-array>
+
+    <string-array name="error_code_string">
+        <item>成功</item>
+<!--    -1 ~ -10     -->        
+        <item>使用者帳號為空</item>
+        <item>使用者密碼為空</item>
+        <item>使用者密碼錯誤</item>
+        <item>無法確認Facebook使用者ID</item>
+        <item>連線ID為空</item>
+        <item>儲存時發生錯誤</item>
+        <item>無法確認Facebook通行token</item>
+        <item>使用者姓名為空</item>
+        <item>尚未支援此類社交平台</item>
+        <item>無法取得名稱資訊</item>
+<!--    -11 ~ -20     -->        
+        <item>無法取得狀態資訊</item>
+        <item>無法取得裝置資訊</item>
+        <item>無法取得裝置設定資訊r</item>
+        <item>無法取得使用者ID</item>
+        <item>無法取得裝置ID</item>
+        <item>無法取得狀態標籤</item>
+        <item>帳號不存在</item>
+        <item>帳號已存在</item>
+        <item>無法取得最小值</item>
+        <item>無法取得最大值</item>
+<!--    -21 ~ -30     -->        
+        <item>無法取得是否需通知資訊</item>
+        <item>無法取得群組名稱</item>
+        <item>無法取得群組ID</item>
+        <item>此token為無效token</item>
+        <item>此token已被使用</item>
+        <item>此token已過期</item>
+        <item>無法取得裝置XMPP驗證碼</item>
+        <item>無對應權限進行相關動作</item>
+        <item>使用者email為空</item>
+        <item>此email已被註冊</item>
+<!--    -31 ~ -40    -->
+        <item>此裝置已為此使用者擁有</item>
+        <item>尚未通過email驗證，請先收email並進行驗證後方可繼續</item>
+        <item>分頁為0~50之間</item>
+        <item>無法取得起始時間</item>
+        <item>無法取得時間區段</item>
+        <item>此帳號已存在於你的好友名單之中</item>
+        <item>此帳號不存在於你的好友名單之中</item>
+        <item>此帳號已通過email驗證</item>
+        <item>無法新增裝置管理者為裝置的使用者</item>
+<!--    -72     -->
+        <item>裝置資料已成功更新，但廣播更新資訊時發生錯誤</item>
+<!--    -998 ~ -1000     -->        
+        <item>Json字串轉換失敗</item>
+        <item>發生未知的錯誤</item>
+        <item>連線錯誤</item>
+<!--    -8000     -->
+	<item>伺服器連線錯誤</item>
+    </string-array>
+</resources>

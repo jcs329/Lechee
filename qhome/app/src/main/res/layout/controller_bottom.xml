@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/white_mask"
+    android:orientation="horizontal">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/btn_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/btn_text_selector"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:textSize="@dimen/controller_type_font_size"
+                android:textAllCaps="false"
+                android:text="@string/schedule"/>
+
+            <ImageView
+                android:id="@+id/btn_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxHeight="@dimen/controller_power_btn_size"
+                android:maxWidth="@dimen/controller_power_btn_size"
+
+                android:src="@drawable/power_btn_off_selector"/>
+            <Button
+                android:id="@+id/btn_advance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/btn_text_selector"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/controller_type_font_size"
+                android:layout_weight="2"
+                android:textAllCaps="false"
+                android:text="@string/advance"
+                android:enabled="false"
+                android:visibility="invisible" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

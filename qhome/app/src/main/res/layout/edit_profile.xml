@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profile_margin_top"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/account_profile"
+            android:text="@string/profile_str"
+            style="@style/custom_button_style"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/accout_group"
+            android:text="@string/profile_group"
+            style="@style/custom_button_style"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/accountLayout"
+        android:paddingBottom="@dimen/profile_padding_bottom"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_profile"/>
+        <android.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/profile_username_space_height" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name_desc"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/main_page_button_text_size" />
+        <android.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/profile_space_height" />
+        <TextView
+            android:id="@+id/txt_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_new_name"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/main_page_button_text_size" />
+        <android.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/profile_username_space_height" />
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/main_page_image_edit_height"
+            android:layout_gravity="center"
+            android:id="@+id/btn_change_pwd"
+            android:background="@drawable/btn_rect"
+            android:textColor="@color/btn_color"
+            android:textSize="@dimen/main_page_button_text_size"
+            android:text="@string/change_password"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_page_image_edit_height"
+        android:layout_gravity="bottom"
+        android:id="@+id/btn_login"
+        android:background="@drawable/salmon_background_selector"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/main_page_button_text_size"
+        android:textAllCaps="false"
+        android:text="@string/logout_str"
+        android:layout_alignParentBottom="true" />
+
+    <!--
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_below="@id/accountLayout">
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/main_page_image_edit_height"
+        android:layout_gravity="center"
+        android:id="@+id/btn_change_profile"
+        android:background="@drawable/btn_rect"
+        android:textColor="@color/btn_color"
+        android:textSize="@dimen/main_page_button_text_size"
+        android:text="@string/change_profile"
+        android:textAllCaps="false"
+        android:enabled="false"/>
+    <android.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/profile_space_height" />
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/main_page_image_edit_height"
+            android:layout_gravity="center"
+            android:id="@+id/btn_change_pwd"
+            android:background="@drawable/btn_rect"
+            android:textColor="@color/btn_color"
+            android:textSize="@dimen/main_page_button_text_size"
+            android:text="@string/change_password"
+            android:textAllCaps="false"
+            android:enabled="false"/>
+        <android.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_margin" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_page_image_edit_height"
+            android:layout_gravity="center"
+            android:id="@+id/btn_login"
+            android:background="@drawable/salmon_background_selector"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/main_page_button_text_size"
+            android:textAllCaps="false"
+            android:text="@string/logout_str" />
+    </LinearLayout>
+        -->
+</RelativeLayout>

@@ -1,0 +1,1009 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+    <string name="app_name">智能小管家</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="first_welcome_msg">歡迎進入</string>
+    <string name="first_welcom_msg_minor">全國電子物聯網世界</string>
+    <string name="main_title">智能小管家</string>
+    <string name="main_desc">安裝智能小管家讓您的家電\n搖滾變身變智慧了</string>
+    <string name="user_account_desc">使用者名稱或電子信箱</string>
+    <string name="user_name_desc">使用者名稱</string>
+    <string name="password_desc">密碼</string>
+    <string name="login_str">登入</string>
+    <string name="createAccount_str">建立帳號</string>
+    <string name="skip_str">直接使用</string>
+    <string name="back">返回</string>
+    <string name="confirm_mail_sent">認證信己寄出</string>
+    <string name="confirm_email">請確認您的信箱</string>
+    <string name="confirm_email_hint1">我們寄了一封認證信到您註冊時所填的信箱,請先關閉此App並至您的信箱確認後再重啟智能小管家App進行後續安裝步驟</string>
+    <string name="confirm_email_hint2"></string>
+    <string name="confirm_email_hint3">沒收到認證信?</string>
+    <string name="confirm_email_send_again">再寄一次認證信</string>
+    <string name="confirm_email_start_now">已認證，開始登入</string>
+    <string name="confirm_email_has_sent">認證信己寄出</string>
+    <string name="account_format_error_msg">使用者名稱不能含\'@\'</string>
+    <string name="wrong_wifi_connected_msg">目前連接的無線網路錯誤, 請連線到正確的無線基地台後再重新開啟此程式</string>
+    <string name="appliance">家電</string>
+    <string name="healthcare">健康</string>
+
+    <!--Side Bar-->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string-array name="drawer_menu">
+        <item>帳號</item>
+        <item>訊息中心</item>
+        <item>疑難排解</item>
+        <item>設定</item>
+    </string-array>
+
+    <string name="signup_str">註冊</string>
+    <string name="profile_str">會員資料</string>
+    <string name="account_str">電子信箱</string>
+    <string name="confirm_pass_str">密碼確認</string>
+    <string name="process_str">連結中......</string>
+    <string name="wrong_account_format_str">電子信箱格式錯誤!!!</string>
+    <string name="wrong_password_confirm_str">請重新輸入密碼確認欄位!!!</string>
+    <string name="profile_group">我的群組</string>
+    <string name="change_profile">修改會員資料</string>
+    <string name="change_password">修改密碼</string>
+    <string name="account_empty_error_msg">使用者名稱不能為空字串</string>
+    <string name="email_prompt">請輸入電子信箱!!!</string>
+    <string name="signup_email_hint">我們會發送認證信到您的電子信箱</string>
+    <string name="enter_new_pass">請輸入新的密碼</string>
+    <string name="confirm_new_pass">請再輸入一次密碼</string>
+    <string name="change_pass_result">密碼已成功變更</string>
+    <string name="forget_pass_email_hint">我們會發送新的連結到您的電子信箱</string>
+    <string name="send">送出</string>
+    <string name="password_len_wrong">密碼不可少於四位英數字</string>
+
+    <string name="wifi_list_title">連接無線網路</string>
+    <string name="wifi_setup_str">開始安裝</string>
+    <string name="wifi_setup_desc">請先將您所使用的行動裝置\n連上家中的無線網路</string>
+    <string name="search_wfi_str">搜尋無線網路</string>
+    <string name="search_title">請選擇您的無線網路提供給小管家使用</string>
+    <string name="wifi_ap_setup_desc">請提供密碼讓智能小管家連至</string>
+    <string name="search_str">搜尋中...</string>
+
+    <string name="wifi_security_short_wep">WEP</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA security -->
+    <string name="wifi_security_short_wpa">WPA</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA2 security -->
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with both WPA/WPA2 security -->
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_short_eap">802.1x</string>
+
+    <!-- Do not translate.  Terminology for wifi with WEP security -->
+    <string name="wifi_security_wep">WEP</string>
+    <!-- Do not translate.  Terminology for wifi with WPA security -->
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <!-- Do not translate.  Terminology for wifi with WPA2 security -->
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with both WPA/WPA2 security, or unknown -->
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_eap">802.1x EAP</string>
+
+    <string name="wifi_security_none">None</string>
+
+    <string name="wifi_connect_to">連至</string>
+
+    <string name="signal_str">訊號強度</string>
+    <string name="security_str">安全性</string>
+    <string name="showpass_str">顯示密碼</string>
+    <string name="confirm_str">確認</string>
+    <string name="wifi_connect_fail">所選擇無線網路連接失敗。請確認網路名稱是否選對及密碼輸入正確。\n(此密碼錯誤會影響系統WiFi連線)</string>
+    <string name="wifi_password_len_wrong_msg">密碼長度為8到64個字元!!!</string>
+    <string name="wifi_password_wep_len_wrong_msg">密碼長度為5,13或16個字元!!!</string>
+    <string name="wifi_password_empty_wrong_msg">密碼不能為空!!!</string>
+    <string name="wifi_password_max_length_msg">密碼長度不能超過64個字元!!!</string>
+    <string name="wifi_connect_same_wifi">您正要連接到目前家用的無線區域網路。\n請確認您輸入的密碼正確。\n(此密碼錯誤會影響系統WiFi連線)</string>
+    <string name="wifi_prompt_skip_connect">請確認網路名稱是否選對及密碼輸入正確。\n(此密碼錯誤會影響系統WiFi連線)</string>
+    <string name="wifi_prompt_connect">若您想要透過無線區域網路使用小管家，請先按「是」前往選擇連接，\n或按「否」繼續使用行動網路。</string>
+
+    <string name="login_account_hint">請輸入使用者名稱或電子信箱</string>
+    <string name="forget_pass_str">忘記密碼</string>
+    <string name="need_login_msg">使用此功能必須登入,現在要登入嗎?</string>
+    <string name="yes_str">是</string>
+    <string name="no_str">否</string>
+    <string name="forget_pass_success_str">請至您的電子信箱收取郵件</string>
+    <string name="not_login_yet">請先登入</string>
+    <string name="prompt_overlay_permissions">由於Android 6.0 以上的版本在權限上有些更動，我們需要您授權以下的權限，麻煩您開啟權限後按下返回鍵。</string>
+
+    <string name="logout_str">登出</string>
+
+    <!-- RoomHubList -->
+    <string name="select_machine">選擇機台</string>
+    <string name="rename">重新命名</string>
+    <string name="ac_pairing">空調配對</string>
+    <string name="permission">管理人</string>
+    <string name="delete_device">刪除此智能小管家</string>
+    <string name="determine_machine">確定</string>
+    <string name="reset_machine">重選</string>
+    <string name="next_schedule">下次排程</string>
+    <string name="account">帳號</string>
+    <string name="add_device">新增智能小管家</string>
+    <string name="settings">設定</string>
+    <string name="enter_new_name">輸入新的名稱</string>
+    <string name="confirm_delete_device">是否要刪除此智能小管家?</string>
+    <string name="roomhub_warning_msg">此功能只能在區域網路上的智能小管家上運作</string>
+    <string name="processing_str">處理中</string>
+    <string name="advance_message">預計 %1$s 關</string>
+    <string name="no_device_message">正在搜尋智能小管家,請稍後...</string>
+    <string name="lan_device_not_support">區域網路上小管家不支援此項操作</string>
+    <string name="only_owner_use">此功能僅限於擁有者才能使用</string>
+    <string name="leave_device">是否要退出此智能小管家?</string>
+    <string name="insufficient_permissions">權限不足,無法使用此功能</string>
+    <string name="device_offline_not_operate">該智能小管家為離線中, 無法操作</string>
+    <string name="device_upgrade_not_operate">該智能小管家韌體更新中, 無法操作</string>
+    <string name="cannot_find_roomhub_confirm_delete">無法在區域網路找到此智能小管家,若要繼續執行刪除動作,需要自行手動初始化智能小管家,是否繼續?</string>
+    <string name="device_offline">小管家離線中,無法操作</string>
+    <string name="device_upgrade">小管家更新中,無法操作</string>
+    <string name="device_not_ir_pairing">此電器尚未配對, 無法使用</string>
+    <string name="device_not_ir_pairing_owner">此電器尚未配對, 需要立即做配對操作嗎?</string>
+    <string name="data_sync_msg">資料同步中, 暫時無法使用, 請稍後再試!</string>
+    <string name="appliance_offline">電器離線中, 無法操作</string>
+
+    <!-- Change WIFI -->
+    <string name="change_wifi_setup">設定無線網路</string>
+    <string name="change_wifi_setup_title">此功能可幫助智能小管家更換無線網路</string>
+    <string name="change_wifi_setup_detail">注意：更換時請勿變換手機網路設定</string>
+    <string name="change_wifi_setup_not_support">此小管家不支援此功能</string>
+    <string name="change_wifi_ing">無線網路設定中</string>
+    <string name="change_wifi_confirm">開始更換</string>
+    <string name="change_wifi_title">更換無線網路</string>
+    <string name="change_wifi_now">進行更換無線網路</string>
+    <string name="change_wifi_fail">更換無線網路失敗，請檢查密碼是否正確或其他連線問題。</string>
+    <string name="change_wifi_roomhub">小管家名稱</string>
+    <string name="change">更換</string>
+    <string name="change_wifi_scanning">正在掃描附近的小管家，請勿中斷離開...</string>
+    <string name="change_wifi_reading">讀取小管家資料中...</string>
+    <string name="change_wifi_done">更換無線網路設定己完成。小管家將會切換無線網路，若無法正常使用，請再設定一次。</string>
+    <string name="change_wifi_start">正在為小管家更換無線網路，請勿中斷離開...</string>
+    <string name="change_wifi_no_devices">掃描不到附近任何一台小管家。請確認是否有替小管家接上電源。</string>
+    <string name="change_wifi_rescan">重新掃描</string>
+    <string name="change_wifi_ap_confirm">請確認網路名稱是否選對及密碼輸入正確。\n(此密碼錯誤會影響小管家連線)</string>
+    <string name="change_wifi_subtitle">更換網路名稱</string>
+    <string name="change_wifi_choose">已選擇</string>
+    <string name="change_wifi_exit_scan_msg">您確定要中斷掃描離開?</string>
+    <string name="change_wifi_exit_ongoing_msg">目前正在幫小管家更換無線網路設定，請勿中斷離開</string>
+    <string name="change_wifi_confirm_dialog">此功能為欲更換家中WiFi時使用，將更換小管家上的WiFi設定，請確定是否使用?</string>
+
+
+    <!-- RoomHub Controller -->
+    <string name="cooler">冷氣</string>
+    <string name="heater">暖氣</string>
+    <string name="dehumidifier">除濕</string>
+    <string name="fan">送風</string>
+    <string name="recommend_temp">建議</string>
+    <string name="schedule">排程</string>
+    <string name="advance">進階</string>
+    <string name="controller_warning">無此功能</string>
+    <string name="prompt_ac_power_on">需先開啟空調方能使用</string>
+    <string name="ac_toggle_msg">本款遙控器無法辨認開關狀態，如在遠端使用，請注意溫度變化</string>
+    <string name="not_remind">不再提示</string>
+
+    <string name="exit_device">再按一次返回(Back)離開程式</string>
+
+    <!-- IR Learning -->
+    <string name="ir_learning">紅外線學習</string>
+    <string name="use_ir_learning_hint">找不到機種?嘗試使用</string>
+    <string name="ir_learning_startup_hint_start">請拿起您原有的空調遙控器</string>
+    <string name="ir_learning_startup_hint_middle">近距離(5公分內)對準智能小管家</string>
+    <string name="ir_learning_startup_hint_end">並按電源鍵</string>
+    <string name="ir_learning_step_aim">請對準</string>
+    <string name="ir_learning_step_search">搜尋中</string>
+    <string name="ir_learning_step_connected">己成功找到</string>
+    <string name="ir_learning_fail_hint_start">很抱歉!操作不成功</string>
+    <string name="ir_learning_fail_hint_end">請使用自動掃描或重試</string>
+    <string name="ir_learning_auto_scan">自動掃描</string>
+    <string name="ir_learning_retry">重試</string>
+    <string name="ir_learning_confirm">是否聽見空調嗶聲?</string>
+    <string name="ir_learning_get_brandlist">正在搜尋相關遙控器型號資料...</string>
+    <string name="ir_learning_get_modellist">由伺服器取得型號列表...</string>
+    <string name="ir_learning_get_brandlist_fail">無法取得相關遙控器型號資料!</string>
+    <string name="ir_learning_get_modellist_fail">取得型號列表失敗!</string>
+    <string name="ir_pairing_success">智能小管家成功連接遙控器</string>
+    <string name="ir_pairing_fail">智能小管家連接遙控器失敗</string>
+    <string name="ir_pairing_now">智能小管家正在連接遙控器中...</string>
+    <string name="ir_pairing_confirm_title">找到的遙控器數量</string>
+    <string name="ir_pairing_fan_confirm_title">找到的機型數量</string>
+    <string name="ir_pairing_confirm_action_title">請按使電器反應</string>
+    <string name="ir_pairing_ac_confirm_hint">電器是否四個按鍵皆有反應？</string>
+    <string name="ir_pairing_ac_confirm_hint_2">（發出嗶嗶聲）</string>
+    <string name="ir_pairing_fan_confirm_hint">電器是否有反應？</string>
+    <string name="ir_pairing_fan_confirm_hint_2"></string>
+    <string name="ir_pairing_do_autoscan">正在搜尋所有的遙控器型號...</string>
+    <string name="ir_search">搜尋</string>
+    <string name="ir_searching_now">搜尋中...</string>
+    <string name="ir_search_fail">搜尋不到任何符合的遙控器</string>
+    <string name="ir_search_keyword_too_short">關鍵字不可少於一位英數字</string>
+    <string name="ir_search_hint1">可搜尋電器品牌 機型</string>
+    <string name="ir_search_hint2">或遙控器型號</string>
+    <string name="ir_search_model">請選擇遙控器型號</string>
+    <string name="ir_search_electric_model">請選擇電器型號</string>
+    <string name="ir_pairing_warning_message">在紅外線配對過程, 請勿按手機或平板的電源鍵</string>
+    <string name="ir_temp_inc">溫度加</string>
+    <string name="ir_temp_dec">溫度減</string>
+    <string name="next_day">隔日</string>
+    <string name="ir_learning_fail_wrong_data">本款遙控器無法辨認開關狀態，如在遠端使用，請注意溫度變化</string>
+    <string name="ir_pairing_bottom_message">若全數按鈕皆可操作，請按確認。若其中一個按鈕無功能，請換其他台試試。</string>
+    <string name="ir_pairing_next">換下一台</string>
+    <string name="ir_pairing_info_1">替您的電器找尋合適的遙控器</string>
+    <string name="ir_pairing_info_2">請依序試按以下按鈕，觀察電器是否正常運作？</string>
+    <string name="ir_pairing_step">第%d步</string>
+    <string name="ir_pairing_open">開啟</string>
+    <string name="ir_pairing_switch_mode">切換模式</string>
+    <!--AC window-->
+    <string name="ir_pairing_mode_cooler">冷氣模式</string>
+    <string name="ir_pairing_temperature">溫度調整</string>
+    <string name="ir_pairing_mode_auto">自動模式</string>
+    <string name="ir_pairing_mode_dry">除濕模式</string>
+    <string name="ir_pairing_mode_fan">送風模式</string>
+    <!--AP-->
+    <string name="ir_pairing_wind_speed">風速調整</string>
+    <string name="ir_pairing_Timer">定時調整</string>
+    <!--TV-->
+    <string name="ir_pairing_volume">音量</string>
+    <string name="ir_pairing_channel">頻道</string>
+    <string name="ir_pairing_mute">靜音</string>
+    <string name="ir_pairing_menu">菜單</string>
+    <string name="ir_pairing_digit_1">數字1</string>
+
+    <string name="ir_pairing_confirm_warning">電器功能是否皆有反應？</string>
+
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="loading">載入中...</string>
+
+    <!-- OnBoarding setup -->
+    <string name="onboarding_setup">設定</string>
+    <string name="onboarding_title">連接小管家</string>
+    <string name="onboarding_desc">已成功連接至智能小管家\n請為它編輯名稱</string>
+    <string name="onboarding_desc_title">步驟說明</string>
+    <string name="onboarding_desc_skip">略過</string>
+    <string name="onboarding_desc_step1">步驟 1. 將小管家連接上電源</string>
+    <string name="onboarding_desc_step2">步驟 2. 將手機連上家中無線網路</string>
+    <string name="onboarding_desc_step3">步驟 3. 連接搜尋到的小管家</string>
+    <string name="onboarding_desc_success">成功: 命名小管家後進入智能小管\n家主頁面</string>
+    <string name="onboarding_desc_fail">失敗: 重新連接</string>
+    <string name="onboarding_desc_startadd">開始新增</string>
+
+    <string name="onboarding_roomhub">連接智能小管家成功</string>
+    <string name="next_str">下一步</string>
+    <string name="info_str1">按</string>
+    <string name="info_str2">點選所搜尋到之智能小管家欄位可依亮燈尋找相對應智能遙控器</string>
+    <string name="onboarding_roomhub_rename">重新命名</string>
+    <string name="start_button_name">開始使用</string>
+    <string name="save">儲存</string>
+    <string name="ok">確定</string>
+    <string name="cancel">取消</string>
+    <string name="err_msg">輸入錯誤</string>
+    <string name="onboarding_roomhub_failed">連接智能小管家失敗</string>
+    <string name="onboarding_roomhub_reconnect">再次新增</string>
+    <string name="no_device_found">沒有找到新智能小管家</string>
+    <string name="onboarding_scan_start">搜尋智能小管家中...</string>
+    <string name="onboarding_scan_hint1">搜尋小管家可能需要較長時間</string>
+    <string name="onboarding_scan_hint2">請耐心等候</string>
+    <string name="onboarding_scan_result">已偵測到 <xliff:g id="number">%1$d</xliff:g> 個智能小管家</string>
+    <string name="onboarding_progress">連接第 <xliff:g id="number">%1$d</xliff:g> 個小管家中...</string>
+    <string name="onboarding_verifying">檢查已連接小管家中...</string>
+    <string name="onboarding_done">搜尋小管家完成</string>
+    <string name="onboarding_do_reconnect">重新連接中...</string>
+    <string name="onboarding_prompt_msg1">新增智能小管家至您家中的無線網路【<xliff:g id="AP">%1$s</xliff:g>】</string>
+    <string name="onboarding_prompt_msg2">連接過程將耗時至少數分鐘，確定要繼續?</string>
+    <string name="onboarding_done_exit_msg">您尚未完成連接程序，確定要離開這個頁面?</string>
+    <string name="onboarding_fail_item_msg">%d個智能小管家連接失敗</string>
+    <string name="onboarding_reg_to_cloud_fail">%s註冊雲端失敗，己經初始化。請確認網路連線狀況後，再新增一次</string>
+    <string name="onboarding_has_fail_to_next">略過重新連接可在結束整個安裝步驟後，在此App首頁點選新增小管家，可重新連回尚未連接成功之小管家。</string>
+    <string name="onboarding_restart">重新新增小管家</string>
+    <string name="onboarding_restart_info">已成功連接之小管家並不會受到此步驟影響</string>
+    <string name="onboarding_restart_message_1">1. 請勿拔除電源，若已拔除請重新接上並等待30秒。</string>
+    <string name="onboarding_restart_message_2">2. 若您同時安裝兩個以上小管家，請先在上頁以按成功之欄位使相對應之小管家亮燈，進而辨認成功或失敗的小管家。確認連接失敗的小管家是哪一個後再進行以下步驟。</string>
+    <string name="onboarding_restart_message_3">3. 在連接電源的狀態下，請以尖物戳入重設鍵3秒以上，直到指示燈亮藍燈即可放開，以使小管家恢復原廠設定值。</string>
+    <string name="onboarding_restart_message_4">4. 請按下方再次新增按鈕，將會重新進行新增小管家步驟。</string>
+    <string name="onboarding_retry">再次新增</string>
+    <string name="onboarding_prompt_turn_off_mobile">您目前裝置的軟體版本為Android 6.0, 為了能正確的使用WiFi連接小管家, 請先暫時關閉行動數據。</string>
+    <string name="onboarding_done_restore_mobile">連接小管家己完成。\n您可以繼續使用WiFi或是前往開啟行動數據</string>
+    <string name="enable_mobile_data">開啟行動數據</string>
+    <string name="continue_use_wifi">繼續使用WiFi</string>
+    <string name="onboarding_warning_message">在新增小管家過程, 請勿按手機或平板的電源鍵</string>
+
+    <!-- City Choice -->
+    <string name="menu_title">設定</string>
+    <string name="location_title">選擇城市</string>
+    <string name="location_title2">選擇鄉鎮</string>
+    <string name="city_title">輸入城市</string>
+    <string name="city_desc"></string>
+    <string name="reload_city">重新載入</string>
+    <string name="lang_str">zh-tw</string>
+
+    <string name="app_notification_title">訊息</string>
+
+    <!-- Schedule -->
+    <string name="history">使用記錄</string>
+    <string name="add_schedule">新增排程</string>
+    <string name="edit_schedule">編輯排程</string>
+    <string name="schedule_start">開始</string>
+    <string name="schedule_end">結束</string>
+    <string name="schedule_week_mon">一</string>
+    <string name="schedule_week_tue">二</string>
+    <string name="schedule_week_wed">三</string>
+    <string name="schedule_week_thu">四</string>
+    <string name="schedule_week_fri">五</string>
+    <string name="schedule_week_sat">六</string>
+    <string name="schedule_week_sun">日</string>
+    <string name="time_setting">設定時間</string>
+    <string name="time_to">至</string>
+    <string name="time_repeat">是否每週重複</string>
+    <string name="mode">模式</string>
+    <string name="auto">自動</string>
+    <string name="temperature">溫度</string>
+    <string name="edit">編輯</string>
+    <string name="temp_select">選擇</string>
+    <string name="delete_schedule">刪除此排程</string>
+    <string name="schedule_warning">溫度超出範圍 (%1$s)</string>
+    <string name="schedule_time_warning">結束時間必須大於開始時間</string>
+    <string name="start_time_warning">開始時間不能為空白</string>
+    <string name="end_time_warning">結束時間不能為空白</string>
+    <string name="week_warning">未選取星期</string>
+    <string name="set_time_already_exist">設定時間已存在</string>
+    <string name="same_start_end_time">開始和結束時間不能相同</string>
+
+    <!-- Advance -->
+    <string name="timing">定時</string>
+    <string name="turn_off_after">關機</string>
+    <string name="wind">風量</string>
+    <string name="wind_low">弱</string>
+    <string name="wind_med">中</string>
+    <string name="wind_high">強</string>
+    <string name="swing">擺動</string>
+    <string name="air_direction">風向</string>
+    <string name="advance_warning">注意: 某些機型可能不適用</string>
+    <string name="advance_fix">固定</string>
+    <string name="advance_timeoff_clear">清除</string>
+    <string name="set_turn_off_after_hours">設定幾小時後關機</string>
+
+    <!-- Settings -->
+    <string name="pref_title_temp_unit">溫度單位</string>
+    <string name="pref_title_wifi">Wi-Fi</string>
+    <string name="pref_title_notification">通知</string>
+    <string name="pref_title_location">定位</string>
+    <string name="pref_title_ads">是否願意收到好康情報</string>
+    <string name="celsius">攝氏°C</string>
+    <string name="fahrenheit">華氏°F</string>
+
+    <!-- Reminder-->
+    <!--string name="alljoyn_remove">%1$s 已經離線\n若非人員移除, 請確認電源是否鬆脫或網路異常</string-->
+    <string name="alljoyn_remove">%1$s 已經離線</string>
+    <string name="ok_i_know">我知道了</string>
+    <string name="remind_later">稍後提醒</string>
+    <string name="handle_now">設置</string>
+
+    <!-- Share Info -->
+    <string name="share_hub">分享小管家</string>
+    <string name="share_info">分享小管家資訊</string>
+    <string name="leave_hub">退出此小管家</string>
+    <string name="share_list">分享名單</string>
+    <string name="share_device_list">共享\"%1$s\"</string>
+    <string name="exist_list">從現有名單加入</string>
+    <string name="no_list">尚未建立名單</string>
+    <string name="or_add_people">或新增名單</string>
+    <string name="add_people">新增名單</string>
+    <string name="enter_nickname">輸入暱稱</string>
+    <string name="id_or_email">使用者名稱或電子信箱</string>
+    <string name="my_list">我的名單</string>
+    <string name="edit_nick_name">更改暱稱</string>
+    <string name="account_not_exist">帳號不存在</string>
+    <string name="room_hub_owner">小管家擁有者</string>
+    <string name="confirm_delete_people">是否要刪除此名單?</string>
+    <string name="self_not_need_join_list">不需要將自己加入名單內</string>
+    <string name="nick_name_empty_error_msg">暱稱不能為空白</string>
+    <string name="share_device">分享%s</string>
+    <string name="share_device_info">分享%s資訊</string>
+    <string name="share_leave_device">退出此%s</string>
+    <string name="share_leave_device_prompt_message">是否要退出此%s?</string>
+
+    <string name="prompt_turn_on_bt">需開啟藍芽才能使用此功能,確定要繼續?</string>
+
+    <!-- Failure message level -->
+    <string name="fail_level_emergency">緊急</string>
+    <string name="fail_level_warning">警告</string>
+    <string name="fail_level_notice">通知</string>
+    <string name="fail_level_infomation">提示</string>
+
+    <!-- Failure message category title -->
+    <string name="fail_category_title_temp">溫馨提醒</string>
+    <string name="fail_category_title_network">溫馨提醒</string>
+    <string name="fail_category_title_control">溫馨提醒</string>
+    <string name="fail_category_title_account">溫馨提醒</string>
+    <string name="fail_category_title_share">溫馨提醒</string>
+    <string name="fail_category_title_phone">溫馨提醒</string>
+    <string name="fail_category_title_system">溫馨提醒</string>
+    <string name="fail_category_title_device">溫馨提醒</string>
+
+    <!-- Failure message/suggestion -->
+    <string name="fail_msg_temp_001">[%s] 偵測到溫度過高</string>
+    <string name="fail_suggestion_temp_001_1">請檢查環境是否異常</string>
+    <string name="fail_suggestion_temp_001_2">請檢查感測器是否失效</string>
+
+    <string name="fail_suggestion_net_001_1">請檢查電源是否脫落</string>
+    <string name="fail_suggestion_net_001_2">請檢查網路是否異常</string>
+
+    <string name="fail_msg_net_002">[%s] 為離線狀態</string>
+    <string name="fail_suggestion_net_002_1">請檢查電源是否脫落</string>
+    <string name="fail_suggestion_net_002_2">請檢查網路是否異常</string>
+
+    <string name="fail_msg_account_001">請檢查網路是否異常</string>
+
+    <string name="fail_msg_network_unavailable"><xliff:g id="network_type">%s</xliff:g>已中斷</string>
+    <string name="fail_msg_network_available"><xliff:g id="network_type">%s</xliff:g>已連接</string>
+
+    <string name="network_type_mobile">數據連線</string>
+    <string name="network_type_wifi">WiFi連線</string>
+
+    <string name="fail_msg_phone_004">搜尋不到任何一台智能小管家</string>
+
+    <string name="fail_suggestion_phone_004_1">請確認RoomHub是否開機並正常連線</string>
+    <string name="fail_suggestion_phone_004_2">請確認手機/平板網路連線正常\n或重新開關手機/平板的網路連線</string>
+
+    <string name="fail_msg_phone_002">網路已從<xliff:g id="networkType">%1$s</xliff:g>切換至<xliff:g id="networkType">%2$s</xliff:g></string>
+
+    <string name="fail_msg_control_002">%s 控制無效</string>
+    <string name="fail_suggestion_control_002_1">請檢查空調是否有開啟成功</string>
+    <string name="fail_suggestion_control_002_2">請檢查是否有他人控制</string>
+
+    <string name="fail_msg_control_003">%s 關機後,室內溫度變化不明顯</string>
+    <string name="fail_suggestion_control_003_1">請檢查空調是否有關閉成功</string>
+    <string name="fail_suggestion_control_003_2">請檢查RoomHub是否有他人控制\n門窗是否關閉</string>
+
+    <string name="fail_msg_control_009">%s 未達預期設定溫度</string>
+    <string name="fail_suggestion_control_009_1">請檢查空調是否有開啟成功\n是否有他人控制</string>
+    <string name="fail_suggestion_control_009_2">此冷氣空調效果異常\n請檢查門窗是否關閉</string>
+
+    <string name="fail_msg_control_010">%s 未開啟\n但室內外溫度差異明顯</string>
+
+    <string name="fail_msg_control_007">%s 有其他使用者正在控制</string>
+    <string name="fail_suggestion_control_007_1"></string>
+    <string name="fail_suggestion_control_007_2"></string>
+
+    <string name="fail_action_reset">初始化</string>
+    <string name="fail_action_activate">重新綁定</string>
+
+    <string name="fail_action_mobile">數據連線</string>
+
+    <!-- Notice Setting -->
+    <string name="abnormal_notice">異常通知設定</string>
+    <string name="notice">通知</string>
+    <string name="notice_setting">通知設定</string>
+    <string name="notice_time">啟動空調後多久通知</string>
+    <string name="notice_time_unit">分鐘</string>
+    <string name="notice_delta">溫差幾度通知</string>
+    <string name="notice_temp_unit">度</string>
+
+    <string name="notice_msg">
+        <![CDATA[
+            <html>
+            <head></head>
+            <body style="text-align:justify;color:white;background-color:transparent;">
+            當網路出現問題、空調不正常運作或門窗未關等因素導致遠端控制失效時，裝置會根據實際溫度與設定溫度之溫差，判斷是否控制失效。</p>但因各裝置所處環境條件不同，若預設值不符合您所在的環境，請在此設定。
+        </body> </html> ]]>
+
+    </string>
+
+    <string name="noticen_warning">%s不能為空白</string>
+    <string name="notice_custom_delta">自訂溫差</string>
+    <string name="notice_custom_time">自訂時間</string>
+    <string name="notice_suggestion_delta">建議溫差</string>
+    <string name="notice_suggestion_time">建議時間</string>
+    <!--
+    <string name="notification_debug">Demo:偵測控制是否有效</string>
+    <string name="notification_valid">Demo:有效</string>
+    <string name="notification_invalid">Demo:無效</string>
+    -->
+
+    <!-- About this hub -->
+    <string name="about_this_hub">管理智能小管家</string>
+    <string name="ac_models">空調機型</string>
+    <string name="firmware_version">智能小管家韌體版本</string>
+    <string name="ac_na">無效</string>
+    <string name="dev_name">名稱</string>
+    <string name="reboot_roomhub">重新啟動小管家</string>
+    <string name="reboot_confirm_msg">重新啟動智能小管家, 是否確定?</string>
+
+    <!-- notification -->
+	<string name="notification_title">訊息中心</string>
+    <string name="notification_btn_handle">立即處理</string>
+    <string name="notification_btn_later">稍後提醒</string>
+    <string name="notification_btn_delete">刪除</string>
+    <string name="notify_menu_delete_all">全部清除</string>
+    <string name="notification_delete_toast">刪除成功</string>
+    <string name="notification_delete_confirm">確定刪除此筆記錄?</string>
+    <string name="notification_delete_all_confirm">確定刪除全部的記錄?</string>
+
+    <!-- OTA -->
+    <string name="ota_title">韌體升級</string>
+    <string name="ota_version_check_onprogress">檢查中</string>
+    <string name="ota_check_now">檢查更新</string>
+    <string name="ota_hint">安裝更新時暫時無法使用此台小管家</string>
+    <string name="ota_arrow_check">檢查更新</string>
+    <string name="ota_arrow_download">下載更新</string>
+    <string name="ota_arrow_update">安裝更新</string>
+    <string name="ota_has_no_updates">您的智能小管家已是最新版本</string>
+    <string name="ota_show_latest_version">[<xliff:g id="device">%1$s</xliff:g>]最新韌體版本為v<xliff:g id="version">%2$s</xliff:g>,\n您要現在更新嗎?</string>
+    <string name="ota_done">您的智能小管家已成功升級至最新版本</string>
+    <string name="ota_fail">韌體更新失敗</string>
+    <string name="ota_fail_timeout">"更新時間過長，若可正常使用請忽略此訊息。\n若尚不能使用，請繼續等候，小管家將於升級完成後自動重啟即可正常使用。"</string>
+    <string name="ota_check_now_manually">立即檢查</string>
+    <string name="ota_device_not_exist">該智能小管家目前不在您的清單中</string>
+    <string name="ota_login_hint">使用此功能必須登入</string>
+    <string name="ota_device_not_support_remote_ota">您的智能小管家目前版本不支援遠端更新</string>
+
+    <!-- Feedback -->
+    <string name="feedback_title">疑難排解</string>
+
+    <string name="control_timeout">控制逾時</string>
+    <string name="control_invalid">控制失效</string>
+
+    <!-- Electric -->
+    <string name="manager_device">管理電器</string>
+    <string name="electric_title">電器</string>
+    <string name="electric_ac">空調</string>
+    <string name="electric_fan">風扇</string>
+    <string name="electric_tv">電視</string>
+    <string name="electric_dehumidifier">除濕機</string>
+    <string name="electric_ion">空氣清淨機</string>
+    <string name="electric_sphygmometer">血壓計</string>
+    <string name="electric_pm">PM2.5</string>
+    <string name="electric_lamp">燈泡</string>
+    <string name="del_electric">刪除</string>
+    <string name="add_electric">新增電器</string>
+    <string name="close_all_device">關閉所有空調</string>
+    <string name="confirm_del_electric">是否要刪除%s?</string>
+    <string name="ir_repairing">重新配對</string>
+    <string name="electric_is_exist">此類型電器已存在</string>
+    <string name="close_all_device_msg">已關閉所有空調</string>
+    <string name="close_ac_fail_msg">下列空調關閉失敗："</string>
+    <string name="electric_reach_limit">此類型電器數量已達上限</string>
+
+    <!-- FAN Controller -->
+    <string name="fan_controller_speed">風量</string>
+    <string name="fan_controller_eco">ECO</string>
+    <string name="fan_advance_mode_humidification">加濕</string>
+    <string name="fan_advance_mode_ion">淨化</string>
+    <string name="fan_advance_mode_sleep">睡眠</string>
+    <string name="fan_advance_mode_natural">自然風</string>
+
+    <string name="fan_advance_air_direction_on">開</string>
+    <string name="fan_advance_air_direction_off">關</string>
+
+    <string name="firmware_version_not_support">此智能小管家韌體版本太舊, 無法使用此功能, 請先升級</string>
+    <string name="coming_soon">建置中</string>
+
+    <string name="add_asset_success">新增電器成功</string>
+    <string name="add_asset_fail">新增電器失敗</string>
+    <string name="delete_asset_success">刪除電器成功</string>
+    <string name="delete_asset_fail">刪除電器失敗</string>
+    <string name="unknown_error">未知錯誤</string>
+    <string name="connect_problem">小管家連線問題</string>
+
+    <string name="gcm_message_title">好康報報</string>
+    <string name="sys_gcm_message_title">訊息公告</string>
+
+    <!-- Start guide -->
+    <string name="start_guide_page_1">智能小管家讓您在家裡或戶外都能輕鬆遙控家中家電</string>
+    <string name="start_guide_page_2">小管家透過紅外線或低功率藍牙連接家電</string>
+    <string name="start_guide_page_3">透過排程自動開關家電讓您出門在外也能安心</string>
+    <string name="start_guide_page_4">輕鬆與家人共享近端、遠端操控家電的便利</string>
+
+    <!-- License -->
+    <string name="license_title">全國電子個資蒐集處理利用告知事項</string>
+    <string name="license_agree">同意</string>
+    <string name="license_disagree">不同意</string>
+    <string name="license_confirm_message">選擇不同意將無法使用此應用程式, 是否確定?</string>
+
+    <string name="app_version_info">版本資訊</string>
+    <string name="current_version">目前版本</string>
+    <string name="network_connection">網路連線</string>
+    <string name="auto_wifi_bridge">智慧網路</string>
+    <string name="wifi_bridge_confirm_msg">此為進階功能，適用於WiFi訊號微弱區域。若需要詳細說明，可以先自行查看疑難排解網站說明。是否開啟智慧網路?</string>
+
+    <string name="skip_login_use_mobile_msg">目前為行動網路連線，直接使用將無法找到或正常使用智能小管家，是否繼續?</string>
+    <string name="wifi_network_not_connect">目前尚未連接到任一個無線區域網路。\n按「是」繼續使用行動網路，或按「否」選擇連接其它的無線區域網路。</string>
+    <string name="wifi_network_no_interet">目前偵測您的無線區域網路無法連網。\n若您按「是」選擇繼續使用，則無法正常使用雲端服務功能，或按「否」返回選擇連接其它的無線區域網路。</string>
+
+    <!-- Blood Pressure -->
+    <string name="bp_measure_time">測量時間:</string>
+    <string name="bp_systolic">收縮壓</string>
+    <string name="bp_diastolic">舒張壓</string>
+    <string name="bp_heart_rate">心跳</string>
+    <string name="bp_history">歷史紀錄</string>
+    <string name="bp_msg">是否要查看此筆血壓記錄?</string>
+    <string name="bp_today">最新</string>
+    <string name="bp_remind_msg">已經%d天沒有測量</string>
+    <string name="bp_no_history">尚無資料</string>
+
+    <!-- Air Purifier BT-->
+    <string name="air_purifier_title">空氣清淨機</string>
+    <string name="air_time_hour">小時</string>
+    <string name="air_time">定時</string>
+    <string name="air_auto">自動</string>
+    <string name="air_uv">UV</string>
+    <string name="air_nanoe">負離子</string>
+    <string name="air_wind">風量</string>
+    <string name="air_off">未啟動</string>
+
+    <!-- Air Purifier IR-->
+    <string name="air_mode_normal">正常</string>
+    <string name="air_mode_special">特定</string>
+
+    <string name="air_smart_purifiy">智能淨化</string>
+    <string name="air_auto_purifiy">自動淨化</string>
+    <string name="air_advance_hint">當PM2.5偵測到空氣品質不良時，會自動開啟空氣清淨機淨化空氣</string>
+
+    <string name="app_update_message">本應用程式已有新版本可用\n請更新後重新啟動</string>
+
+    <!-- PM2.5 -->
+    <string name="aerosol_sensor_title">懸浮微粒感測器</string>
+    <string name="air_quality">空氣品質</string>
+    <string name="air_quality_good">良好</string>
+    <string name="air_quality_normal">普通</string>
+    <string name="air_quality_danger">不良</string>
+    <string name="update_time_title">更新時間</string>
+    <string name="pm25_advance_desc">當PM2.5在警示週期內，偵測到空氣品質為不良時，將會推播警示通知。</string>
+    <string name="pm25_advance_warning_time_title">警示通知週期</string>
+    <string name="pm25_low_batter_alert">PM2.5感測器電量過低，請更換電池</string>
+
+    <string name="wifi_bridge_not_support">此小管家不支援此功能</string>
+
+    <string name="location_service_disable">定位己關閉</string>
+    <string name="enable_location_service">定位功能處於關閉狀態，可能需要打開此設定。\n自Android 6.0後，應用程式可能無法在定位關閉狀態下正確掃描WiFi</string>
+    <string name="yahoo_mail_warning_msg">使用者反應Yahoo!! mail 常常收不到認證信，建議使用其他郵件系統</string>
+    <string name="reenter_str">重新輸入</string>
+    <string name="continue_str">繼續</string>
+
+    <string name="no_cloud_identity_msg">發現 [%s] 智能小管家不在雲端註冊清單內, 如此會無法使用雲端服務. 建議初始化後重新新增小管家, 若選是, 將初始化小管家</string>
+
+    <string name="exit">離開</string>
+
+    <!-- BPM history -->
+    <string name="bpm_history">歷史紀錄</string>
+    <string name="history_latest">最近7天</string>
+    <string name="history_Usage">健康紀錄</string>
+
+    <!-- Healthcare device -->
+    <string name="healthcare_device">健康設備</string>
+    <string name="healthcare_add_device">新增健康設備</string>
+    <string name="share_healthdevice">分享%s資訊</string>
+    <string name="manage_healthdevice">管理設備</string>
+    <string name="operation_guide">操作教學</string>
+    <string name="manage_all_devices">管理所有%s設備</string>
+    <string name="manage_all_healthcare_devices">管理所有健康設備</string>
+    <string name="add_healthcare_device_title">可新增的設備</string>
+    <string name="health_device_owner">%s擁有者</string>
+    <string name="current_device">目前設備</string>
+    <string name="bathroom_scales">體重計</string>
+    <string name="bpm_operation_guide">血壓計操作教學</string>
+    <string name="bpm_guide_step1">步驟 1</string>
+    <string name="bpm_guide_step1_desc">請將血壓計拿靠近小管家使用</string>
+    <string name="bpm_guide_step2">步驟 2</string>
+    <string name="bpm_guide_step2_desc">按壓血壓計開機按鈕</string>
+    <string name="bpm_guide_step3">步驟 3</string>
+    <string name="bpm_guide_step3_desc">開始測量中</string>
+    <string name="bpm_guide_step4">步驟 4</string>
+    <string name="bpm_guide_step4_desc">測量結束後，請開機稍等 10 秒將數據上傳</string>
+    <string name="bpm_guide_step5">步驟 5</string>
+    <string name="bpm_guide_step5_desc">拿下血壓計，並看到APP畫面上呈現數據，完成操作</string>
+    <string name="bpm_first_use_string">快來體驗第一次的測量</string>
+    <string name="bpm_notification_message">%s有最新的量測紀錄，按此前往查看</string>
+    <string name="skip_guide">跳過</string>
+    <string name="add_healthcare_device_warning">無法在區域網路內找到任一台智能小管家</string>
+
+    <string name="model">型號</string>
+    <string name="reset_default_user">重設使用者</string>
+    <!-- TV -->
+    <string name="tv_controller_function_1">電源</string>
+    <string name="tv_controller_function_2">頻道-</string>
+    <string name="tv_controller_function_3">頻道+</string>
+    <string name="tv_controller_function_4">音量-</string>
+    <string name="tv_controller_function_5">音量+</string>
+    <string name="tv_controller_function_6">靜音</string>
+    <string name="tv_controller_function_7">快退</string>
+    <string name="tv_controller_function_8">播放</string>
+    <string name="tv_controller_function_9">快進</string>
+    <string name="tv_controller_function_10">停止</string>
+    <string name="tv_controller_function_11">暫停</string>
+    <string name="tv_controller_function_12">錄影</string>
+    <string name="tv_controller_function_13">0</string>
+    <string name="tv_controller_function_14">1</string>
+    <string name="tv_controller_function_15">2</string>
+    <string name="tv_controller_function_16">3</string>
+    <string name="tv_controller_function_17">4</string>
+    <string name="tv_controller_function_18">5</string>
+    <string name="tv_controller_function_19">6</string>
+    <string name="tv_controller_function_20">7</string>
+    <string name="tv_controller_function_21">8</string>
+    <string name="tv_controller_function_22">9</string>
+    <string name="tv_controller_function_23">菜單</string>
+    <string name="tv_controller_function_24">輸入</string>
+    <string name="tv_controller_function_25">複合端子</string>
+    <string name="tv_controller_function_26">智慧電視</string>
+    <string name="tv_controller_function_27">往返</string>
+    <string name="tv_controller_function_28">上一步</string>
+    <string name="tv_controller_function_29">下一步</string>
+    <string name="tv_controller_function_30">導引</string>
+    <string name="tv_controller_function_31">子母畫面</string>
+    <string name="tv_controller_function_32">切換</string>
+    <string name="tv_controller_function_33">資訊</string>
+    <string name="tv_controller_function_34">字幕</string>
+    <string name="tv_controller_function_35">DASH</string>
+    <string name="tv_controller_function_37">及時</string>
+    <string name="tv_controller_function_38">睡眠</string>
+    <string name="tv_controller_function_41">離開</string>
+    <string name="tv_controller_function_42">左</string>
+    <string name="tv_controller_function_43">上</string>
+    <string name="tv_controller_function_44">右</string>
+    <string name="tv_controller_function_45">確認</string>
+    <string name="tv_controller_function_46">下</string>
+    <string name="tv_controller_function_47">下一頁</string>
+    <string name="tv_controller_function_48">上一頁</string>
+    <string name="tv_controller_function_49">錄影列表</string>
+    <string name="tv_controller_function_50">啟動</string>
+    <string name="tv_controller_function_51">紅</string>
+    <string name="tv_controller_function_52">黃</string>
+    <string name="tv_controller_function_53">藍</string>
+    <string name="tv_controller_function_54">綠</string>
+    <string name="tv_controller_function_55">返回</string>
+    <string name="tv_controller_function_56">寬螢幕</string>
+    <string name="tv_controller_function_58">日-</string>
+    <string name="tv_controller_function_59">日+</string>
+    <string name="tv_controller_function_60">連覽器</string>
+    <string name="tv_controller_function_61">恢復</string>
+    <string name="tv_controller_function_62">隨選視訊</string>
+    <string name="tv_controller_function_63">音頻</string>
+    <string name="tv_controller_function_64">電視資訊混和</string>
+    <string name="tv_controller_function_65">電視資訊關閉</string>
+    <string name="tv_controller_function_66">電視資訊100</string>
+    <string name="tv_controller_function_67">電視資訊開啟</string>
+    <string name="tv_controller_function_68">電視資訊凍結</string>
+    <string name="tv_controller_function_69">電視資訊放大</string>
+    <string name="tv_controller_function_70">100</string>
+    <string name="tv_controller_function_71">最愛</string>
+    <string name="tv_controller_function_72">立體音</string>
+    <string name="tv_controller_function_73">PLANNER</string>
+    <string name="tv_controller_function_74">幫助</string>
+    <string name="tv_controller_function_75">設定</string>
+    <string name="tv_controller_function_76">家</string>
+    <string name="tv_controller_function_77">3D</string>
+    <string name="tv_controller_function_78">11</string>
+    <string name="tv_controller_function_79">12</string>
+    <string name="tv_controller_function_80">CS-110</string>
+    <string name="tv_controller_function_81">日本BS</string>
+    <string name="tv_controller_function_82">數位電視</string>
+    <string name="tv_controller_function_83">資料</string>
+    <string name="tv_controller_function_84">選擇</string>
+    <string name="tv_controller_function_85">退片</string>
+    <string name="tv_controller_function_86">圖片模式</string>
+    <string name="tv_controller_function_87">聲音模式</string>
+    <string name="tv_controller_function_91">NETFLIX</string>
+    <string name="tv_controller_function_92">網際網路</string>
+    <string name="tv_controller_function_100">夜間模式</string>
+    <string name="tv_controller_function_101">亮度強</string>
+    <string name="tv_controller_function_102">亮度弱</string>
+    <string name="tv_controller_function_103">彩度強</string>
+    <string name="tv_controller_function_104">彩度弱</string>
+    <string name="tv_controller_function_105">定時30分</string>
+    <string name="tv_controller_function_106">定時60分</string>
+    <string name="tv_controller_function_200">電視</string>
+    <string name="tv_controller_function_201">HDMI1</string>
+    <string name="tv_controller_function_202">HDMI2</string>
+    <string name="tv_controller_function_203">HDMI3</string>
+    <string name="tv_controller_function_204">HDMI4</string>
+    <string name="tv_controller_function_205">HDMI5</string>
+    <string name="tv_controller_function_206">HDMI6</string>
+    <string name="tv_controller_function_207">藍光撥放器</string>
+    <string name="tv_controller_function_208">DVD</string>
+    <string name="tv_controller_function_209">數位錄影機</string>
+    <string name="tv_controller_function_210">CD</string>
+    <string name="tv_controller_function_211">錄影機</string>
+    <string name="tv_controller_function_212">衛星</string>
+    <string name="tv_controller_function_213">AUX1/AUX2</string>
+    <string name="tv_controller_function_214">AUX2</string>
+    <string name="tv_controller_function_215">IPOD</string>
+    <string name="tv_controller_function_216">調諧器</string>
+    <string name="tv_controller_function_217">USB</string>
+    <string name="tv_controller_function_218">類比</string>
+    <string name="tv_controller_function_219">MD</string>
+    <string name="tv_controller_function_220">XM</string>
+    <string name="tv_controller_function_221">照片</string>
+    <string name="tv_controller_function_222">多重輸入</string>
+    <string name="tv_controller_function_223">光纖</string>
+    <string name="tv_controller_function_224">AV1</string>
+    <string name="tv_controller_function_225">AV2</string>
+    <string name="tv_controller_function_226">AV3</string>
+    <string name="tv_controller_function_227">AV4</string>
+    <string name="tv_controller_function_228">AV5</string>
+    <string name="tv_controller_function_229">電源開</string>
+    <string name="tv_controller_function_230">電源關</string>
+    <string name="tv_controller_function_231">電腦</string>
+    <string name="tv_controller_function_232">獨立視訊端子</string>
+    <string name="tv_controller_function_233">色差端子</string>
+    <string name="tv_controller_function_1001">音量1</string>
+    <string name="tv_controller_function_1002">音量2</string>
+    <string name="tv_controller_function_1003">音量3</string>
+    <string name="tv_controller_function_1004">音量4</string>
+    <string name="tv_controller_function_1005">音量5</string>
+    <string name="tv_controller_function_1006">音量6</string>
+    <string name="tv_controller_function_1007">音量7</string>
+    <string name="tv_controller_function_1008">音量8</string>
+    <string name="tv_controller_function_1009">音量9</string>
+    <string name="tv_controller_function_1010">音量10</string>
+    <string name="tv_controller_function_1011">亮度1</string>
+    <string name="tv_controller_function_1012">亮度2</string>
+    <string name="tv_controller_function_1013">亮度3</string>
+    <string name="tv_controller_function_1014">亮度4</string>
+    <string name="tv_controller_function_1015">亮度5</string>
+    <string name="tv_controller_function_1016">亮度6</string>
+    <string name="tv_controller_function_1017">亮度7</string>
+    <string name="tv_controller_function_1018">亮度8</string>
+    <string name="tv_controller_function_1019">亮度9</string>
+    <string name="tv_controller_function_1020">亮度10</string>
+    <string name="tv_controller_function_1021">亮度11</string>
+    <string name="tv_controller_function_1022">亮度12</string>
+    <string name="tv_controller_function_1023">亮度13</string>
+    <string name="tv_controller_function_1024">亮度14</string>
+    <string name="tv_controller_function_1025">亮度15</string>
+    <string name="tv_controller_function_1026">亮度16</string>
+    <string name="tv_controller_function_1027">亮度17</string>
+    <string name="tv_controller_function_1028">亮度18</string>
+    <string name="tv_controller_function_1029">亮度19</string>
+    <string name="tv_controller_function_1030">亮度20</string>
+    <string name="tv_controller_function_1031">彩度1</string>
+    <string name="tv_controller_function_1032">彩度2</string>
+    <string name="tv_controller_function_1033">彩度3</string>
+    <string name="tv_controller_function_1034">彩度4</string>
+    <string name="tv_controller_function_1035">彩度5</string>
+    <string name="tv_controller_function_1036">彩度6</string>
+    <string name="tv_controller_function_1037">彩度7</string>
+    <string name="tv_controller_function_1038">彩度8</string>
+    <string name="tv_controller_function_1039">彩度9</string>
+    <string name="tv_controller_function_1040">彩度10</string>
+    <string name="tv_controller_function_1041">彩度11</string>
+    <string name="tv_controller_function_1042">彩度12</string>
+    <string name="tv_controller_function_1043">彩度13</string>
+    <string name="tv_controller_function_1044">彩度14</string>
+    <string name="tv_controller_function_1045">彩度15</string>
+    <string name="tv_controller_function_1046">彩度16</string>
+    <string name="tv_controller_function_1047">彩度17</string>
+    <string name="tv_controller_function_1048">彩度18</string>
+    <string name="tv_controller_function_1049">彩度19</string>
+    <string name="tv_controller_function_1050">彩度20</string>
+
+    <!-- BLE Pair-->
+    <string name="ble_pairing_title">新增藍芽電器</string>
+    <string name="ble_pairing_type_title">%s配對</string>
+    <string name="ble_pairing_desc">進行%s配對</string>
+    <string name="ble_pairing_bpm_main_desc">請長按血壓計記憶按鈕 3 秒\n來進入配對</string>
+    <string name="ble_pairing_pm25_main_desc">請長按PM2.5連線按鈕 1 秒\n來進入配對</string>
+    <string name="ble_pairing_ap_main_desc">請長按空氣清淨機電源按鈕 3 秒\n來進入配對</string>
+    <string name="ble_pairing_scan_desc">此程序可能花費數分鐘\n請耐心等待</string>
+    <string name="ble_pairing_success_title">連接成功</string>
+    <string name="ble_pairing_fail_title">連接失敗</string>
+    <string name="ble_pairing_fail_desc">%s，請重新連接一次</string>
+    <string name="ble_pairing_mgm_title">管理空氣清淨器</string>
+    <string name="rename_title">名稱</string>
+    <string name="bpm_default_name">使用者</string>
+    <string name="bpm_rename_desc">建議設定為使用者名稱，如：爸爸、媽媽等</string>
+    <string name="set_default_user_title">連結%s</string>
+    <string name="select_default_user">選擇%s使用身份</string>
+    <string name="self">自己</string>
+
+    <!-- BULB BLE pair -->
+    <string name="bulb_pairing">安裝燈泡</string>
+    <string name="bulb_pairing_step">步驟%d</string>
+    <string name="bulb_pairing_step1_hint">先關閉電源，再把燈泡裝上燈座</string>
+    <string name="bulb_pairing_step2_hint">再將電源開啟，並留意燈泡是否閃爍一次</string>
+    <string name="bulb_pairing_step2_flashes_once">是，閃爍一次</string>
+    <string name="bulb_pairing_list">配對列表</string>
+    <string name="bulb_pairing_select_all">全選</string>
+    <string name="bulb_pairing_list_hint">請點選列表中亮燈按鍵以尋找相對應燈泡</string>
+    <string name="bulb_pairing_list_desc1">上限：%1$d</string>
+    <string name="bulb_pairing_list_desc2">可選：%1$d</string>
+    <string name="bulb_pairing_list_desc3">已選：%1$d</string>
+    <string name="bulb_pairing_rename_hint">為了方便使用，貼心建議可依照以下規則命名物件及空間關係\n例如：電視上方、餐桌上方、沙發區</string>
+    <string name="bulb_add_fail_msg">%d 顆燈泡連接失敗</string>
+
+    <!-- TV Controller -->
+    <string name="tv_controller_mute">靜音</string>
+    <string name="tv_controller_source">來源</string>
+    <string name="tv_controller_volumn">音量</string>
+    <string name="tv_controller_channel">頻道</string>
+    <string name="tv_controller_number_keyboard">數字鍵</string>
+    <string name="tv_controller_arrow_keyboard">方向鍵</string>
+    <string name="tv_controller_advance_function">進階</string>
+    <string name="tv_controller_menu_mode">菜單操作模式</string>
+    <string name="tv_controller_back">回看</string>
+    <string name="tv_controller_hundred_key">百位鍵</string>
+
+    <!-- bulb -->
+    <string name="bulb_control_off">OFF</string>
+    <string name="bulb_control_schedule">排程</string>
+    <string name="bulb_group_control_title">群組控制</string>
+    <string name="bulb_group_control_select_all">全選</string>
+    <string name="bulb_group_control_select_description">點選所搜尋到之燈炮欄位可依亮燈尋找相對應燈炮</string>
+    <string name="bulb_group_control_select_notice">請選取燈炮，進行群組控制</string>
+    <string name="bulb_group_control_luminance_selected_number">%d 顆被選取</string>
+    <string name="bulb_group_control_luminance_open">開啟</string>
+    <string name="bulb_group_control_luminance_close">關閉</string>
+    <string name="bulb_schedule_select_bulbs">選擇燈炮</string>
+    <string name="bulb_control_offline">未連線</string>
+    <string name="bulb_schedule_no_schedule">目前尚無排程</string>
+
+    <string name="voice_assistant_nationality">Taiwanese</string>
+    <string name="voice_assistant_title">有什麼我可以幫忙的嗎？</string>
+    <string name="voice_assistant_error_cmd1">我不明白你的意思</string>
+    <string name="voice_assistant_error_cmd2">這件事我無能為力</string>
+    <string name="voice_assistant_error_client">系統發生了一些問題</string>
+    <string name="voice_assistant_error_server">伺服器發生錯誤</string>
+    <string name="voice_assistant_error_network">請檢查網路是否正常</string>
+    <string name="voice_assistant_error_noInput">需要我幫你什麼</string>
+    <string name="voice_assistant_error_noResult">我聽不清楚</string>
+    <string name="voice_assistant_goodbye">再見</string>
+
+    <string name="cmd_action_open">開</string>
+    <string name="cmd_action_close">關</string>
+    <string name="cmd_action_turn_on">開</string>
+    <string name="cmd_action_turn_off">關</string>
+    <string name="cmd_action_call">打給</string>
+    <string name="cmd_weather_main">天氣</string>
+    <string name="cmd_time_main">幾點</string>
+    <string name="cmd_realTime_video_main">即時影像</string>
+    <string name="cmd_livehd_guard_second">警衛室</string>
+    <string name="cmd_livehd_contacts_main">通訊錄</string>
+    <string name="cmd_h60_fan_main">風扇</string>
+    <string name="cmd_allseen_light_main">客廳的燈</string>
+
+    <string name="res_action_opened">已經開啟</string>
+    <string name="res_action_closed">已經關閉</string>
+    <string name="res_action_opening">正在開啟</string>
+    <string name="asset_connection_type_string">請選擇裝置類型</string>
+    <string name="res_action_closing">正在關閉</string>
+    <string name="res_action_open_failed">開啟失敗</string>
+    <string name="res_action_close_failed">關閉失敗</string>
+    <string name="res_action_calling">正在打給</string>
+    <string name="res_weather_clearSky">今天是個晴朗的好天氣</string>
+    <string name="res_weather_foggy">今天的天氣霧濛濛的</string>
+    <string name="res_weather_cloudy">今天是個多雲的天氣</string>
+    <string name="res_weather_rainy">今天可能會下雨，出門要記得帶傘</string>
+    <string name="res_weather_snowy">今天可能會下雪，要注意保暖</string>
+    <string name="res_weather_thunder">今天可能會有雷雨，出門請小心</string>
+    <string name="connection_type_title">新增%s</string>
+    <string name="connection_type_IR">紅外線</string>
+    <string name="connection_type_BT">藍牙</string>
+    <string name="res_weather_drizzle">今天會下毛毛雨</string>
+    <string name="res_weather_temp">室外的溫度為</string>
+    <string name="res_weather_degree">度</string>
+    <string name="res_weather_unknown">抱歉，我不清楚現在的天氣</string>
+    <string name="connection_type_WIFI">無線網路</string>
+    <string name="advance_setting">進階設定</string>
+    <string name="res_time_now">現在的時間是</string>
+    <string name="res_time_month">月</string>
+    <string name="res_time_day">號</string>
+    <string name="res_time_hour">點</string>
+    <string name="res_time_min">分</string>
+    <string name="res_livehd_contacts_prefix">通訊錄中有</string>
+    <string name="res_livehd_multi_possibility">個名子相近的朋友</string>
+    <string name="res_livehd_call_which">你要打給哪一位?</string>
+    <string name="res_livehd_call_check">你是否要打給他?</string>
+    <string name="res_livehd_unknown">通訊錄中找不到這個人</string>
+    <string name="res_h60_fan_unkown">我偵测不到風扇</string>
+    <string name="res_allseen_light_unknown">我偵测不到客廳的燈</string>
+    <!-- Strings related to Voice Assistant -->
+</resources>

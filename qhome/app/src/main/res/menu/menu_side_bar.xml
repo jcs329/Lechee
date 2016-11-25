@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/icon_account2"
+        android:title="@string/account"/>
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/icon_notification"
+        android:title="@string/notification_title"/>
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/icon_info2"
+        android:title="@string/feedback_title"/>
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/icon_settings"
+        android:title="@string/settings"/>
+</menu>

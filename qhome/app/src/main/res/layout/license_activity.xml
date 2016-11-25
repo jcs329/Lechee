@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/license_title_font_size"
+        android:textColor="@color/color_liteblack"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/license_title"/>
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="@dimen/license_content_width"
+        android:layout_height="@dimen/license_content_height"
+        android:layout_weight="1"     />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1" >
+        <Button
+            android:id="@+id/btn_disagree"
+            android:layout_width="@dimen/license_btn_width"
+            android:layout_height="@dimen/license_btn_height"
+            android:textSize="@dimen/license_btn_font_size"
+            android:textColor="@color/color_white"
+            android:text="@string/license_disagree"
+            android:background="@drawable/license_btn_selector"/>
+
+        <Button
+            android:id="@+id/btn_agree"
+            android:layout_width="@dimen/license_btn_width"
+            android:layout_height="@dimen/license_btn_height"
+            android:layout_marginLeft="@dimen/license_btn_gap"
+            android:textSize="@dimen/license_btn_font_size"
+            android:textColor="@color/color_white"
+            android:text="@string/license_agree"
+            android:background="@drawable/license_btn_selector"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/backLayout"
+        layout="@layout/back_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/signup_profile_margin_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_str"
+            android:textColor="@color/color_white"
+            android:layout_marginLeft="@dimen/signup_profile_margin_left"
+            android:layout_marginTop="@dimen/signup_profile_gap_2"
+            android:textSize="@dimen/signp_profile_text_size" />
+        <EditText
+            android:id="@+id/loginUserName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signp_profile_signup_btn_height"
+            android:layout_gravity="center"
+            android:textColor="@color/color_white50"
+            android:textColorHint="@color/color_white50"
+            android:background="@color/color_white25"
+            android:textSize="@dimen/signp_profile_editor_text_size"
+            android:paddingLeft="@dimen/signup_profile_margin_left"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/user_name_desc"
+            android:layout_marginBottom="@dimen/signup_profile_gap_1" />
+        <EditText
+            android:id="@+id/loginAccount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signp_profile_signup_btn_height"
+            android:layout_gravity="center"
+            android:textColor="@color/color_white50"
+            android:textColorHint="@color/color_white50"
+            android:background="@color/color_white25"
+            android:paddingLeft="@dimen/signup_profile_margin_left"
+            android:textSize="@dimen/signp_profile_editor_text_size"
+            android:hint="@string/account_str"
+            android:inputType="textNoSuggestions"
+            android:layout_marginBottom="@dimen/signup_profile_gap_3" />
+        <EditText
+            android:id="@+id/signupPwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signp_profile_signup_btn_height"
+            android:layout_gravity="center"
+            android:textColor="@color/color_white50"
+            android:textColorHint="@color/color_white50"
+            android:background="@color/color_white25"
+            android:textSize="@dimen/signp_profile_editor_text_size"
+            android:paddingLeft="@dimen/signup_profile_margin_left"
+            android:inputType="textPassword"
+            android:hint="@string/password_desc"
+            android:layout_marginBottom="@dimen/signup_profile_gap_1" />
+        <EditText
+            android:id="@+id/confirmPwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signp_profile_signup_btn_height"
+            android:layout_gravity="center"
+            android:textColor="@color/color_white50"
+            android:textColorHint="@color/color_white50"
+            android:background="@color/color_white25"
+            android:textSize="@dimen/signp_profile_editor_text_size"
+            android:paddingLeft="@dimen/signup_profile_margin_left"
+            android:inputType="textPassword"
+            android:layout_marginBottom="@dimen/signup_profile_gap_1"
+            android:hint="@string/confirm_pass_str" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkShowPass"
+            android:layout_gravity="right"
+            android:textColor="@color/color_white"
+            android:layout_marginRight="@dimen/wifi_setup_pass_check_margin_right"
+            android:textSize="@dimen/main_page_text_title_desc_size"
+            android:text="@string/showpass_str" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/signp_profile_signup_btn_height"
+        android:layout_gravity="bottom"
+        android:id="@+id/btnSignup"
+        android:background="@drawable/salmon_background_selector"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/signp_profile_signup_btn_text_size"
+        android:text="@string/signup_str"
+        android:layout_alignParentBottom="true"
+        />
+    <LinearLayout
+        android:layout_above="@id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/signup_profile_margin_left"
+        android:layout_marginBottom="@dimen/signp_profile_email_hint_margin_bottom"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_info"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/signp_profile_email_hint_margin_left"
+            android:textSize="@dimen/signup_profile_email_hint_text_size"
+            android:text="@string/signup_email_hint"/>
+    </LinearLayout>
+</RelativeLayout>

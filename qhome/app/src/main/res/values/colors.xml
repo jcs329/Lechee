@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue">#25d5f2</color>
+    <color name="white">#FFFFFF</color>
+    <drawable name="transparent">@android:color/transparent</drawable>
+    <color name="btn_color">#08afd3</color>
+    <color name="color_charcoal_grey">#38353b</color>
+    <color name="color_white">#000000</color>
+    <color name="color_white40">#66ffff</color>
+    <color name="color_white80">#80ffffff</color>
+    <color name="color_white25">#40ffffff</color>
+    <color name="color_pinkish_grey">#b9b8b8</color>
+    <color name="white_mask">#40ffffff</color>
+    <color name="selected_color_salmon">#f77e7e</color>
+    <color name="wifi_setup_background">#910b0a43</color>
+    <color name="dark_sea_green">#02758d</color>
+    <color name="grey_color">#d8d8d8</color>
+    <color name="color_blue">#08afd3</color>
+    <color name="color_liteblack">#024655</color>
+    <color name="color_navyblue">#02758d</color>
+    <color name="color_wifilist_selected">#17c7ed</color>
+    <color name="color_white50">#802e0303</color>
+    <color name="color_dark_grayish_cyan">#809fa5</color>
+    <color name="color_very_dark_blue">#142b3e</color>
+    <color name="color_grey">#9b9b9b</color>
+
+    <color name="color_advance_item">#33ffffff</color>
+    <color name="color_schedule_item_on">#26ffffff</color>
+    <color name="color_schedule_item_off">@color/color_white50</color>
+    <color name="color_schedule_txt_off">#506266</color>
+    <color name="color_schedule_mode">#54000000</color>
+
+    <color name="color_fan_controller_switch">#4d494949</color>
+
+    <color name="color_bp_item_bg">#1a000000</color>
+    <color name="color_bp_unit">#bfffffff</color>
+
+    <color name="color_blue_light">#00c0f3</color>
+
+    <color name="color_white59">#59ffffff</color>
+    <color name="color_whitea1">#a1ffffff</color>
+    <color name="color_white_f5">#f5f5f5</color>
+
+    <color name="color_white10">#1affffff</color>
+    <color name="color_c3d3d7">#c3d3d7</color>
+    <color name="color_67ffffff">#67ffffff</color>
+    <color name="color_4a4a4a">#4a4a4a</color>
+	<color name="color_list_item_bg">#26ffffff</color>
+	<color name="color_gold">#ffd700</color>
+	<color name="separate_line">#525d66</color>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="black">#024655</drawable>
+</resources>

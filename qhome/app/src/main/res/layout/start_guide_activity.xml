@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue">
+
+    <ImageView
+        android:id="@+id/img_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/i_m_g_0001"
+        android:layout_gravity="top"/>
+
+    <Button
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/onboarding_desc_skip"
+        android:textColor="@drawable/change_nickname_txt_selector"
+        android:textSize="@dimen/main_page_button_text_size"
+        android:background="@android:color/transparent"/>
+
+        <LinearLayout
+            android:id="@+id/ll_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:textSize="@dimen/main_page_loading_text_size"
+                android:text="@string/start_guide_page_1"/>
+            <ImageView
+                android:id="@+id/btn_page"
+                android:layout_width="@dimen/start_guide_page_width"
+                android:layout_height="@dimen/start_guide_page_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/loading_01"/>
+        </LinearLayout>
+
+</RelativeLayout>

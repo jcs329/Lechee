@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <TextView
+        android:text="@string/bpm_operation_guide"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/bpm_guide_title_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_bpm_guide_step"
+        android:layout_marginTop="@dimen/bpm_guide_step_marginTop"
+        android:layout_marginBottom="@dimen/bpm_guide_step_marginBottom"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/bpm_rectangle"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/bpm_guide_step_text_size"
+        android:layout_width="@dimen/bpm_guide_step_width"
+        android:layout_height="@dimen/bpm_guide_step_height" />
+    <com.quantatw.roomhub.ui.RoomHubViewFilpper
+        android:id="@+id/body_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bpm_guide_flipper_height"
+        android:addStatesFromChildren="false">
+    </com.quantatw.roomhub.ui.RoomHubViewFilpper>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signp_profile_signup_btn_height"
+            android:layout_gravity="center"
+            android:id="@+id/btn_bpm_guide_skip_comfirm"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/signp_profile_text_size"
+            android:textAllCaps="false"
+            android:text="@string/confirm_str" />
+        <ImageView
+            android:id="@+id/image_bpm_guide_progress"
+            android:layout_marginBottom="@dimen/bpm_guide_progress_marginBottom"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/btn_bpm_guide_skip_comfirm"
+            android:layout_width="@dimen/bpm_guide_progress_image_width"
+            android:layout_height="@dimen/bpm_guide_progress_image_height" />
+    </RelativeLayout>
+</LinearLayout>

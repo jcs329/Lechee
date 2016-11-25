@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout main -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:weightSum="1.0">
+     <LinearLayout
+            android:id="@+id/tutorialLinear"
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/functionContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@android:color/white">
+	    <Button
+	        android:id="@+id/tutorialOkBtn"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:text="OK"
+	        />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/pageIndexLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_alignBottom="@id/tutorialLinear"
+            android:layout_above="@id/functionContainer"
+            android:gravity="center"
+            android:background="@android:color/transparent">
+    </LinearLayout> 
+</RelativeLayout>

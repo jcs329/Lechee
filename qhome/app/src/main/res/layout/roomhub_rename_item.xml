@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="@dimen/onboarding_setup_list_item_margin"
+    android:background="@color/color_schedule_item_on"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/onboarding_setup_roomhub_failed_list_height">
+
+    <ImageView
+        android:id="@+id/deviceState"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_success"/>
+
+    <ImageView
+        android:id="@+id/imgLed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_led_off"/>
+
+    <RelativeLayout
+        android:layout_marginRight="@dimen/onboarding_setup_roomhub_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRoomhubName"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/onboarding_setup_button_text_size"
+            android:text="Hub 1"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="@dimen/onboarding_reconnect_button_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRename"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:background="@drawable/salmon_background_selector"
+            android:textSize="@dimen/onboarding_setup_info_text_rename_size"
+            android:text="@string/onboarding_roomhub_rename"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:id="@+id/imgRenameOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_check_hub"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

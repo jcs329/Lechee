@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/health_item_height"
+    android:background="@color/white_mask"
+    android:paddingTop="@dimen/health_item_padding_top"
+    android:paddingLeft="@dimen/health_item_padding_left"
+    android:paddingRight="@dimen/health_item_padding_right"
+    android:paddingBottom="@dimen/health_item_padding_botoom">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/healthcare_dev_image"
+                android:src="@drawable/icon_bpm_head"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/bp_history_title_image_width"
+                android:layout_height="@dimen/bp_history_title_image_height" />
+            <TextView
+                android:id="@+id/healthcare_dev_name"
+                android:layout_gravity="center"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/health_item_title_size"
+                android:layout_marginLeft="@dimen/health_item_title_margin_left"
+                android:layout_width="@dimen/dev_name_width"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/room_hub_menu_selector"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <include  android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/healthcare_item_content"
+            layout="@layout/healthcare_bpm_content" />
+    </LinearLayout>
+</RelativeLayout>

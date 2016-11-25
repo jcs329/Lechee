@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.quantatw.roomhub.ui.RoomHubViewFilpper
+        android:id="@+id/title_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:addStatesFromChildren="false">
+    </com.quantatw.roomhub.ui.RoomHubViewFilpper>
+    <com.quantatw.roomhub.ui.RoomHubViewFilpper
+        android:id="@+id/body_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:addStatesFromChildren="false"
+        android:layout_below="@id/title_flipper">
+    </com.quantatw.roomhub.ui.RoomHubViewFilpper>
+</RelativeLayout>

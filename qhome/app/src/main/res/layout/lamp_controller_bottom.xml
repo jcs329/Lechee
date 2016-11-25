@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_mask"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_schedule"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="@android:color/transparent"
+        android:text="@string/schedule"
+        android:textAllCaps="false"
+        android:textColor="@drawable/btn_text_selector"
+        android:textSize="@dimen/controller_type_font_size"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/btn_power"
+        android:layout_width="@dimen/controller_power_btn_size"
+        android:layout_height="@dimen/controller_power_btn_size"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:src="@drawable/btn_power_off" />
+
+    <Button
+        android:id="@+id/btn_advance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="@android:color/transparent"
+        android:text="@string/advance"
+        android:textAllCaps="false"
+        android:textColor="@drawable/btn_text_selector"
+        android:textSize="@dimen/controller_type_font_size" />
+
+</LinearLayout>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_height"
+    android:gravity="center"
+    android:background="@color/color_schedule_item_on"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/btn_reload"
+        android:layout_width="@dimen/reload_btn_size"
+        android:layout_height="@dimen/reload_btn_size"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/reload_btn_selector"/>
+
+</LinearLayout>

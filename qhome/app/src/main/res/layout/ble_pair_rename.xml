@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_asset_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/start_guide_margin"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/color_white"
+            android:text="dsfssdf"
+            android:textSize="@dimen/sensor_info_font_size"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/start_guide_margin"
+            android:gravity="left"
+            android:textColor="@color/color_white"
+            android:text="@string/enter_new_name"
+            android:textSize="@dimen/advance_warning_font_size"/>
+        <EditText
+            android:id="@+id/edit_txt_rename"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_page_image_edit_height"
+            android:layout_gravity="center"
+            android:textSize="@dimen/signp_profile_text_size"
+            android:background="@color/color_schedule_item_on"
+            android:paddingLeft="@dimen/start_guide_margin"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/user_name_desc"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/start_guide_margin"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:text="@string/bpm_rename_desc"
+            android:textSize="@dimen/city_desc_text_size"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signp_profile_signup_btn_height"
+            android:layout_gravity="center"
+            android:background="@drawable/salmon_background_selector"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/signp_profile_text_size"
+            android:textAllCaps="false"
+            android:text="@string/confirm_str" />
+    </RelativeLayout>
+</LinearLayout>

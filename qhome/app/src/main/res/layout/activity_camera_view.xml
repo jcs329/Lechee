@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    tools:context="com.quantatw.myapplication.CameraViewActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/camera_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout android:id="@+id/layoutCam"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/button_capture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/snapshot2"
+                android:layout_alignParentRight="true"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/close_preview"
+                android:src="@drawable/call_decline"
+                android:layout_toLeftOf="@+id/button_capture"
+                android:layout_marginRight="20dp"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/answer_door"
+                android:src="@drawable/call_accept"
+                android:layout_toLeftOf="@+id/close_preview"
+                android:layout_marginRight="20dp"
+                android:visibility="visible" />
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>

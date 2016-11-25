@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+    <LinearLayout
+        android:paddingTop="@dimen/ir_search_padding"
+        android:paddingBottom="@dimen/ir_search_padding"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="@dimen/ir_search_margin"
+            android:background="@drawable/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="@dimen/ir_search_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@color/white_mask"
+            android:hint="@string/ir_search"
+            android:textColorHint="@color/white_mask"
+            android:textSize="@dimen/ir_search_text_size"
+            android:imeOptions="actionSearch"
+            android:inputType="textFilter"
+            android:id="@+id/search" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_search_large"
+        android:id="@+id/irsearch_large_image"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_search_hint1"
+        android:id="@+id/irsearch_hint1"
+        android:layout_below="@+id/irsearch_large_image"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_search_hint2"
+        android:id="@+id/irsearch_hint2"
+        android:layout_below="@+id/irsearch_hint1"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

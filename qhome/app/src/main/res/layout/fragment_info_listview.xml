@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:divider="@color/separate_line"
+	android:dividerHeight="1dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/listimage"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="6dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listtext"
+        android:layout_gravity="center_vertical"
+        android:textSize="25dp"
+        android:text="Medium Text"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/listimage"
+        android:layout_toEndOf="@+id/listimage" />
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listtextmailto"
+        android:layout_gravity="right"
+        android:textSize="25dp"
+        android:text="Medium Text"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_below="@+id/listtext"
+        android:layout_toRightOf="@+id/listtext"
+        android:layout_toEndOf="@+id/listtext"
+		android:foreground="#ef8080"
+		android:textColor="#0000aa" />
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listread"
+        android:layout_gravity="right"
+        android:textSize="25dp"
+        android:text="New"
+        android:layout_marginLeft="39dp"
+		android:foreground="#ef8080"
+		android:textColor="#ff0000"
+		android:visibility="invisible"
+		android:layout_marginStart="46dp"
+		android:layout_alignTop="@+id/listtextmailto"
+		android:layout_toEndOf="@+id/listtextmailto" />
+
+		
+</RelativeLayout>

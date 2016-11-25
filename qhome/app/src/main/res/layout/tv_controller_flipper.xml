@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.quantatw.roomhub.ui.RoomHubViewFilpper
+        android:id="@+id/body_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:addStatesFromChildren="false">
+    </com.quantatw.roomhub.ui.RoomHubViewFilpper>
+    <include android:layout_width="fill_parent"
+        android:layout_height="@dimen/controller_bottom_height"
+        android:layout_marginTop="@dimen/fan_controller_margin_top"
+        android:layout_alignParentBottom="true"
+        layout="@layout/tv_controller_bottom"/>
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/icon_mid"
+        android:layout_height="@dimen/icon_mid"
+        android:src="@drawable/btn_back"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        />
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/img_next"
+        android:layout_width="@dimen/icon_mid"
+        android:layout_height="@dimen/icon_mid"
+        android:src="@drawable/btn_next"
+        android:layout_gravity="center"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>

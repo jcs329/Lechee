@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/hint_start"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/ir_learning_hint_text_size"
+            android:textStyle="bold"
+            android:text="@string/ir_learning_startup_hint_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/hint_middle"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/ir_learning_hint_text_size"
+            android:textStyle="bold"
+            android:text="@string/ir_learning_startup_hint_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/hint_start" />
+
+        <TextView
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/ir_learning_hint_text_size"
+            android:textStyle="bold"
+            android:text="@string/ir_learning_startup_hint_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/hint_middle" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

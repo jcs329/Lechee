@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ir_pair_confirm_layout"
+    android:layout_alignParentBottom="true"
+    android:padding="20dp"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white25"
+    >
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/ir_pair_confirm_title"
+        android:layout_gravity="center"
+        android:textSize="@dimen/listview_item_size"
+        android:textColor="@color/color_liteblack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/ir_pair_confirm_title_2"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/listview_item_size"
+        android:textColor="@color/color_liteblack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/titleLayout"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/ir_pair_confirm_yesBtn"
+            android:background="@drawable/ir_test_confirm_btn_selector"
+            android:text="@string/yes"
+            android:textSize="@dimen/listview_item_size"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:text="@string/no"
+            android:textSize="@dimen/listview_item_size"
+            android:background="@drawable/ir_test_confirm_btn_selector"
+            android:layout_weight="1"
+            android:id="@+id/ir_pair_confirm_noBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/failItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/schedule_icon_height"
+    android:layout_marginTop="@dimen/onboarding_setup_list_item_margin"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/color_schedule_item_on">
+    <ImageView
+        android:layout_width="@dimen/bulb_btn_width"
+        android:layout_height="@dimen/bulb_btn_width"
+        android:layout_marginLeft="@dimen/start_guide_margin"
+        android:layout_marginRight="@dimen/start_guide_margin"
+        android:src="@drawable/icon_onboarding_failed"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/start_guide_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fail_msg"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_16_7"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</LinearLayout>

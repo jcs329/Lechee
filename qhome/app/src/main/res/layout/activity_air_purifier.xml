@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/air_main_layout"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/time_main_layout"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/air_time_set"
+                android:clickable="true"
+                android:background="@drawable/air_btn_timer_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/linearLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/linearLayout">
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/air_time_text"
+                    android:text="- -"
+                    android:textSize="40sp"
+                    android:textColor="#00c0f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/air_time_hour"
+                    android:textSize="14sp"
+                    android:textColor="#c0d3d7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:text="@string/air_time"
+            android:textColor="@color/color_white"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mode_main_layout"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/air_auto_set"
+                    android:background="@drawable/air_btn_auto_selector"
+                    android:clickable="true"
+                    android:layout_width="@dimen/air_btn_size"
+                    android:layout_height="@dimen/air_btn_size" />
+                <TextView
+                    android:textColor="@color/color_white"
+                    android:layout_gravity="center"
+                    android:text="@string/air_auto"
+                    android:textSize="@dimen/air_btn_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/air_uv_set"
+                    android:background="@drawable/air_btn_uv_selector"
+                    android:clickable="true"
+                    android:layout_width="@dimen/air_btn_size"
+                    android:layout_height="@dimen/air_btn_size" />
+                <TextView
+                    android:textColor="@color/color_white"
+                    android:layout_gravity="center"
+                    android:text="@string/air_uv"
+                    android:textSize="@dimen/air_btn_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/air_nanoe_set"
+                    android:background="@drawable/air_btn_water_selector"
+                    android:clickable="true"
+                    android:layout_width="@dimen/air_btn_size"
+                    android:layout_height="@dimen/air_btn_size" />
+                <TextView
+                    android:textColor="@color/color_white"
+                    android:layout_gravity="center"
+                    android:text="@string/air_nanoe"
+                    android:textSize="@dimen/air_btn_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wind_main_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/air_fan_speed"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/air_fan_speed_size"
+                android:layout_height="@dimen/air_fan_speed_size" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/air_fan_set"
+                    android:text="@string/air_wind"
+                    android:background="@drawable/air_btn_wind_selector"
+                    android:clickable="true"
+                    android:textColor="@drawable/air_fan_speed_text_selector"
+                    android:textSize="@dimen/air_btn_text_size"
+                    android:layout_width="@dimen/air_fan_btn_size"
+                    android:layout_height="@dimen/air_fan_btn_size" />
+
+                <!--
+                <ImageView
+                    android:id="@+id/air_fan_set"
+                    android:background="@drawable/air_btn_wind_selector"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="@string/air_wind"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@drawable/air_fan_speed_text_selector"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                    -->
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/air_off_layout"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/air_off"
+            android:textSize="48sp"
+            android:textColor="#67ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:background="#26ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height">
+        <ImageView
+            android:id="@+id/air_power_set"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/air_btn_power_selector"
+            android:layout_width="@dimen/air_btn_power_size"
+            android:layout_height="@dimen/air_btn_power_size" />
+    </RelativeLayout>
+</RelativeLayout>

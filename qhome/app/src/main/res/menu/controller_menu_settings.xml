@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ui.RoomHubApplication="http://schemas.android.com/tools">
+    <item android:id="@+id/controller_menu_settings"
+        android:icon="@drawable/controller_menu_2_selector"
+        android:title=""
+        android:showAsAction="always" />
+</menu>

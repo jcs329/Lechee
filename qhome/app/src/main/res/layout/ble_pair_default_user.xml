@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/txt_share_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_blue"
+                android:text="@string/select_default_user"
+                android:textSize="@dimen/share_people_title_font_size"
+                android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/wifi_setup_title_gap"
+            android:background="@color/btn_color" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"
+          android:layout_marginRight="@dimen/onboarding_setup_roomhub_margin"
+          android:orientation="horizontal">
+          <TextView
+              android:id="@+id/txt_owner_name"
+              android:layout_width="@dimen/controller_devname_width"
+              android:layout_height="wrap_content"
+              android:src="@drawable/icon_lock"
+              android:layout_gravity="center_vertical"
+              android:textSize="@dimen/determine_pair_font_size"
+              android:textColor="@color/color_white"
+              android:singleLine="true"
+              android:ellipsize="end"
+              android:layout_marginLeft="15dp"
+              android:layout_weight="1"
+              android:text="eeeddd"/>
+
+          <RadioButton
+              android:id="@+id/btn_select"
+              android:layout_width="@dimen/my_list_del_btn_size"
+              android:layout_height="@dimen/my_list_del_btn_size"
+              android:button="@android:color/transparent"
+              android:background="@drawable/custom_radio_btn" />
+
+      </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_blue"
+            android:text="@string/exist_list"
+            android:textSize="@dimen/exist_people_title_font_size"
+            android:layout_marginTop="@dimen/onboarding_setup_roomhub_list_top"
+            android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/wifi_setup_title_gap"
+            android:background="@color/btn_color" />
+
+        <ListView
+            android:id="@+id/lst_exist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@drawable/transparent"
+            android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"
+            android:layout_marginRight="@dimen/onboarding_setup_roomhub_margin"
+            android:layout_marginTop="@dimen/onboarding_setup_roomhub_list_top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add_people"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_people_height"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/btn_color">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/btn_color"
+            android:layout_marginTop="@dimen/add_people_margin_top">
+            <TextView
+                android:id="@+id/txt_add_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or_add_people"
+                android:layout_marginLeft="@dimen/ir_learning_hint_text_margin_top"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="@dimen/exist_people_title_font_size"
+                android:textColor="@color/color_white" />
+
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/ir_learning_hint_text_margin_top"
+                android:src="@drawable/btn_cancel"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_add_people"
+            android:layout_width="@dimen/add_people_btn_width"
+            android:layout_height="@dimen/add_people_btn_height"
+            android:layout_marginLeft="@dimen/ir_learning_hint_text_margin_top"
+            android:layout_marginTop="@dimen/add_people_margin_top"
+            android:background="@color/color_white50"
+            android:text="@string/id_or_email"
+            android:textSize="@dimen/share_people_title_font_size"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_dark_grayish_cyan" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/okBtnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signp_profile_signup_btn_height"
+            android:layout_gravity="center"
+            android:background="@drawable/salmon_background_selector"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/signp_profile_text_size"
+            android:textAllCaps="false"
+            android:text="@string/confirm_str" />
+    </RelativeLayout>
+</FrameLayout>

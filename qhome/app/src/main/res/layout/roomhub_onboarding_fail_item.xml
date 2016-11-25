@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/onboarding_failItemLayout"
+    android:visibility="gone"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="@dimen/onboarding_setup_list_item_margin"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/onboarding_setup_roomhub_failed_list_height"
+>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"
+        android:src="@drawable/icon_onboarding_failed"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/onboarding_setup_roomhub_margin"
+        android:layout_marginLeft="@dimen/onboarding_setup_item_text_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/onboarding_fail_msg"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/onboarding_setup_button_text_size"
+            android:text="Hub 1"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="@dimen/onboarding_reconnect_button_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/onboarding_fail_reconnect"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:textSize="@dimen/onboarding_setup_info_text_rename_size"
+            android:text="@string/onboarding_roomhub_reconnect"
+            android:background="@drawable/salmon_background_selector"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/roomhub_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <include android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/fan_controller_top_v2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+        <!-- 3: Swing Toggle 4: Swing On 5: Swing Off -->
+        <LinearLayout
+            android:id="@+id/ll_swing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout style="@style/fan_controller_swing_btn_bg">
+                    <Button
+                        android:id="@+id/btn_swing_auto"
+                        style="@style/fan_controller_swing_btn"
+                        android:text="@string/swing"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="17dp"
+                    style="@style/fan_controller_swing_btn_bg">
+                    <Button
+                        android:id="@+id/btn_swing_fix"
+                        style="@style/fan_controller_swing_btn"
+                        android:text="@string/advance_fix"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="@dimen/schedule_time"
+                android:textColor="@color/color_white"
+                android:text="@string/air_direction"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_swing_toggle"
+            style="@style/fan_controller_swing_btn_bg"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_swing_toggle"
+                style="@style/fan_controller_swing_btn"
+                android:text="@string/air_direction"/>
+        </LinearLayout>
+
+        <!-- 6: FanSpeed Switch 7: FanSpeed Increase 8: FanSpeed Decrease -->
+        <LinearLayout
+            android:id="@+id/ll_speed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/btn_lower"
+                android:layout_width="@dimen/fan_swing_toggle_btn_size"
+                android:layout_height="@dimen/fan_swing_toggle_btn_size"
+                android:clickable="true"
+                android:src="@drawable/fan_lower_btn_selector"/>
+            <android.widget.Space
+                android:layout_width="@dimen/controller_temp_gap"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/btn_higher"
+                android:layout_width="@dimen/fan_swing_toggle_btn_size"
+                android:layout_height="@dimen/fan_swing_toggle_btn_size"
+                android:clickable="true"
+                android:src="@drawable/fan_higher_btn_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_speed_switch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fan_controller_v2_speed_margin_top"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/btn_speed"
+                android:layout_width="@dimen/fan_speed_switch_btn_size"
+                android:layout_height="@dimen/fan_speed_switch_btn_size"
+                android:background="@drawable/fan_speed_btn_selector"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="@dimen/schedule_time"
+            android:textColor="@color/color_white"
+            android:text="@string/fan_controller_speed"/>
+        <android.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="12dp" />
+    </LinearLayout>
+
+    <include android:layout_width="fill_parent"
+        android:layout_height="@dimen/controller_bottom_height"
+        android:layout_marginTop="@dimen/fan_controller_margin_top"
+        android:layout_alignParentBottom="true"
+        layout="@layout/fan_controller_bottom_v2"/>
+
+</RelativeLayout>

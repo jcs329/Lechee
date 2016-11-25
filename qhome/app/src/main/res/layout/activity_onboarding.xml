@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onboarding_setup_button_height"
+        android:textSize="@dimen/onboarding_setup_button_text_size"
+        android:background="@color/btn_color"
+        android:textColor="@color/color_white"
+        android:layout_alignParentBottom="true"
+        android:text="@string/next_str" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"
+        android:layout_above="@id/btnNext">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_info"
+            android:layout_marginRight="@dimen/onboarding_setup_info_margin"
+            android:src="@drawable/icon_info"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/onboarding_setup_info_text_size"
+            android:text="@string/info_str2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_above="@id/clearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onboarding_setup_roomhub_failed_list_height"
+            layout="@layout/roomhub_onboarding_fail_item" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="5dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@drawable/transparent"
+            android:id="@+id/lstRoomhub" />
+    </LinearLayout>
+</RelativeLayout>

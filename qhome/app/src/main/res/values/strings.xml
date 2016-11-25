@@ -1,0 +1,1090 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+    <string name="app_name">My Application</string>
+    <string name="contact">聯絡人</string>
+    <string name="contactView">H60</string>
+    <string name="livehdView">LiveHD</string>
+    <string name="title_activity_sip_login">LiveHD sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_rms_server">Server address</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!--Strings related to weather widget-->
+    <string name="open_weather_maps_app_id">cb1fcd8f5c286afa85562acf6fbbdfd4</string>
+
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+
+    <string name="place_not_found">Sorry, no weather data found.</string>
+
+    <!-- Strings related to Allseen Lightring Controller -->
+    <string name="default_controller_name">[Searching for controller&#8230;]</string>
+    <string name="data_not_found">-----</string>
+    <string name="default_lamp_name">[Loading lamp info&#8230;]</string>
+    <string name="no_network">Please check that Network is enabled in the device\'s settings, and that the device is connected to a network</string>
+    <string name="waiting_network">Waiting for Network to become available&#8230;</string>
+    <string name="no_controller">No controller service is available on the network</string>
+    <string name="loading_controller">Searching for controller service&#8230;</string>
+    <string name="no_lamps">No lamps have been detected on the network</string>
+    <string name="loading_lamps">Searching for lamps&#8230;</string>
+    <string name="no_support_dimmable">Changing brightness is not supported</string>
+    <string name="no_support_color">Changing color is not supported</string>
+    <string name="no_support_temp">Changing color temperature is not supported</string>
+    <string name="saturation_disable_hue">Hue has no effect when saturation is at 0\u0025. Set saturation to greater than 0\u0025 to enable the hue slider</string>
+    <string name="saturation_disable_temp">color temperature has no effect when saturation is at 100\u0025. Set saturation to less than 100\u0025 to enable the color temperature slider</string>
+    <string name="na">n/a</string>
+    <string name="units_mw">mw</string>
+    <string name="units_percent">%</string>
+    <string name="units_degrees">\u00b0</string>
+    <string name="units_kelvin">K</string>
+    <!-- Strings related to Allseen Lightring Controller -->
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="first_welcome_msg">Welcome to</string>
+    <string name="first_welcom_msg_minor">the world of IoT in Elife</string>
+    <string name="main_title">Room Hub</string>
+    <string name="main_desc">Make your family closer\nWelcome! Sign up and join a smart home.</string>
+    <string name="user_account_desc">Username or Email</string>
+    <string name="user_name_desc">User Name</string>
+    <string name="password_desc">Password</string>
+    <string name="login_str">Login</string>
+    <string name="createAccount_str">Create Account</string>
+    <string name="skip_str">Skip</string>
+    <string name="back">Back</string>
+    <string name="confirm_mail_sent">Email Sent</string>
+    <string name="confirm_email">Check your email</string>
+    <string name="confirm_email_hint1">We sent an email with a link to you,please check the link to continue the registration.</string>
+    <string name="confirm_email_hint2"></string>
+    <string name="confirm_email_hint3">Did not get email?</string>
+    <string name="confirm_email_send_again">Send again</string>
+    <string name="confirm_email_start_now">Account authorized, Login now?</string>
+    <string name="confirm_email_has_sent">Email has been sent</string>
+    <string name="account_format_error_msg">User account couldn\'t contain character \'@\'</string>
+    <string name="wrong_wifi_connected_msg">Please connect to another correct WiFi AP and restart app</string>
+    <string name="appliance">Appliance</string>
+    <string name="healthcare">Health</string>
+
+    <!--Side Bar-->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string-array name="drawer_menu">
+        <item>Account</item>
+        <item>Notification</item>
+        <item>FAQ</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="signup_str">Sign Up</string>
+    <string name="profile_str">Profile</string>
+    <string name="account_str">Email</string>
+    <string name="confirm_pass_str">Confirm Password</string>
+    <string name="process_str">Connecting......</string>
+    <string name="wrong_account_format_str">Wrong email format!!!</string>
+    <string name="wrong_password_confirm_str">Please input the confirm password again!!!</string>
+    <string name="profile_group">My Group</string>
+    <string name="change_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="account_empty_error_msg">User account couldn\'t empty!!!</string>
+    <string name="email_prompt">Please input email!!!</string>
+    <string name="signup_email_hint">We will send verification to your Email</string>
+    <string name="enter_new_pass">New Password</string>
+    <string name="confirm_new_pass">Re-enter New Password</string>
+    <string name="change_pass_result">Password has been changed successfully.</string>
+    <string name="forget_pass_email_hint">We will send a new verification tor your Email</string>
+    <string name="send">Send</string>
+    <string name="password_len_wrong">Password must be at least 4 characters or numbers</string>
+
+    <string name="wifi_list_title">Connect Wi-Fi</string>
+    <string name="wifi_setup_str">Connect Wi-Fi</string>
+    <string name="wifi_setup_desc">Please select your home WiFi to connect \n with your room hub. Press the button \n below for getting start.</string>
+    <string name="search_wfi_str">Search Home WiFi</string>
+    <string name="search_str">Searching...</string>
+    <string name="search_title">Connect to Wifi</string>
+    <string name="wifi_ap_setup_desc">Please input password to connect with </string>
+
+    <string name="wifi_security_short_wep">WEP</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA security -->
+    <string name="wifi_security_short_wpa">WPA</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA2 security -->
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with both WPA/WPA2 security -->
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_short_eap">802.1x</string>
+
+    <!-- Do not translate.  Terminology for wifi with WEP security -->
+    <string name="wifi_security_wep">WEP</string>
+    <!-- Do not translate.  Terminology for wifi with WPA security -->
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <!-- Do not translate.  Terminology for wifi with WPA2 security -->
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with both WPA/WPA2 security, or unknown -->
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_eap">802.1x EAP</string>
+
+    <string name="wifi_security_none">None</string>
+
+    <string name="wifi_connect_to">Connect to</string>
+
+    <string name="signal_str">Signal intentsity</string>
+    <string name="security_str">Security</string>
+    <string name="showpass_str">Show Password</string>
+    <string name="confirm_str">Confirm</string>
+    <string name="wifi_connect_fail">Connect failed!!! Please recheck WiFi Network Name and password.</string>
+    <string name="wifi_password_len_wrong_msg">Password length is 8 to 64 characters!</string>
+    <string name="wifi_password_wep_len_wrong_msg">Password length is 5, 13 or 16 ASCII characters!</string>
+    <string name="wifi_password_empty_wrong_msg">Password couldn\'t be empty!!!</string>
+    <string name="wifi_password_max_length_msg">Password can\'t be no longer than 64 characters!</string>
+    <string name="wifi_connect_same_wifi">You are connecting to current home WiFi.Please make sure password is correct otherwise the following process might not be done successfully.</string>
+    <string name="wifi_prompt_skip_connect">Please make sure WiFi network name and password are correct or the following process might not be done successfully.</string>
+    <string name="wifi_prompt_connect">If you want to use WiFi connection, press \'Yes\' to choose WiFi AP or press \'No\' to use Mobile connection.</string>
+
+    <string name="login_account_hint">Enter your email</string>
+    <string name="forget_pass_str">Forget Password</string>
+    <string name="need_login_msg">Please login to activate this funcion. Login now?</string>
+    <string name="yes_str">Yes</string>
+    <string name="no_str">No</string>
+    <string name="forget_pass_success_str">Please receive mail from your email account</string>
+    <string name="not_login_yet">Please login</string>
+    <string name="prompt_overlay_permissions">Since Android 6.0 or later have some changes on privileges, we need you to authorize the following permission to continue after your press Back</string>
+
+    <string name="logout_str">Logout</string>
+
+    <!-- RoomHubList -->
+    <string name="select_machine">Select model</string>
+    <string name="rename">Rename</string>
+    <string name="ac_pairing">A/C pairing</string>
+    <string name="permission">Permission</string>
+    <string name="delete_device">Delete this Room Hub</string>
+    <string name="determine_machine">OK</string>
+    <string name="reset_machine">Reset</string>
+    <string name="next_schedule">Next schedule</string>
+    <string name="account">Account</string>
+    <string name="add_device">Add Room Hub</string>
+    <string name="settings">Settings</string>
+    <string name="enter_new_name">Enter New Name</string>
+    <string name="confirm_delete_device">Did you delete this Room Hub?</string>
+    <string name="roomhub_warning_msg">This function can only operate on the LAN device</string>
+    <string name="processing_str">Processing</string>
+    <string name="advance_message">Expected to %1$s Turn off</string>
+    <string name="no_device_message">Seeking device, please wait a moment...</string>
+    <string name="lan_device_not_support">LAN device does not support this operation</string>
+    <string name="only_owner_use">This function is limited to the owner to use</string>
+    <string name="leave_device">Did you leave this Room Hub?</string>
+    <string name="insufficient_permissions">Insufficient permissions to use this function</string>
+    <string name="device_offline_not_operate">The Room Hub is offline, you can\'t operate</string>
+    <string name="device_upgrade_not_operate">The Room Hub is updating firmware, you can\'t operate</string>
+    <string name="cannot_find_roomhub_confirm_delete">Can not find this Room Hub in LAN, to proceed to remove the Room Hub, it needs its own manual initialization Room Hub, whether to continue</string>
+    <string name="device_offline">The Room Hub is offline...</string>
+    <string name="device_upgrade">The Room Hub is updating...</string>
+    <string name="device_not_ir_pairing">The RoomHub unpaired, you can\'t operate</string>
+    <string name="device_not_ir_pairing_owner">The RoomHub unpaired, do you want to pairing now?</string>
+    <string name="data_sync_msg">Data synchronization. Please try again later!</string>
+    <string name="appliance_offline">The appliance is offline…</string>
+
+    <!-- Change WIFI -->
+    <string name="change_wifi_setup">Change WiFi</string>
+    <string name="change_wifi_setup_title">Change WIFI for Room Hub</string>
+    <string name="change_wifi_setup_detail">Attention: Do not change WIFI of device when changing WIFI for Room Hub.</string>
+    <string name="change_wifi_setup_not_support">This Room Hub can not support this function.</string>
+    <string name="change_wifi_ing">Changing WIFI setting</string>
+    <string name="change_wifi_confirm">Change WIFI</string>
+    <string name="change_wifi_title">Change WIFI</string>
+    <string name="change_wifi_now">Change WIFI</string>
+    <string name="change_wifi_fail">Change WIFI failed! \nPlease check internet connection and password.</string>
+    <string name="change_wifi_roomhub">Room Hub Name</string>
+    <string name="change">Change</string>
+    <string name="change_wifi_scanning">Scanning Room Hub may take a few seconds, please wait...</string>
+    <string name="change_wifi_reading">Retrieving data from Room Hub...</string>
+    <string name="change_wifi_done">AP Transfer has finished</string>
+    <string name="change_wifi_start">AP Transfer is ongoing now...</string>
+    <string name="change_wifi_no_devices">Unable to find any nearby Room Hubs</string>
+    <string name="change_wifi_rescan">Re-scan</string>
+    <string name="change_wifi_ap_confirm">Please make sure WiFi network name and password are correct or the following process might not be done successfully.</string>
+    <string name="change_wifi_subtitle">Change WiFi SSID</string>
+    <string name="change_wifi_choose">Choosed</string>
+    <string name="change_wifi_exit_scan_msg">Are you sure to terminate scan now?</string>
+    <string name="change_wifi_exit_ongoing_msg">Please wait for changing wifi task is done</string>
+    <string name="change_wifi_confirm_dialog">The following process can help you change WiFi settings on Room Hub. Are you sure to continue?</string>
+
+    <!-- RoomHub Controller -->
+    <string name="cooler">Cooler</string>
+    <string name="heater">Heater</string>
+    <string name="dehumidifier">Dehumidifier</string>
+    <string name="fan">Fan</string>
+    <string name="recommend_temp">Recommend</string>
+    <string name="schedule">Schedule</string>
+    <string name="advance">Advance</string>
+    <string name="controller_warning">This function is not supported</string>
+    <string name="prompt_ac_power_on">Must turn A/C on first</string>
+    <string name="ac_toggle_msg">The remote controller does not get the power state, please pay attention to temperature change when you control in remote.</string>
+    <string name="not_remind">Do not remind again</string>
+
+    <string name="exit_device">Please click BACK again to exit</string>
+    <string name="title_activity_rename">RenameActivity</string>
+
+    <!-- IR Learning -->
+    <string name="ir_learning">IR Learning</string>
+    <string name="use_ir_learning_hint">Couldn\'t find your device? Try to use</string>
+    <string name="ir_learning_startup_hint_start">Please aim to the Room Hub with</string>
+    <string name="ir_learning_startup_hint_middle">pressing power button of</string>
+    <string name="ir_learning_startup_hint_end">your original A/C controller</string>
+    <string name="ir_learning_step_aim">Aim to Room Hub</string>
+    <string name="ir_learning_step_search">Searching</string>
+    <string name="ir_learning_step_connected">Connected</string>
+    <string name="ir_learning_fail_hint_start">Sorry! The Room Hub couldn\'t connect to your controller.</string>
+    <string name="ir_learning_fail_hint_end">Please try or use Auto scan.</string>
+    <string name="ir_learning_auto_scan">Auto Scan</string>
+    <string name="ir_learning_retry">Retry</string>
+    <string name="ir_learning_confirm">Do you hear the beep sound?</string>
+    <string name="ir_learning_get_brandlist">Getting brand list from server...</string>
+    <string name="ir_learning_get_modellist">Getting model list from server...</string>
+    <string name="ir_learning_get_brandlist_fail">Fail to get brand list!</string>
+    <string name="ir_learning_get_modellist_fail">Fail to get model list!</string>
+    <string name="ir_pairing_success">Pairing is successful</string>
+    <string name="ir_pairing_fail">Pairing is failed</string>
+    <string name="ir_pairing_now">Pairing process is on-going...</string>
+    <string name="ir_pairing_confirm_title">We\'ve found several remotes</string>
+    <string name="ir_pairing_fan_confirm_title">We\'ve found several devices</string>
+    <string name="ir_pairing_confirm_action_title">Press the power button on remote</string>
+    <string name="ir_pairing_ac_confirm_hint">Does your AC work well?</string>
+    <string name="ir_pairing_ac_confirm_hint_2"></string>
+    <string name="ir_pairing_fan_confirm_hint">Does your Fan work well?</string>
+    <string name="ir_pairing_fan_confirm_hint_2"></string>
+    <string name="ir_pairing_do_autoscan">Search all remotes from server...</string>
+    <string name="ir_search">Search</string>
+    <string name="ir_searching_now">Searching...</string>
+    <string name="ir_search_fail">Can\'t find any devices!</string>
+    <string name="ir_search_keyword_too_short">At least 1 alphanumeric in keyword</string>
+    <string name="ir_search_hint1">Search by Brand Name, Model Name</string>
+    <string name="ir_search_hint2">or Controller Model</string>
+    <string name="ir_search_model">Next Step: Select Model</string>
+    <string name="ir_search_electric_model">Next Step: Select Appliance Model</string>
+    <string name="ir_pairing_warning_message">Please do not press power button while IR is pairing</string>
+    <string name="ir_temp_inc">Temp +</string>
+    <string name="ir_temp_dec">Temp -</string>
+    <string name="next_day">Next</string>
+    <string name="ir_learning_fail_wrong_data">This remote controller is not be able to confirm ON/OFF state. Please notice the tempearture changes if you are using it from remote.</string>
+    <string name="ir_pairing_bottom_message">Press OK once all buttons work. If not, Press Next for repairing.</string>
+    <string name="ir_pairing_next">Next</string>
+    <string name="ir_pairing_info_1">Search Your Remote Controller</string>
+    <string name="ir_pairing_info_2">Press buttons in sequence then check if appliance operates correctly.</string>
+    <string name="ir_pairing_step">Step %d</string>
+    <string name="ir_pairing_open">Open</string>
+    <string name="ir_pairing_switch_mode">Switch mode</string>
+    <!--AC window-->
+    <string name="ir_pairing_mode_cooler">Cooler mode</string>
+    <string name="ir_pairing_temperature">Temperature</string>
+    <string name="ir_pairing_mode_auto">Auto mode</string>
+    <string name="ir_pairing_mode_dry">Dry mode</string>
+    <string name="ir_pairing_mode_fan">Fan mode</string>
+    <!--AP-->
+    <string name="ir_pairing_wind_speed">Wind speed</string>
+    <string name="ir_pairing_Timer">Timer</string>
+    <!--TV-->
+    <string name="ir_pairing_volume">Volume</string>
+    <string name="ir_pairing_channel">Channel</string>
+    <string name="ir_pairing_mute">Mute</string>
+    <string name="ir_pairing_menu">Menu</string>
+    <string name="ir_pairing_digit_1">Digit 1</string>
+
+    <string name="ir_pairing_confirm_warning">Does your appliance work well?</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="loading">Loading...</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+
+    <!-- OnBoarding setup -->
+    <string name="onboarding_setup">Setup</string>
+    <string name="onboarding_title">Connect to Room Hub</string>
+    <string name="onboarding_desc">Connected to Room Hub\nPlease edit the names</string>
+    <string name="onboarding_desc_title">Onboarding Step</string>
+    <string name="onboarding_desc_skip">Skip</string>
+    <string name="onboarding_desc_step1">Step 1. Connect RoomHub to power</string>
+    <string name="onboarding_desc_step2">Step 2. Connect to home Wi-Fi</string>
+    <string name="onboarding_desc_step3">Step 3. Connect to RoomHub</string>
+    <string name="onboarding_desc_success">Success: Rename the RoomHub\nand it is now ready to use. </string>
+    <string name="onboarding_desc_fail">Failed: Please try to reconnect\nagain.</string>
+    <string name="onboarding_desc_startadd">Start Add</string>
+
+    <string name="onboarding_roomhub">Room Hub Connect Success</string>
+    <string name="next_str">Next Step</string>
+    <string name="info_str1">Press</string>
+    <string name="info_str2">You can easily to identify Room Hub by clicking it from the search result list</string>
+    <string name="onboarding_roomhub_rename">Rename</string>
+    <string name="start_button_name">Start Now</string>
+    <string name="save">Save</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="err_msg">Input error!!!</string>
+    <string name="onboarding_roomhub_failed">Room Hub Connect Failed</string>
+    <string name="onboarding_roomhub_reconnect">Reconnect</string>
+    <string name="no_device_found">No new Room Hub found</string>
+    <string name="onboarding_scan_start">Searching for new Room Hub...</string>
+    <string name="onboarding_scan_hint1">Search Room Hub may took a long time</string>
+    <string name="onboarding_scan_hint2">Please wait for a while</string>
+    <string name="onboarding_scan_result">There are <xliff:g id="number">%1$d</xliff:g> Room Hub has been found</string>
+    <string name="onboarding_progress">Connecting to device <xliff:g id="number">%1$d</xliff:g></string>
+    <string name="onboarding_verifying">Please wait for the end of process...</string>
+    <string name="onboarding_done">Connect Room Hub is finished</string>
+    <string name="onboarding_do_reconnect">Reconnecting this Room Hub...</string>
+    <string name="onboarding_prompt_msg1">Connect Room Hub to your home Wi-Fi [<xliff:g id="AP">%1$s</xliff:g>]</string>
+    <string name="onboarding_prompt_msg2">The whole process will be took a few minutes.Are you sure to continue?</string>
+    <string name="onboarding_done_exit_msg">You haven\'t finished on-boarding process.\nAre you sure you want to leave this page?</string>
+    <string name="onboarding_fail_item_msg">%d hubs failed to connect</string>
+    <string name="onboarding_reg_to_cloud_fail">%s has registered failed. \nPlease check internet connection and add it again.</string>
+    <string name="onboarding_has_fail_to_next">You can always connect to more Room hubs later on. You will find "Add Room Hub" from menu on Room hub main page.</string>
+    <string name="onboarding_restart">Restart Add RoomHub</string>
+    <string name="onboarding_restart_info">The connected hub will not be affected by this procedure.</string>
+    <string name="onboarding_restart_message_1">1. Please keep the hub power on, if the power is off, replug in and wait for 30 secs.</string>
+    <string name="onboarding_restart_message_2">2. Before reconnecting to the hub, please make sure you find the hub that has failed to connect, if you have more than one hub listed in the previous step. (You can distinguish the hub that has connected successfully or unsuccessfully by looking from previous step)</string>
+    <string name="onboarding_restart_message_3">3. While the power of the hub is still on, use a sharp object to press the reset button for more than 3 secs until the LED turns blue, then release the reset button.</string>
+    <string name="onboarding_restart_message_4">4. Press the button below will start to re-add Room Hub.</string>
+    <string name="onboarding_retry">Retry</string>
+    <string name="onboarding_prompt_turn_off_mobile">You have to turn off Cellular data before you on-boarding Room Hub on the next step.</string>
+    <string name="onboarding_done_restore_mobile">Connect Room Hub is done.\n You can continue to use WiFi or turn on Cellular data.</string>
+    <string name="enable_mobile_data">Cellular Data</string>
+    <string name="continue_use_wifi">Use WiFi</string>
+    <string name="onboarding_warning_message">Please do not press power button while connecting Room Hub</string>
+
+    <item type="id" name="tag_first"></item>
+    <item type="id" name="tag_second"></item>
+
+    <string name="title_activity_ibeacon_test">IBeaconTestActivity</string>
+
+    <!-- City Choice -->
+    <string name="menu_title">Settings</string>
+    <string name="location_title">Select city</string>
+    <string name="location_title2">select town</string>
+    <string name="city_title">City</string>
+    <string name="city_desc">* Please enter the city where the Room Hub is located.</string>
+    <string name="reload_city">Retry</string>
+    <string name="lang_str">en</string>
+
+    <string name="app_notification_title">Messages</string>
+
+    <!-- Schedule -->
+    <string name="history">History</string>
+    <string name="add_schedule">New schedule</string>
+    <string name="edit_schedule">Edit schedule</string>
+    <string name="schedule_start">Start</string>
+    <string name="schedule_end">End</string>
+    <string name="schedule_week_mon">Mon</string>
+    <string name="schedule_week_tue">Tue</string>
+    <string name="schedule_week_wed">Wed</string>
+    <string name="schedule_week_thu">Thu</string>
+    <string name="schedule_week_fri">Fri</string>
+    <string name="schedule_week_sat">Sat</string>
+    <string name="schedule_week_sun">Sun</string>
+    <string name="time_setting">Time</string>
+    <string name="time_to">to</string>
+    <string name="time_repeat">Repeat?</string>
+    <string name="mode">Mode</string>
+    <string name="auto">Auto</string>
+    <string name="temperature">Temperature</string>
+    <string name="edit">Edit</string>
+    <string name="temp_select">Select</string>
+    <string name="delete_schedule">Delete this schedule</string>
+    <string name="schedule_warning">Temperature out of range (%1$s)</string>
+    <string name="schedule_time_warning">The End time must be greater than Start time</string>
+    <string name="start_time_warning">start time couldn\'t empty</string>
+    <string name="end_time_warning">end time couldn\'t empty</string>
+    <string name="week_warning">Not selected week</string>
+    <string name="set_time_already_exist">Set time already exists</string>
+    <string name="same_start_end_time">Start time and end time must be different</string>
+
+    <!-- Advance -->
+    <string name="timing">Timer</string>
+    <string name="turn_off_after">Turn off</string>
+    <string name="wind">Fan speed</string>
+    <string name="wind_low">Low</string>
+    <string name="wind_med">Med</string>
+    <string name="wind_high">High</string>
+    <string name="swing">Swing</string>
+    <string name="air_direction">Air Direction</string>
+    <string name="advance_warning">Notice: These functions may not be applied to some models</string>
+    <string name="advance_fix">Stop</string>
+    <string name="advance_timeoff_clear">Clear</string>
+    <string name="set_turn_off_after_hours">Set turn off after a few hours</string>
+
+    <!-- Settings -->
+    <string name="pref_title_temp_unit">Units</string>
+    <string name="pref_title_wifi">Wi-Fi</string>
+    <string name="pref_title_notification">Notification</string>
+    <string name="pref_title_location">Locate me</string>
+    <string name="pref_title_ads">Receive newsletter</string>
+    <string name="celsius">°C</string>
+    <string name="fahrenheit">°F</string>
+
+    <!-- Reminder-->
+    <!--string name="alljoyn_remove">%1$s is off line.\nPlease make sure the power is loose or abnormal network.</string-->
+    <string name="alljoyn_remove">%1$s is off line.</string>
+    <string name="ok_i_know">OK</string>
+    <string name="remind_later">Later</string>
+    <string name="handle_now">Settings</string>
+
+    <!-- Share Info -->
+    <!--<string name="share_hub">Share Room Hub</string>-->
+    <string name="share_hub">Share Room Hub</string>
+    <string name="share_info">Sharing info</string>
+    <string name="leave_hub">Leave</string>
+    <string name="share_list">Sharing List</string>
+    <string name="share_device_list">Share\"%1$s\"</string>
+    <string name="exist_list">Join the existing list</string>
+    <string name="no_list">No list yet</string>
+    <string name="or_add_people">Or add new people</string>
+    <string name="add_people">add new people</string>
+    <string name="enter_nickname">Enter Nickname</string>
+    <string name="id_or_email">ID or Email</string>
+    <string name="my_list">My list</string>
+    <string name="edit_nick_name">Edit nick name</string>
+    <string name="account_not_exist">account does not exist</string>
+    <string name="room_hub_owner">Hub owner</string>
+    <string name="confirm_delete_people">Did you delete this people??</string>
+    <string name="self_not_need_join_list">You do not need to add yourself to the list</string>
+    <string name="nick_name_empty_error_msg">Nick name couldn\'t empty</string>
+    <string name="share_device">Share %s</string>
+    <string name="share_device_info">Share %s info</string>
+    <string name="share_leave_device">Leave %s</string>
+    <string name="share_leave_device_prompt_message">Do you want to leave this %s?</string>
+
+    <string name="prompt_turn_on_bt">Are you sure to enable BT to continue?</string>
+
+    <!-- Failure message level -->
+    <string name="fail_level_emergency">Emergency</string>
+    <string name="fail_level_warning">Warning</string>
+    <string name="fail_level_notice">Notice</string>
+    <string name="fail_level_infomation">Information</string>
+
+    <!-- Failure message category title -->
+    <string name="fail_category_title_temp">Reminder</string>
+    <string name="fail_category_title_network">Reminder</string>
+    <string name="fail_category_title_control">Reminder</string>
+    <string name="fail_category_title_account">Reminder</string>
+    <string name="fail_category_title_share">Reminder</string>
+    <string name="fail_category_title_phone">Reminder</string>
+    <string name="fail_category_title_system">Reminder</string>
+    <string name="fail_category_title_device">Reminder</string>
+
+    <!-- Failure message/suggestion -->
+    <string name="fail_msg_temp_001">[%s] temperature is way too high!</string>
+    <string name="fail_suggestion_temp_001_1">Check your environment is ok</string>
+    <string name="fail_suggestion_temp_001_2">Check Room Hub is working well</string>
+
+    <string name="fail_msg_net_001">[%s] is offline</string>
+    <string name="fail_suggestion_net_001_1">Check power supply is attached</string>
+    <string name="fail_suggestion_net_001_2">Check network connection</string>
+
+    <string name="fail_msg_net_002">[%s] is offline</string>
+    <string name="fail_suggestion_net_002_1">Check power supply is attached</string>
+    <string name="fail_suggestion_net_002_2">Check network connection</string>
+
+    <string name="fail_msg_account_001">Please check your network connection</string>
+
+    <string name="fail_msg_network_unavailable"><xliff:g id="network_type">%s</xliff:g> connection is disconnected</string>
+    <string name="fail_msg_network_available"><xliff:g id="network_type">%s</xliff:g> connection is connected</string>
+
+    <string name="network_type_mobile">Mobile</string>
+    <string name="network_type_wifi">WiFi</string>
+
+    <string name="fail_msg_phone_004">Cannot find any Room Hub on your network environment</string>
+
+    <string name="fail_suggestion_phone_004_1">Check your Room Hub has been turned ON</string>
+    <string name="fail_suggestion_phone_004_2">Check to see if can connect to internet\n or restart network connection</string>
+
+    <string name="fail_msg_phone_002">Network connection has been switched from
+        <xliff:g id="networkType">%1$s</xliff:g> to <xliff:g id="networkType">%2$s</xliff:g></string>
+
+    <string name="fail_msg_control_002">Control %s is invalid</string>
+    <string name="fail_suggestion_control_002_1">Check A/C is turn ON</string>
+    <string name="fail_suggestion_control_002_2">Room Hub is controlled by someone</string>
+
+    <string name="fail_msg_control_003">%s temperature seems not changed after turned off</string>
+    <string name="fail_suggestion_control_003_1">Check A/C is turn off</string>
+    <string name="fail_suggestion_control_003_2">Check Room Hub is controlled by someone or not\nor doors and windows are closed.</string>
+
+    <string name="fail_msg_control_009">%s Temperature is not up to expectation</string>
+    <string name="fail_suggestion_control_009_1">Check A/C is turn ON\n or is controlled by someone</string>
+    <string name="fail_suggestion_control_009_2">A/C is not working well\n Check doors and windows are closed</string>
+
+    <string name="fail_msg_control_010">%s A/C hasn\'t been turned ON.\nIndoor and outdoor temperature have apparently difference</string>
+
+    <string name="fail_msg_control_007">%s is controlled by someone now</string>
+    <string name="fail_suggestion_control_007_1"></string>
+    <string name="fail_suggestion_control_007_2"></string>
+
+    <string name="fail_msg_device_001">%s is not in your cloud device list.\nSuggest to do reset then re-bind it</string>
+    <string name="fail_suggestion_device_001_1"></string>
+    <string name="fail_suggestion_device_001_2"></string>
+
+    <string name="fail_action_reset">Reset</string>
+    <string name="fail_action_activate">Activate</string>
+
+    <string name="fail_action_wifi">Wi-Fi</string>
+    <string name="fail_action_mobile">Cellular</string>
+
+    <string name="notification_time">Notification time</string>
+    <string name="notification_time_summy">%s minutes</string>
+    <string name="notification_time_unit">Unit: minutes</string>
+    <string name="notification_delta">Notification delta</string>
+    <string name="notification_debug">Demo:Detection control effective</string>
+    <string name="notification_valid">Demo:valid</string>
+    <string name="notification_invalid">Demo:invalid</string>
+
+    <!-- Notice Setting -->
+    <string name="abnormal_notice">Abnormal notice</string>
+    <string name="notice">Notice</string>
+    <string name="notice_setting">Notice setting</string>
+    <string name="notice_time">Notice time</string>
+    <string name="notice_time_unit">mins</string>
+    <string name="notice_delta">Notice delta</string>
+    <string name="notice_temp_unit">degree(s)</string>
+     <string name="notice_msg">
+        <![CDATA[
+            <html>
+            <head></head>
+            <body style="text-align:justify;color:white;background-color:transparent;">
+            When network has connection problems, A/C abnormally operations ,windows and doors are not closed or any other factors led to control failure, device will determine control is valid according to the temperature difference between the actual temperature and the set temperature .</p>
+            But because of different environmental conditions in each device, you can set here if the default value does not match your environment
+        </body> </html> ]]>
+
+    </string>
+
+    <string name="notice_warning">%s couldn\'t empty</string>
+    <string name="notice_custom_delta">Custom delta</string>
+    <string name="notice_custom_time">Custom time</string>
+    <string name="notice_suggestion_delta">Suggestion Delta</string>
+    <string name="notice_suggestion_time">Suggestion Time</string>
+
+    <!-- About this hub -->
+    <string name="about_this_hub">Management Room Hub</string>
+    <string name="ac_models">AC models</string>
+    <string name="firmware_version">Firmware version</string>
+    <string name="ac_na">NA</string>
+    <string name="dev_name">Name</string>
+    <string name="reboot_roomhub">Reboot Room Hub</string>
+    <string name="reboot_confirm_msg">Did you reboot this Room Hub?</string>
+
+    <!-- notification -->
+    <string name="notification_title">Notification</string>
+    <string name="notification_btn_handle">Setting</string>
+    <string name="notification_btn_later">Later</string>
+    <string name="notification_btn_delete">Delete</string>
+    <string name="notify_menu_delete_all">Clear All</string>
+    <string name="notification_delete_toast">Delete done</string>
+
+    <string name="notification_delete_confirm">Are you sure to delete this message?</string>
+    <string name="notification_delete_all_confirm">Are you sure to delete all messages?</string>
+
+    <!-- OTA -->
+    <string name="ota_title">Firmware updates</string>
+    <string name="ota_version_check_onprogress">Checking</string>
+    <string name="ota_check_now">Check Now</string>
+    <string name="ota_hint">This Room Hub can\'t be controlled\nduring updating firmware</string>
+    <string name="ota_arrow_check">Checking</string>
+    <string name="ota_arrow_download">Downloading</string>
+    <string name="ota_arrow_update">Updating</string>
+    <string name="ota_has_no_updates">Your device currently has the latest firmware</string>
+    <string name="ota_show_latest_version">[<xliff:g id="device">%1$s</xliff:g>] The latest firmware version is v<xliff:g id="version">%2$s</xliff:g>,\ndo you want to install now?</string>
+    <string name="ota_done">Your device has already updated to the latest firmware version</string>
+    <string name="ota_fail">Firmware Update Failed</string>
+    <string name="ota_fail_timeout">"Update time is too long, please ignore this message if workable.\n If not, please continue to wait, Room Hub will automatically restart after completion of upgrade and then can be used normally."</string>
+    <string name="ota_check_now_manually">Check now</string>
+    <string name="ota_device_not_exist">This Room Hub is not available in your device list</string>
+    <string name="ota_login_hint">You have to login to activate this function</string>
+    <string name="ota_device_not_support_remote_ota">This RoomHub firmware version does not support remote OTA</string>
+
+    <!-- Feedback -->
+    <string name="feedback_title">FAQ</string>
+
+    <string name="control_timeout">Control Timeout</string>
+    <string name="control_invalid">Control Failed</string>
+
+    <!-- Electric -->
+    <string name="manager_device">Management Appliance</string>
+    <string name="electric_title">Appliance</string>
+    <string name="electric_ac">AC</string>
+    <string name="electric_fan">FAN</string>
+    <string name="electric_dehumidifier">Dehumidifier</string>
+    <string name="electric_ion">Air Purifier</string>
+    <string name="electric_sphygmometer">BPM</string>
+    <string name="electric_pm">PM2.5</string>
+    <string name="electric_lamp">Bulb</string>
+    <string name="electric_tv">TV</string>
+    <string name="del_electric">Delete</string>
+    <string name="add_electric">Add Appliance</string>
+    <string name="close_all_device">Close all devices</string>
+    <string name="confirm_del_electric">Did you delete this %s ?</string>
+    <string name="ir_repairing">Repairing</string>
+    <string name="electric_is_exist">This type of appliances already exists</string>
+    <string name="close_all_device_msg">All devices closed</string>
+    <string name="close_ac_fail_msg">These AC close failed：</string>
+    <string name="electric_reach_limit">This type of appliances have reached the limit</string>
+
+    <!-- FAN Controller -->
+    <string name="fan_controller_speed">Speed</string>
+    <string name="fan_controller_eco">ECO</string>
+    <string name="fan_advance_mode_humidification">Dry</string>
+    <string name="fan_advance_mode_ion">ION</string>
+    <string name="fan_advance_mode_sleep">Sleep</string>
+    <string name="fan_advance_mode_natural">Natural</string>
+    <string name="fan_advance_air_direction_on">On</string>
+    <string name="fan_advance_air_direction_off">Off</string>
+
+    <string name="firmware_version_not_support">This Room hub firmware version is too old to use this feature, please upgrade first.</string>
+    <string name="coming_soon">Coming Soon</string>
+
+    <string name="add_asset_success">Add Appliance success</string>
+    <string name="add_asset_fail">Add Appliance fail</string>
+    <string name="delete_asset_success">Delete Appliance success</string>
+    <string name="delete_asset_fail">Delete Appliance fail</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="connect_problem">Room hub connection problem</string>
+
+    <string name="gcm_message_title">Message</string>
+    <string name="sys_gcm_message_title">Notice</string>
+
+    <!-- Start guide -->
+    <string name="start_guide_page_1">Room hub allows you at home or outdoors can easily remote control home appliances</string>
+    <string name="start_guide_page_2">Room hub connected appliances via IR or BLE</string>
+    <string name="start_guide_page_3">Automatic switch appliance through scheduling lets you can feel at ease away from home</string>
+    <string name="start_guide_page_4">Easily share with family proximal end, a distal control appliances</string>
+
+    <!-- License -->
+    <string name="license_title">全國電子個資蒐集處理利用告知事項</string>
+    <string name="license_agree">Agree</string>
+    <string name="license_disagree">Disagree</string>
+    <string name="license_confirm_message">Choose disagree could not use this application, still yes?</string>
+
+    <string name="app_version_info">Version Info</string>
+    <string name="current_version">Current Version</string>
+    <string name="network_connection">Network connection</string>
+    <string name="auto_wifi_bridge">Smart Network</string>
+    <string name="wifi_bridge_confirm_msg">This is the advanced capabilities for WiFi signal weak area, if need be described in detail, you can view the troubleshooting website. Still turn on?</string>
+
+    <string name="skip_login_use_mobile_msg">You may not find any devices if skip login because current device is using Cellular network. Are you sure to continue?</string>
+    <string name="wifi_network_not_connect">You haven\'t connected to any WiFi AP. Press \'Yes\' to continue use cellular network or press \'No\' to go back then choose others AP</string>
+    <string name="wifi_network_no_internet">Your WiFi connection has no internet capability. You may not be able to use Cloud service if you press \'Yes\' to continue. Or press \'No\' to go back then choose other network.</string>
+
+    <!-- Blood Pressure -->
+    <string name="bp_measure_time">measure time:</string>
+    <string name="bp_systolic">Systolic</string>
+    <string name="bp_diastolic">Diastolic</string>
+    <string name="bp_heart_rate">Heart rate</string>
+    <string name="bp_history">History</string>
+    <string name="bp_unit">mmHg</string>
+    <string name="bp_hear_rate_unit">/min</string>
+    <string name="bp_msg">Did you look this blood pressure record?</string>
+    <string name="bp_today">Today</string>
+    <string name="bp_remind_msg">%d days ago</string>
+    <string name="bp_no_history">No data</string>
+
+	<!-- Air Purifier BT-->
+    <string name="air_purifier_title">Air Purifier</string>
+    <string name="air_time_hour">Hours</string>
+    <string name="air_time">Timer</string>
+    <string name="air_auto">Auto</string>
+    <string name="air_uv">UV</string>
+    <string name="air_nanoe">nanoe</string>
+    <string name="air_wind">Fan</string>
+    <string name="air_off">OFF</string>
+    <!-- Air Purifier IR-->
+    <string name="air_mode_normal">Normal</string>
+    <string name="air_mode_special">Special</string>
+
+    <string name="air_smart_purifiy">Smart purifiy</string>
+    <string name="air_auto_purifiy">Auto purifiy</string>
+    <string name="air_advance_hint">It will automatically open air purifier when pm2.5 detect to air quality is bad</string>
+
+    <string name="app_update_message">App has a new version now.\nPlease update to the latest version then restart it.</string>
+
+    <!-- PM2.5-->
+    <string name="aerosol_sensor_title">Aerosol Sensor</string>
+    <string name="air_quality">Air Quality</string>
+    <string name="air_quality_good">Good</string>
+    <string name="air_quality_normal">Normal</string>
+    <string name="air_quality_danger">Danger</string>
+    <string name="update_time_title">Updated</string>
+    <string name="pm25_advance_desc">Room Hub will receive push notifications when PM2.5 detects air quality is poor during alert period</string>
+    <string name="pm25_advance_warning_time_title">Alert notification period</string>
+    <string name="pm25_low_batter_alert">PM2.5 battery is low, please replace new batteries</string>
+
+    <string name="wifi_bridge_not_support">This Room Hub can not switch WiFi bridge</string>
+
+    <string name="location_service_disable">Location service is disabled.</string>
+    <string name="enable_location_service">Enable Location Service to continue.(App might no be able to scan WiFi AP if Location Service is disabled since Android 6.0)</string>
+    <string name="yahoo_mail_warning_msg">Yahoo !! mail users often do not receive certification letter, we recommend you to use another email</string>
+    <string name="reenter_str">Re-enter</string>
+    <string name="continue_str">Continue</string>
+    <string name="gcm_defaultSenderId">dummy id</string>
+
+    <string name="no_cloud_identity_msg">[%s] is not in registration list and also will be unable to use cloud services.We recommend you to reset Room Hub and re-add it again.Press \'Yes\' to do reset Room Hub.</string>
+
+    <string name="exit">Exit</string>
+
+    <!-- BPM history -->
+    <string name="bpm_history">History</string>
+    <string name="history_latest">Latest</string>
+    <string name="history_Usage">Usage</string>
+
+    <!-- Healthcare -->
+    <string name="healthcare_device">Healthcare Device</string>
+    <string name="healthcare_add_device">Add Healthcare Device</string>
+    <string name="share_healthdevice">Share %s Info</string>
+    <string name="manage_healthdevice">Manage</string>
+    <string name="operation_guide">Guide</string>
+    <string name="manage_all_devices">Manage all %s Device</string>
+    <string name="manage_all_healthcare_devices">All Healthcare Devices</string>
+    <string name="add_healthcare_device_title">Healthcare Type</string>
+    <string name="health_device_owner">%s Owner</string>
+    <string name="current_device">Current Device</string>
+    <string name="bathroom_scales">Scales</string>
+    <string name="bpm_operation_guide">BPM Operation Guide</string>
+    <string name="bpm_guide_step1">Step 1</string>
+    <string name="bpm_guide_step1_desc">Please put your blood pressure monitor closer to the Room Hub</string>
+    <string name="bpm_guide_step2">Step 2</string>
+    <string name="bpm_guide_step2_desc">Press power button to start using blood pressure monitor</string>
+    <string name="bpm_guide_step3">Step 3</string>
+    <string name="bpm_guide_step3_desc">Start measurement</string>
+    <string name="bpm_guide_step4">Step 4</string>
+    <string name="bpm_guide_step4_desc">After the measurement, please wait for 10 seconds to upload data.</string>
+    <string name="bpm_guide_step5">Step 5</string>
+    <string name="bpm_guide_step5_desc">See data on App then complete measurement</string>
+    <string name="bpm_first_use_string">Come and experience</string>
+    <string name="bpm_notification_message">%s has new record, go and check now</string>
+    <string name="skip_guide">Skip</string>
+    <string name="add_healthcare_device_warning">Healthcare devices only can be added on Home LAN environment</string>
+
+    <string name="model">Model</string>
+    <string name="reset_default_user">Reset default user</string>
+    <!-- TV -->
+    <string name="tv_controller_function_1">POWER</string>
+    <string name="tv_controller_function_2">CH DOWN</string>
+    <string name="tv_controller_function_3">CH UP</string>
+    <string name="tv_controller_function_4">VOL DOWN</string>
+    <string name="tv_controller_function_5">VOL UP</string>
+    <string name="tv_controller_function_6">MUTE</string>
+    <string name="tv_controller_function_7">REW</string>
+    <string name="tv_controller_function_8">PLAY</string>
+    <string name="tv_controller_function_9">FF</string>
+    <string name="tv_controller_function_10">STOP</string>
+    <string name="tv_controller_function_11">PAUSE</string>
+    <string name="tv_controller_function_12">RECORD</string>
+    <string name="tv_controller_function_13">0</string>
+    <string name="tv_controller_function_14">1</string>
+    <string name="tv_controller_function_15">2</string>
+    <string name="tv_controller_function_16">3</string>
+    <string name="tv_controller_function_17">4</string>
+    <string name="tv_controller_function_18">5</string>
+    <string name="tv_controller_function_19">6</string>
+    <string name="tv_controller_function_20">7</string>
+    <string name="tv_controller_function_21">8</string>
+    <string name="tv_controller_function_22">9</string>
+    <string name="tv_controller_function_23">MENU</string>
+    <string name="tv_controller_function_24">CH ENTER</string>
+    <string name="tv_controller_function_25">AV</string>
+    <string name="tv_controller_function_26">SMART TV</string>
+    <string name="tv_controller_function_27">LAST CH</string>
+    <string name="tv_controller_function_28">PREV</string>
+    <string name="tv_controller_function_29">NEXT</string>
+    <string name="tv_controller_function_30">GUIDE</string>
+    <string name="tv_controller_function_31">PIP</string>
+    <string name="tv_controller_function_32">PIP SWAP</string>
+    <string name="tv_controller_function_33">INFO</string>
+    <string name="tv_controller_function_34">SUBTITLE</string>
+    <string name="tv_controller_function_35">DASH</string>
+    <string name="tv_controller_function_37">LIVE</string>
+    <string name="tv_controller_function_38">SLEEP</string>
+    <string name="tv_controller_function_41">EXIT</string>
+    <string name="tv_controller_function_42">LEFT</string>
+    <string name="tv_controller_function_43">UP</string>
+    <string name="tv_controller_function_44">RIGHT</string>
+    <string name="tv_controller_function_45">OK</string>
+    <string name="tv_controller_function_46">DOWN</string>
+    <string name="tv_controller_function_47">PAGE DOWN</string>
+    <string name="tv_controller_function_48">PAGE UP</string>
+    <string name="tv_controller_function_49">DVR LIST</string>
+    <string name="tv_controller_function_50">ACTIVE</string>
+    <string name="tv_controller_function_51">RED</string>
+    <string name="tv_controller_function_52">YELLOW</string>
+    <string name="tv_controller_function_53">BLUE</string>
+    <string name="tv_controller_function_54">GREEN</string>
+    <string name="tv_controller_function_55">BACK</string>
+    <string name="tv_controller_function_56">ASPECT</string>
+    <string name="tv_controller_function_58">DAY-</string>
+    <string name="tv_controller_function_59">DAY+</string>
+    <string name="tv_controller_function_60">EXPLORE</string>
+    <string name="tv_controller_function_61">RECOVER</string>
+    <string name="tv_controller_function_62">VOD</string>
+    <string name="tv_controller_function_63">AUDIO</string>
+    <string name="tv_controller_function_64">TXT.MIX</string>
+    <string name="tv_controller_function_65">TXT.OFF</string>
+    <string name="tv_controller_function_66">TXT.100</string>
+    <string name="tv_controller_function_67">TXT.ON</string>
+    <string name="tv_controller_function_68">TXT.HOLD</string>
+    <string name="tv_controller_function_69">TXT.EXPEND</string>
+    <string name="tv_controller_function_70">-/--</string>
+    <string name="tv_controller_function_71">FAV</string>
+    <string name="tv_controller_function_72">STEREO/MONO</string>
+    <string name="tv_controller_function_73">PLANNER</string>
+    <string name="tv_controller_function_74">HELP</string>
+    <string name="tv_controller_function_75">SETUP</string>
+    <string name="tv_controller_function_76">HOME</string>
+    <string name="tv_controller_function_77">3D</string>
+    <string name="tv_controller_function_78">11</string>
+    <string name="tv_controller_function_79">12</string>
+    <string name="tv_controller_function_80">CS110</string>
+    <string name="tv_controller_function_81">BS</string>
+    <string name="tv_controller_function_82">TERRESTRIAL</string>
+    <string name="tv_controller_function_83">DATA</string>
+    <string name="tv_controller_function_84">OPTION</string>
+    <string name="tv_controller_function_85">EJECT</string>
+    <string name="tv_controller_function_86">PICTURE MODE</string>
+    <string name="tv_controller_function_87">SOUND MODE</string>
+    <string name="tv_controller_function_91">NETFLIX</string>
+    <string name="tv_controller_function_92">INTERNET</string>
+    <string name="tv_controller_function_100">NIGHT LIGHT</string>
+    <string name="tv_controller_function_101">DIM UP</string>
+    <string name="tv_controller_function_102">DIM DOWN</string>
+    <string name="tv_controller_function_103">COLOR UP</string>
+    <string name="tv_controller_function_104">COLOR DOWN</string>
+    <string name="tv_controller_function_105">TIMER30</string>
+    <string name="tv_controller_function_106">TIMER60</string>
+    <string name="tv_controller_function_200">TV</string>
+    <string name="tv_controller_function_201">HDMI1</string>
+    <string name="tv_controller_function_202">HDMI2</string>
+    <string name="tv_controller_function_203">HDMI3</string>
+    <string name="tv_controller_function_204">HDMI4</string>
+    <string name="tv_controller_function_205">HDMI5</string>
+    <string name="tv_controller_function_206">HDMI6</string>
+    <string name="tv_controller_function_207">BD/HD DVD</string>
+    <string name="tv_controller_function_208">DVD</string>
+    <string name="tv_controller_function_209">DVR</string>
+    <string name="tv_controller_function_210">CD</string>
+    <string name="tv_controller_function_211">VCR</string>
+    <string name="tv_controller_function_212">CBL/SAT</string>
+    <string name="tv_controller_function_213">AUX1/AUX2</string>
+    <string name="tv_controller_function_214">AUX2</string>
+    <string name="tv_controller_function_215">DOCK/IPOD</string>
+    <string name="tv_controller_function_216">TUNER</string>
+    <string name="tv_controller_function_217">NET/USB</string>
+    <string name="tv_controller_function_218">ANALOG</string>
+    <string name="tv_controller_function_219">MD/CD-R</string>
+    <string name="tv_controller_function_220">XM</string>
+    <string name="tv_controller_function_221">PHONO</string>
+    <string name="tv_controller_function_222">MULT.IN</string>
+    <string name="tv_controller_function_223">OPTICAL</string>
+    <string name="tv_controller_function_224">AV1</string>
+    <string name="tv_controller_function_225">AV2</string>
+    <string name="tv_controller_function_226">AV3</string>
+    <string name="tv_controller_function_227">AV4</string>
+    <string name="tv_controller_function_228">AV5</string>
+    <string name="tv_controller_function_229">POWER ON</string>
+    <string name="tv_controller_function_230">POWER OFF</string>
+    <string name="tv_controller_function_231">PC</string>
+    <string name="tv_controller_function_232">S-VIDEO</string>
+    <string name="tv_controller_function_233">COMPONENT</string>
+    <string name="tv_controller_function_1001">A1</string>
+    <string name="tv_controller_function_1002">A2</string>
+    <string name="tv_controller_function_1003">A3</string>
+    <string name="tv_controller_function_1004">A4</string>
+    <string name="tv_controller_function_1005">A5</string>
+    <string name="tv_controller_function_1006">A6</string>
+    <string name="tv_controller_function_1007">A7</string>
+    <string name="tv_controller_function_1008">A8</string>
+    <string name="tv_controller_function_1009">A9</string>
+    <string name="tv_controller_function_1010">A10</string>
+    <string name="tv_controller_function_1011">DIM1</string>
+    <string name="tv_controller_function_1012">DIM2</string>
+    <string name="tv_controller_function_1013">DIM3</string>
+    <string name="tv_controller_function_1014">DIM4</string>
+    <string name="tv_controller_function_1015">DIM5</string>
+    <string name="tv_controller_function_1016">DIM6</string>
+    <string name="tv_controller_function_1017">DIM7</string>
+    <string name="tv_controller_function_1018">DIM8</string>
+    <string name="tv_controller_function_1019">DIM9</string>
+    <string name="tv_controller_function_1020">DIM10</string>
+    <string name="tv_controller_function_1021">DIM11</string>
+    <string name="tv_controller_function_1022">DIM12</string>
+    <string name="tv_controller_function_1023">DIM13</string>
+    <string name="tv_controller_function_1024">DIM14</string>
+    <string name="tv_controller_function_1025">DIM15</string>
+    <string name="tv_controller_function_1026">DIM16</string>
+    <string name="tv_controller_function_1027">DIM17</string>
+    <string name="tv_controller_function_1028">DIM18</string>
+    <string name="tv_controller_function_1029">DIM19</string>
+    <string name="tv_controller_function_1030">DIM20</string>
+    <string name="tv_controller_function_1031">COLOR1</string>
+    <string name="tv_controller_function_1032">COLOR2</string>
+    <string name="tv_controller_function_1033">COLOR3</string>
+    <string name="tv_controller_function_1034">COLOR4</string>
+    <string name="tv_controller_function_1035">COLOR5</string>
+    <string name="tv_controller_function_1036">COLOR6</string>
+    <string name="tv_controller_function_1037">COLOR7</string>
+    <string name="dialog_gas_alarm">Gas Alarm</string>
+    <string name="tv_controller_function_1038">COLOR8</string>
+    <string name="tv_controller_function_1039">COLOR9</string>
+    <string name="tv_controller_function_1040">COLOR10</string>
+    <string name="tv_controller_function_1041">COLOR11</string>
+    <string name="tv_controller_function_1042">COLOR12</string>
+    <string name="tv_controller_function_1043">COLOR13</string>
+    <string name="tv_controller_function_1044">COLOR14</string>
+    <string name="tv_controller_function_1045">COLOR15</string>
+    <string name="tv_controller_function_1046">COLOR16</string>
+    <string name="tv_controller_function_1047">COLOR17</string>
+    <string name="tv_controller_function_1048">COLOR18</string>
+    <string name="tv_controller_function_1049">COLOR19</string>
+    <string name="tv_controller_function_1050">COLOR20</string>
+
+
+    <!-- BLE Pair-->
+    <string name="ble_pairing_title">Add BLE Appliance</string>
+    <string name="ble_pairing_type_title">%s BLE Pairing</string>
+    <string name="ble_pairing_desc">Start %s BLE Pairing</string>
+    <string name="ble_pairing_bpm_main_desc">Long press the memory button of blood pressure monitor for 3 seconds to enter pairing</string>
+    <string name="ble_pairing_pm25_main_desc">Long press the connect button of pm2.5 for 1 seconds to enter pairing</string>
+    <string name="ble_pairing_ap_main_desc">Long press the Power button of air purifier for 3 seconds to enter pairing</string>
+
+    <string name="ble_pairing_main_desc">Long press the %s memory button for 3 seconds to enter pairing</string>
+    <string name="ble_pairing_scan_desc">It may take a few minutes.\nPlease wait!</string>
+    <string name="dialog_get_gas_alarm">Got a gas alarm</string>
+    <string name="ble_pairing_success_title">Connect Success</string>
+    <string name="ble_pairing_fail_title">Connect Fail</string>
+    <string name="ble_pairing_fail_desc">%s, please try again!</string>
+    <string name="ble_pairing_mgm_title">Management %s</string>
+    <string name="rename_title">Name</string>
+    <string name="bpm_default_name">User</string>
+    <string name="bpm_rename_desc">Recommends the user name, such as: father, mother, etc.</string>
+    <string name="set_default_user_title">Connect %s</string>
+    <string name="select_default_user">Select Default User%s</string>
+    <string name="self">Self</string>
+
+    <!-- BULB BLE pair -->
+    <string name="bulb_pairing">Install bulb</string>
+    <string name="bulb_pairing_step">Step%d</string>
+    <string name="bulb_pairing_step1_hint">Install bulb on the lamp place holder</string>
+    <string name="bulb_pairing_step2_hint">Turn the power on，the bulb will flashes once to enter pairing mode</string>
+    <string name="bulb_pairing_step2_flashes_once">Yes，flashes once</string>
+    <string name="bulb_pairing_list">Pairing list</string>
+    <string name="bulb_pairing_select_all">Select all</string>
+    <string name="bulb_pairing_list_hint">You can easily to identify bulb by clicking it from the search result list</string>
+    <string name="bulb_pairing_list_desc1">Limit Count: %d</string>
+    <string name="bulb_pairing_list_desc2">Remaining Count: %d</string>
+    <string name="bulb_pairing_list_desc3">Selected Count: %d</string>
+    <string name="bulb_pairing_rename_hint">For convenient to use, sweety suggestion: the naming rule you can follow the spatial relations\nFor example: top of the TV, top of the table, sofa area</string>
+    <string name="bulb_add_fail_msg">%d bulb light(s) connect failed</string>
+    <string name="dialog_call_guardroom">Call guardroom</string>
+    <string name="dialog_dismiss">Dismiss</string>
+    <string name="weather_title">Weather</string>
+    <string name="prompt_weather">Enter your city</string>
+    <string name="default_city">Taipei</string>
+
+    <!-- bulb -->
+    <string name="bulb_control_off">OFF</string>
+    <string name="bulb_control_schedule">Schedule</string>
+    <string name="bulb_group_control_title">Group Control</string>
+    <string name="bulb_group_control_select_all">Select All</string>
+    <string name="bulb_group_control_select_description">You can find the specific bulb by clicking the bulb icon</string>
+    <string name="bulb_group_control_select_notice">Please select the bulbs to control them</string>
+    <string name="bulb_group_control_luminance_selected_number">%d bulbs were selected</string>
+    <string name="bulb_group_control_luminance_open">Open</string>
+    <!-- Strings related to Voice Assistant -->
+    <string name="voice_assistant_nationality">American</string>
+    <string name="voice_assistant_title">Can I help you?</string>
+    <string name="voice_assistant_error_cmd1">"What do you mean?"</string>
+    <string name="voice_assistant_error_cmd2">"I can't do anything."</string>
+    <string name="voice_assistant_error_client">There is something wrong. Please wait a minute.</string>
+    <string name="voice_assistant_error_server">There is something wrong with remote server.</string>
+    <string name="voice_assistant_error_network">Please check the network.</string>
+    <string name="voice_assistant_error_noInput">What can I do for you?</string>
+    <string name="bulb_group_control_luminance_close">Close</string>
+    <string name="bulb_schedule_select_bulbs">Select bulbs</string>
+    <string name="voice_assistant_error_noResult">"Sorry, I can't hear clearly."</string>
+    <string name="bulb_control_offline">OFFLINE</string>
+    <string name="bulb_schedule_no_schedule">No schedule</string>
+    <string name="voice_assistant_goodbye">bye bye</string>
+
+    <!--TV -->
+    <string name="tv_controller_mute">MUTE</string>
+    <string name="tv_controller_source">SOURCE</string>
+    <string name="tv_controller_volumn">VOL</string>
+    <string name="tv_controller_channel">CH</string>
+    <string name="tv_controller_number_keyboard">Number</string>
+    <string name="tv_controller_arrow_keyboard">Arrow Keys</string>
+    <string name="tv_controller_advance_function">Advance</string>
+    <string name="tv_controller_menu_mode">MENU MODE</string>
+    <string name="cmd_action_open">open</string>
+    <string name="cmd_action_close">close</string>
+    <string name="cmd_action_turn_on">turn on</string>
+    <string name="cmd_action_turn_off">turn off</string>
+    <string name="cmd_action_call">make call to</string>
+    <string name="cmd_weather_main">weather</string>
+    <string name="cmd_time_main">what time</string>
+    <string name="cmd_realTime_video_main">real time video</string>
+    <string name="cmd_livehd_guard_second">guardhouse</string>
+    <string name="cmd_livehd_contacts_main">contacts</string>
+    <string name="tv_controller_back">BACK</string>
+    <string name="tv_controller_hundred_key">100</string>
+    <string name="cmd_h60_fan_main">fan</string>
+    <string name="cmd_allseen_light_main">living room lights</string>
+
+    <string name="advance_setting">Advance Settings</string>
+    <!-- Connection Type -->
+    <string name="asset_connection_type_string">Please select the connection type of appliance</string>
+    <string name="res_action_opened">" has been opened"</string>
+    <string name="res_action_closed">" has been closed"</string>
+    <string name="res_action_opening">" is opening"</string>
+    <string name="res_action_closing">" is closing"</string>
+    <string name="connection_type_title">Add %s</string>
+    <string name="connection_type_IR">IR</string>
+    <string name="connection_type_BT">Bluetooth</string>
+    <string name="connection_type_WIFI">WIFI</string>
+    <string name="res_action_open_failed">Failed to open.</string>
+    <string name="res_action_close_failed">Failed to close.</string>
+    <string name="res_action_calling">"calling "</string>
+    <string name="res_weather_clearSky">It is nice today.</string>
+    <string name="res_weather_foggy">"It's a misty day."</string>
+    <string name="res_weather_cloudy">"It's a cloudy day."</string>
+    <string name="res_weather_rainy">"It might be raining. Don't forget to take umbrella when you go out."</string>
+    <string name="res_weather_snowy">"It's cold and snowy today."</string>
+    <string name="res_weather_thunder">"There will be a thunder shower."</string>
+    <string name="res_weather_drizzle">"It might be drizzling."</string>
+    <string name="res_weather_temp">"The temperature is "</string>
+    <string name="res_weather_degree">" degrees Celsius."</string>
+    <string name="res_weather_unknown">"Sorry, I don't know."</string>
+    <string name="res_time_now">"Current time is "</string>
+    <string name="res_livehd_contacts_prefix">"in your contacts list, "</string>
+    <string name="res_livehd_multi_possibility">" people have similar name."</string>
+    <string name="res_livehd_call_which">Whom do you want to call?</string>
+    <string name="res_livehd_call_check">Are you sure to make call?</string>
+    <string name="res_livehd_unknown">"I can't find this guy in your contacts."</string>
+    <string name="res_h60_fan_unkown">"I can't find any electric fans."</string>
+    <string name="res_allseen_light_unknown">"I can't find any lights in living room."</string>
+    <!-- Strings related to Voice Assistant -->
+</resources>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ir_learning_results_btn_height"
+        android:layout_gravity="center"
+        android:id="@+id/btnAutoScan"
+        android:background="@drawable/salmon_background_selector_lite"
+        android:textSize="@dimen/main_page_button_text_size"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"
+        android:text="@string/ir_learning_auto_scan"
+        android:layout_marginBottom="@dimen/ir_learning_autoscan_margin_bottom" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ir_learning_results_btn_height"
+        android:layout_gravity="center"
+        android:id="@+id/btnRetry"
+        android:background="@drawable/salmon_background_selector_lite"
+        android:textSize="@dimen/main_page_button_text_size"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"
+        android:text="@string/ir_learning_retry" />
+
+</LinearLayout>

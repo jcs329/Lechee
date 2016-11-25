@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lampInfoScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:fillViewport="true" >
+
+    <TableLayout
+        android:id="@+id/lampInfoTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:paddingBottom="10dp"
+        android:stretchColumns="0"
+        android:shrinkColumns="0"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="9dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Properties"
+                android:textColor="#595959"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stateLabelBrightness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Brightness"
+                android:textColor="#989898"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/controlBrightness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/stateLabelBrightness"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <SeekBar
+                    android:id="@+id/sliderBrightness"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxHeight="6dip"
+                    android:paddingLeft="22dip"
+                    android:paddingRight="12dip"
+                    android:progressDrawable="@drawable/allseen_slider_track"
+                    android:thumb="@drawable/allseen_slider_thumb_normal"
+                    android:thumbOffset="23dip" />
+
+                <TextView
+                    android:id="@+id/textBrightness"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="n/a"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/stateLabelHue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stateControlBrightness"
+                android:layout_marginLeft="20dp"
+                android:scrollHorizontally="true"
+                android:paddingTop="8dip"
+                android:singleLine="true"
+                android:text="Hue"
+                android:textColor="#989898"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/controlHue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/stateLabelHue"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <SeekBar
+                    android:id="@+id/sliderHue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxHeight="6dip"
+                    android:paddingLeft="22dip"
+                    android:paddingRight="12dip"
+                    android:progressDrawable="@drawable/allseen_slider_track"
+                    android:thumb="@drawable/allseen_slider_thumb_normal"
+                    android:thumbOffset="23dip" />
+
+                <TextView
+                    android:id="@+id/textHue"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="n/a"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/stateLabelSaturation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stateControlHue"
+                android:layout_marginLeft="20dp"
+                android:scrollHorizontally="true"
+                android:paddingTop="8dip"
+                android:singleLine="true"
+                android:text="Saturation"
+                android:textColor="#989898"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/controlSaturation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/stateLabelSaturation"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <SeekBar
+                    android:id="@+id/sliderSaturation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxHeight="6dip"
+                    android:paddingLeft="22dip"
+                    android:paddingRight="12dip"
+                    android:progressDrawable="@drawable/allseen_slider_track"
+                    android:thumb="@drawable/allseen_slider_thumb_normal"
+                    android:thumbOffset="23dip" />
+
+                <TextView
+                    android:id="@+id/textSaturation"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="n/a"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/stateLabelColorTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stateControlSaturation"
+                android:layout_marginLeft="20dp"
+                android:scrollHorizontally="true"
+                android:paddingTop="8dip"
+                android:singleLine="true"
+                android:text="Color Temperature"
+                android:textColor="#989898"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/controlColorTemp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/stateLabelColorTemp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <SeekBar
+                    android:id="@+id/sliderColorTemp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxHeight="6dip"
+                    android:paddingLeft="22dip"
+                    android:paddingRight="12dip"
+                    android:progressDrawable="@drawable/allseen_slider_track"
+                    android:thumb="@drawable/allseen_slider_thumb_normal"
+                    android:thumbOffset="23dip" />
+
+                <TextView
+                    android:id="@+id/textColorTemp"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="n/a"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Lumens"
+                    android:textColor="#595959"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lampInfoTextLumens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textSize="13sp"
+                    android:textColor="#989898" />
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Energy usage"
+                    android:textColor="#595959"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lampInfoTextEnergy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#9898"/>
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0" />
+    </TableLayout>
+</ScrollView>

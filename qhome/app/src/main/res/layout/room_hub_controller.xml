@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/roomhub_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/controller_funmode_height"
+        android:orientation="horizontal"
+        android:background="@color/white_mask">
+        <ImageView
+            android:id="@+id/btn_cooler"
+            style="@style/controller_switch_btn"
+            android:src="@drawable/btn_cooler"/>
+        <ImageView
+            android:id="@+id/btn_heater"
+            style="@style/controller_switch_btn"
+            android:src="@drawable/btn_heater"/>
+        <ImageView
+            android:id="@+id/btn_dehum"
+            style="@style/controller_switch_btn"
+            android:src="@drawable/btn_dehumidifier"/>
+        <ImageView
+            android:id="@+id/btn_fan"
+            style="@style/controller_switch_btn"
+            android:src="@drawable/btn_fan"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_fun_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/color_white"
+        android:gravity="center"
+        android:textSize="@dimen/controller_type_font_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back"
+            android:id="@+id/controller_left_btn"
+            android:layout_gravity="center"/>
+        <include android:layout_width="wrap_content"
+            android:layout_height="@dimen/controller_dehum_height"
+            android:id="@+id/controller_temp"
+            layout="@layout/controller_temp"
+            android:layout_weight="1"
+            android:visibility="visible"/>
+        <include android:layout_width="wrap_content"
+            android:layout_height="@dimen/controller_dehum_height"
+            android:id="@+id/controller_dehum"
+            layout="@layout/controller_dehum"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <include android:layout_width="wrap_content"
+            android:layout_height="@dimen/controller_dehum_height"
+            android:id="@+id/controller_fan"
+            layout="@layout/controller_fan"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_next"
+            android:id="@+id/controller_right_btn"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_debug"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notification_debug"
+        android:visibility="gone"/>
+    <!--
+    <TextView
+        android:id="@+id/txt_schedule"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_mask"
+        android:gravity="center"
+        android:textSize="@dimen/select_pair_font_size"/>
+    -->
+    <android.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+    </LinearLayout>
+
+    <include android:layout_width="fill_parent"
+        android:layout_height="@dimen/controller_bottom_height"
+        android:id="@+id/controller_bottom"
+        android:layout_alignParentBottom="true"
+        layout="@layout/controller_bottom"/>
+
+</RelativeLayout>

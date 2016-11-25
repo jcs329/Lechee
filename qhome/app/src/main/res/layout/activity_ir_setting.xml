@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/ir_learning_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ir_learning_hint_height"
+        android:orientation="vertical"
+        android:background="@color/btn_color">
+
+        <TextView
+            android:layout_marginTop="@dimen/ir_learning_hint_text_margin_top"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/ir_learning_hint_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/color_white"
+            android:id="@+id/hintText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/use_ir_learning_hint"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/ir_learning_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ir_learning_button_cancel_margin_top"
+            android:src="@drawable/btn_cancel"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/ir_learning_btn"
+            android:layout_toEndOf="@+id/ir_learning_btn" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ir_learning_button_bg_margin_top"
+            android:background="@drawable/image_rectangle"
+            android:layout_below="@id/hintText"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ir_learning"
+            android:textStyle="bold"
+            android:textSize="@dimen/ir_learning_button_text_size"
+            android:textColor="@color/color_white"
+            android:id="@+id/ir_learning_btn" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_above="@id/ir_learning_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingTop="@dimen/ir_search_padding"
+            android:paddingBottom="@dimen/ir_search_padding"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="@dimen/ir_search_margin"
+                android:background="@drawable/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_marginLeft="@dimen/ir_search_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="@color/white_mask"
+                android:hint="@string/ir_search"
+                android:textColorHint="@color/white_mask"
+                android:textSize="@dimen/ir_search_text_size"
+                android:imeOptions="actionSearch"
+                android:inputType="textFilter"
+                android:id="@+id/search" />
+        </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_white"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@drawable/ir_brand_list_selector"
+        android:id="@+id/IRBrandlist" />
+    </LinearLayout>
+
+
+</RelativeLayout>

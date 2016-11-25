@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llForgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/main_page_forget_pass_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtForgetPassword"
+            android:text="@string/forget_pass_str"
+            android:textColor="@drawable/btn_text_selector"
+            android:textSize="@dimen/main_page_text_title_desc_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/createAccountLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llForgetPass"
+        android:layout_alignParentLeft="true">
+        <!--android:layout_centerHorizontal="true"-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent"
+            android:id="@+id/btnCreateAccount"
+            android:textColor="@drawable/btn_text_selector"
+            android:textSize="@dimen/main_page_process_text_size"
+            android:text="@string/createAccount_str" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/imgCreateAccount"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/btn_enter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/skipLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_below="@id/llForgetPass"
+        android:layout_alignParentRight="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSkip"
+            android:background="@drawable/transparent"
+            android:textColor="@drawable/btn_text_selector"
+            android:textSize="@dimen/main_page_process_text_size"
+            android:text="@string/skip_str" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/imgSkip"
+            android:src="@drawable/btn_enter" />
+    </LinearLayout>
+</RelativeLayout>

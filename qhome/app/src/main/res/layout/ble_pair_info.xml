@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_asset_pair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/start_guide_margin"
+        android:gravity="left"
+        android:textColor="@color/color_blue_light"
+        android:text="@string/ble_pairing_type_title"
+        android:textSize="@dimen/sensor_info_font_size" />
+
+    <include android:id="@+id/bulb_wait_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        layout="@layout/ble_pair_wait" />
+
+    <include android:id="@+id/bulb_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        layout="@layout/bulb_ble_pair_result" />
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- row 1 -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/ll_ac"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/btn_ac"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_add_ac" />
+            <android.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/determine_pair_font_size"
+                android:text="@string/electric_ac"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/ll_fan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/btn_fan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_add_fan"
+                android:layout_gravity="center"/>
+            <android.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/determine_pair_font_size"
+                android:text="@string/electric_fan"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/ll_airpurier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/btn_airpurifer"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_ion" />
+            <android.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white50"
+                android:textSize="@dimen/determine_pair_font_size"
+                android:text="@string/electric_ion"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- row 2 -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/ll_dehumidi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/btn_dehumidi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_dehumidifier_asset"
+                android:layout_gravity="center"/>
+            <android.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white50"
+                android:textSize="@dimen/determine_pair_font_size"
+                android:text="@string/electric_dehumidifier"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/ll_bp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/btn_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bp"
+                android:layout_gravity="center"/>
+            <android.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white50"
+                android:textSize="@dimen/determine_pair_font_size"
+                android:text="@string/electric_sphygmometer"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/btn_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_pm_transparent"
+                android:layout_gravity="center"/>
+            <android.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white50"
+                android:textSize="@dimen/determine_pair_font_size"
+                android:text="@string/electric_pm"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

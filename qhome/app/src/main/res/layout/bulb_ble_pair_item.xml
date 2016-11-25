@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/schedule_icon_height"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="@dimen/onboarding_setup_list_item_margin"
+    android:background="@color/color_schedule_item_on">
+
+    <ImageView
+        android:id="@+id/btn_led"
+        android:layout_width="@dimen/bulb_btn_width"
+        android:layout_height="@dimen/bulb_btn_height"
+        android:layout_marginLeft="@dimen/start_guide_margin"
+        android:layout_marginRight="@dimen/start_guide_margin"
+        android:src="@drawable/btn_blub_on"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/start_guide_margin">
+
+        <TextView
+            android:id="@+id/txt_bulb_name"
+            android:layout_width="@dimen/next_schedule_txt_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_16_7"
+            android:text="ddddddddddddddddddddddddeeeee"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <Button
+            android:id="@+id/btn_rename"
+            android:layout_width="@dimen/bulb_pair_rename_btn_width"
+            android:layout_height="@dimen/bulb_pair_rename_btn_height"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/onboarding_setup_info_text_rename_size"
+            android:text="@string/rename"
+            android:background="@drawable/salmon_background_selector"
+            android:visibility="visible"/>
+        <ImageView
+            android:id="@+id/btn_check"
+            android:layout_width="@dimen/bulb_check_btn_size"
+            android:layout_height="@dimen/bulb_check_btn_size"
+            android:src="@drawable/icon_check_null"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

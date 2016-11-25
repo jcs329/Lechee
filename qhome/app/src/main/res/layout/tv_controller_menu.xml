@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    >
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_controller_arrow_keyboard"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_16" />
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/tv_menu_bg"
+        android:layout_height="@dimen/tv_menu_bg"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_menubtn"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_menu_up"
+            android:layout_width="@dimen/circle_button_55"
+            android:layout_height="@dimen/circle_button_55"
+            android:background="@drawable/btn_tv_ch_higher_selector" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_menu_left"
+                android:layout_width="@dimen/circle_button_55"
+                android:layout_height="@dimen/circle_button_55"
+                android:background="@drawable/btn_tv_left_selector" />
+
+            <ImageButton
+                android:id="@+id/btn_menu_ok"
+                android:layout_width="@dimen/circle_button_85"
+                android:layout_height="@dimen/circle_button_85"
+                android:background="@drawable/btn_tv_menu_ok_selector" />
+
+            <ImageButton
+                android:id="@+id/btn_menu_right"
+                android:layout_width="@dimen/circle_button_55"
+                android:layout_height="@dimen/circle_button_55"
+                android:background="@drawable/btn_tv_right_selector" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_menu_down"
+            android:layout_width="@dimen/circle_button_55"
+            android:layout_height="@dimen/circle_button_55"
+            android:background="@drawable/btn_tv_ch_lower_selector" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/tv_progress_bottom"
+        android:src="@drawable/loading_03"/>
+</RelativeLayout>

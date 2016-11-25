@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll"
+    android:layout_marginLeft="@dimen/lamp_group_control_lampname_margin_bottom"
+    android:paddingTop="@dimen/lamp_group_control_list_margin_left"
+    android:paddingBottom="@dimen/lamp_group_control_list_margin_left"
+    android:paddingLeft="@dimen/lamp_group_control_list_margin_left"
+    android:paddingRight="@dimen/lamp_group_control_list_margin_left"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/icon_small"
+        android:layout_height="@dimen/icon_small"
+        android:layout_marginLeft="@dimen/lamp_group_control_list_margin_left"
+        android:src="@drawable/btn_blub_on"
+        android:layout_gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/item_tv"
+        android:textSize="@dimen/font_17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lamp_group_control_listitem_name_margin_left"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:text="Lamp name"/>
+    <CheckBox
+        android:id="@+id/item_cb"
+        android:layout_width="@dimen/icon_small"
+        android:layout_height="@dimen/icon_small"
+        android:focusable="false"
+        android:clickable="false"
+        style="@style/bulb_group_checkbox"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>

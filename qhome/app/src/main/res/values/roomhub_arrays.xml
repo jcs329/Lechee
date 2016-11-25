@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="roomhub_error_code_string">
+        <item>Success</item>
+        <item>Error</item>
+        <item>not found device</item>
+        <item>not found data</item>
+        <item>This type of appliances already exists</item>
+    </string-array>
+
+    <string-array name="roomhub_error_code_number">
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+        <item>-3</item>
+        <item>-4</item>
+    </string-array>
+</resources>

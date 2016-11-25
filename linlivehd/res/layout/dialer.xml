@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  	android:background="#F4F4F4">
+    
+    <org.linphone.ui.AddressText
+        android:id="@+id/Adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:background="@color/transparent"
+        android:inputType="textEmailAddress"
+        android:hint="@string/addressHint"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+       	android:layout_gravity="center" 
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnquery"
+        android:layout_alignBottom="@+id/btnquery" />
+        <!--android:layout_centerHorizontal="true"/>-->
+    
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnquery"
+        android:scaleType="fitXY"
+        android:background="@color/transparent"
+        android:src="@drawable/search_ldap" />
+
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:contentDescription="@string/content_description_add_contact"
+            android:id="@+id/addContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:src="@drawable/add_contact" />
+        
+        <org.linphone.ui.CallButton
+            android:id="@+id/Call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:src="@drawable/call" />
+        
+        <org.linphone.ui.EraseButton
+            android:id="@+id/Erase"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:src="@drawable/backspace" />
+        
+    </LinearLayout>
+	
+    <org.linphone.ui.Numpad 
+	    android:id="@+id/Dialer"
+        android:background="#262A2D"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/controls"
+        android:layout_below="@id/Adress" />
+	
+        
+</RelativeLayout>

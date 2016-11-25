@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="pref_key_root"
+    android:title="@string/settings">
+    <ListPreference
+        android:key="pref_key_temp_unit"
+        android:dialogTitle="@string/pref_title_temp_unit"
+        android:title="@string/pref_title_temp_unit"
+        android:entries="@array/temp_unit_entries"
+        android:entryValues="@array/temp_unit_values"
+        android:layout="@layout/settings_custom_preference"
+        android:defaultValue="0"/>
+
+    <!-- redirect to SetupWifActivity, resume to SettingsActivity when wifi has been setup finished -->
+    <!-- See WifiAPSetup.java line#197 -->
+    <!--
+    <Preference
+        android:key="pref_key_wifi"
+        android:title="@string/pref_title_wifi"
+        android:layout="@layout/settings_custom_preference">
+        <intent android:action="android.intent.action.CHANGE_WIFI"
+            android:targetPackage="com.quantatw.roomhub"
+            android:targetClass="com.quantatw.roomhub.ui.SetupWifiActivity" />
+    </Preference>
+    -->
+
+    <SwitchPreference
+        android:key="pref_key_notification"
+        android:defaultValue="true"
+        android:title="@string/pref_title_notification" />
+    <!--
+    <EditTextPreference
+        android:key="pref_key_notification_time"
+        android:title="@string/notification_time"
+        android:defaultValue="@integer/config_notification_time"
+        android:dialogTitle="@string/notification_time" />
+    <EditTextPreference
+        android:key="pref_key_notification_delta"
+        android:title="@string/notification_delta"
+        android:defaultValue="@integer/config_notification_temp_delta"
+        android:dialogTitle="@string/notification_delta" />
+    <SwitchPreference
+        android:key="pref_key_location"
+        android:defaultValue="true"
+        android:title="@string/pref_title_location" />
+    -->
+
+    <!--
+    <SwitchPreference
+        android:key="pref_key_ads"
+        android:defaultValue="true"
+        android:title="@string/pref_title_ads" />
+        -->
+
+    <PreferenceCategory
+        android:title="@string/app_version_info">
+
+        <Preference
+            android:key="pref_key_app_version"
+            android:title="@string/current_version" />
+    </PreferenceCategory>
+</PreferenceScreen>

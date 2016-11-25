@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onboarding_setup_button_height"
+        android:textSize="@dimen/onboarding_setup_button_text_size"
+        android:background="@color/btn_color"
+        android:textColor="@color/color_white"
+        android:layout_alignParentBottom="true"
+        android:text="@string/onboarding_restart" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"
+        android:layout_above="@id/btnRestart">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_info"
+            android:layout_marginRight="@dimen/onboarding_setup_info_margin"
+            android:src="@drawable/icon_info"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/onboarding_setup_info_text_size"
+            android:text="@string/onboarding_restart_info" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_roomhub"
+        android:src="@drawable/img_roomhub"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="@dimen/onboarding_restart_message_width"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_restart_message_1"
+        android:textColor="@color/btn_color"
+        android:textSize="@dimen/onboarding_restart_message_size"
+        android:id="@+id/msg_hint1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/img_roomhub"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="@dimen/onboarding_restart_message_width"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_restart_message_2"
+        android:textColor="@color/btn_color"
+        android:textSize="@dimen/onboarding_restart_message_size"
+        android:id="@+id/msg_hint2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/msg_hint1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="@dimen/onboarding_restart_message_width"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_restart_message_3"
+        android:textColor="@color/btn_color"
+        android:textSize="@dimen/onboarding_restart_message_size"
+        android:id="@+id/msg_hint3"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/msg_hint2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="@dimen/onboarding_restart_message_width"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_restart_message_4"
+        android:textColor="@color/btn_color"
+        android:textSize="@dimen/onboarding_restart_message_size"
+        android:id="@+id/msg_hint4"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/msg_hint3"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

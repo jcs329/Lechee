@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ui.RoomHubApplication="http://schemas.android.com/tools">
+
+    <item android:id="@+id/menu_ac"
+        android:icon="@drawable/icon_ac_green"
+        android:title="@string/electric_ac"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/menu_fan"
+        android:icon="@drawable/icon_fan_green"
+        android:title="@string/electric_fan"
+        android:showAsAction="always"
+        />
+</menu>

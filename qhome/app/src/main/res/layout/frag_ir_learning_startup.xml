@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/ir_learning_startup_hint_margin_top"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/ir_leaning_hint"
+        layout="@layout/ir_learning_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_connect_to_controller"
+        android:layout_marginTop="@dimen/ir_learning_startup_logo_margin_top"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ir_learning_startup_step_margin_top"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentAction_aim"
+            android:src="@drawable/icon_arrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/currentAction_aim"
+            android:textSize="@dimen/ir_brand_list_text_size"
+            android:text="@string/ir_learning_step_aim"
+            android:textStyle="bold"
+            android:textColor="@color/color_white"
+            android:id="@+id/step_aim" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentAction_search"
+            android:src="@drawable/icon_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/currentAction_search"
+            android:textSize="@dimen/ir_brand_list_text_size"
+            android:text="@string/ir_learning_step_search"
+            android:textStyle="bold"
+            android:id="@+id/step_searching"
+            android:textColor="@color/color_white"
+            android:layout_gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentAction_connect"
+            android:src="@drawable/icon_arrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/currentAction_connect"
+            android:textSize="@dimen/ir_brand_list_text_size"
+            android:text="@string/ir_learning_step_connected"
+            android:textStyle="bold"
+            android:id="@+id/step_connected"
+            android:textColor="@color/color_white"
+            android:layout_gravity="center_horizontal" />
+    </RelativeLayout>
+</LinearLayout>

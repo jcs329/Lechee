@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/wifi_title_margin_top"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_new_name"
+            android:layout_marginLeft="@dimen/signup_profile_margin_left"
+            android:layout_marginTop="@dimen/signup_profile_gap_2"
+            android:textSize="@dimen/signp_profile_text_size" />
+        <android.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+        <EditText
+            android:id="@+id/new_dev_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_page_image_edit_height"
+            android:layout_gravity="center"
+            android:textSize="@dimen/signp_profile_text_size"
+            android:background="@color/white_mask"
+            android:paddingLeft="@dimen/signup_profile_margin_left"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/user_name_desc"
+            android:layout_marginBottom="@dimen/signup_profile_gap_1" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signp_profile_signup_btn_height"
+            android:layout_gravity="center"
+            android:id="@+id/rename_ok"
+            android:background="@drawable/salmon_background_selector"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/signp_profile_text_size"
+            android:textAllCaps="false"
+            android:text="@string/confirm_str" />
+    </RelativeLayout>
+</LinearLayout>

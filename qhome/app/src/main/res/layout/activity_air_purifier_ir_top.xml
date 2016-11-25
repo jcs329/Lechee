@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/controller_funmode_height"
+    android:orientation="horizontal"
+    android:background="@color/white_mask">
+
+    <Button
+        android:id="@+id/btn_normal"
+        style="@style/fan_controller_switch_btn"
+        android:text="@string/air_mode_normal"/>
+
+    <Button
+        android:id="@+id/btn_sleep"
+        style="@style/fan_controller_switch_btn"
+        android:text="@string/fan_advance_mode_sleep"/>
+
+    <Button
+        android:id="@+id/btn_natural"
+        style="@style/fan_controller_switch_btn"
+        android:text="@string/fan_advance_mode_natural"/>
+
+    <Button
+        android:id="@+id/btn_special"
+        style="@style/fan_controller_switch_btn"
+        android:text="@string/air_mode_special"/>
+
+</LinearLayout>

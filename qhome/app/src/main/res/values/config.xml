@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *
+ * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above
+ *       copyright notice, this list of conditions and the following
+ *       disclaimer in the documentation and/or other materials provided
+ *       with the distribution.
+ *     * Neither the name of The Linux Foundation nor the names of its
+ *       contributors may be used to endorse or promote products derived
+ *       from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<resources>
+    <!-- true for debug: always display skip button in main page -->
+    <bool name="config_force_display_skip_for_debug">false</bool>
+
+    <bool name="config_bypassIRLearning">true</bool>
+    <!-- for onBoarding (secs.) -->
+
+    <bool name="config_onboarding_do_reconnect">true</bool>
+
+    <integer name="config_onboardee_connect_timeout">20000</integer>
+    <integer name="config_onboarding_target_timeout">5000</integer>
+    <integer name="config_onboarding_target_wait_announcement_timeout">5000</integer>
+    <string name="config_onboardee_ssid_prefix">H60AJ_</string>
+    <!--- OnboardingService.AuthType -->
+    <string name="config_onboardee_default_authtype">WPA2_AUTO</string>
+    <string name="config_onboardee_default_pass">12345678</string>
+
+    <!-- timeout for ir learning search -->
+    <integer name="config_ir_learning_timeout">40000</integer>
+
+    <!-- timeout for ir auto scan -->
+    <integer name="config_ir_auto_scan_timeout">120000</integer>
+
+    <!-- timeout for ir searching -->
+    <integer name="config_ir_search_timeout">30000</integer>
+
+    <!-- wifi ap connect timeout -->
+    <integer name="config_wifi_ap_connect_timeout">20000</integer>
+    
+	<integer name="config_onboarding_reconnect_timeout">90000</integer>
+
+    <bool name="config_use_ir_database">false</bool>
+
+    <integer name="config_mac_fixed_len">6</integer>
+
+    <!-- 10 secs -->
+    <integer name="config_send_command_timeout">10000</integer>
+
+    <!-- MQTT Timeout: 30 seconds -->
+    <integer name="config_mqtt_timeout">30000</integer>
+
+    <integer name="config_max_share_list_count">5</integer>
+    <integer name="config_max_share_list_count_no_addpeople">6</integer>
+    
+	<!-- Poll alarm interval: 60 secs. -->
+    <integer name="config_poll_alarm_interval">30000</integer>
+
+    <!-- true: for 3g+Wifi, false: only for Wifi -->
+    <bool name="config_poll_for_all_connection">false</bool>
+
+    <!-- max retry count for detecting network connection -->
+    <!-- 10 times for 10 secs, do detectiong every second -->
+    <integer name="config_poll_retry_max_count">10</integer>
+
+    <integer name="config_notification_switch">1</integer>
+    <integer name="config_notification_time">5</integer> <!-- unit:mins-->
+    <integer name="config_notification_temp_delta">2</integer>
+    <integer name="config_notification_normal_temp_delta">2</integer>
+    <integer name="config_notification_fire_temp">60</integer>
+    <integer name="config_notification_conflict_time">60000</integer>
+
+    <bool name="config_administrator_for_debug">false</bool>
+
+    <!-- OTA -->
+    <!-- background auto update switch -->
+    <bool name="config_ota_auto_update">false</bool>
+    <!-- Unit: mins ,24 hours (1440 mins) -->
+    <integer name="config_ota_auto_check_timeout">1440</integer>
+    <!-- auto update when adding a new device -->
+    <bool name="config_ota_auto_update_add_device">true</bool>
+    <!-- Force all device have new updates. Assign old version here -->
+    <!-- ex: 1.0.1 -->
+    <string name="config_ota_auto_udpate_debug"></string>
+    <!-- timeout for each state change. Unit: mins -->
+    <integer name="config_ota_state_change_timeout">5</integer>
+
+    <string name="config_feedback_url">http://h60service.eql.com.tw/eqlfaq</string>
+
+    <string name="config_app_update_url">https://play.google.com/store/apps/details?id=com.quantatw.roomhub</string>
+
+    <bool name="config_blood_pressure">false</bool>
+    <bool name="config_pm25">true</bool>
+    <bool name="config_air_purifier">true</bool>
+    <bool name="config_bulb">false</bool>
+    <bool name="config_tv">false</bool>
+
+    <bool name="config_skip_app_check_version">true</bool>
+
+    <bool name="config_ota_support_remote">true</bool>
+
+    <string name="config_roomhub_ble_name_prefix">EQL-RoomHub</string>
+    <!-- scan ble devices timeout Unit: secs -->
+    <integer name="config_search_devices_duration">10</integer>
+    <string name="config_test_ap_transfer_ble_mac"></string>
+    <bool name="config_test_ap_transfer_skip_owner">false</bool>
+
+    <!-- default days of records for bpm history -->
+    <integer name="config_bpm_history_days">7</integer>
+
+    <string name="config_ble_pair_prefix_name">*</string>
+    <integer name="config_ble_pair_expire_time">30</integer> <!-- Unit: secs -->
+
+    <integer name="config_retry_delay_for_alljoyn">2000</integer>
+    <integer name="config_retry_delay_for_cloud">30000</integer>
+
+    <integer name="config_bulb_max_quantity">6</integer>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue">
+
+    <LinearLayout
+        android:id="@+id/ir_pair_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/backLayout"
+            layout="@layout/back_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.quantatw.roomhub.ui.RoomHubViewFilpper
+            android:id="@+id/ir_viewFlipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:addStatesFromChildren="false">
+        </com.quantatw.roomhub.ui.RoomHubViewFilpper>
+
+    </LinearLayout>
+
+    <include
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ir_pair_confirm_layout"
+        layout="@layout/activity_ir_pair_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/ir_pair_progress_layout"
+        layout="@layout/activity_ir_paring_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_page_image_edit_height"
+        android:layout_gravity="bottom"
+        android:id="@+id/btn_confirm"
+        android:background="#40ffffff"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/main_page_button_text_size"
+        android:textAllCaps="false"
+        android:text="@string/confirm_str"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

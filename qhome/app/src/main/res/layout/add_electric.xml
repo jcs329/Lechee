@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_dev_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_blue"
+        android:text="@string/ac_models"
+        android:textSize="@dimen/dev_name_font_size"
+        android:layout_marginTop="@dimen/signup_profile_gap_2"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/wifi_setup_title_gap"
+        android:background="@color/btn_color" />
+
+    <include android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_marginTop="@dimen/signup_profile_gap_2"
+        android:id="@+id/electric_list"
+        layout="@layout/room_hub_assets"/>
+</LinearLayout>

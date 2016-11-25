@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ui.RoomHubApplication="http://schemas.android.com/tools">
+    <item android:id="@+id/health_add_device"
+        android:title="@string/healthcare_add_device"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/health_manage_all_devices"
+        android:title="@string/manage_all_healthcare_devices"
+        android:showAsAction="always"
+        />
+</menu>

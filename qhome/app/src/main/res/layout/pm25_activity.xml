@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_battery"
+        android:layout_marginTop="@dimen/main_page_buttom_margin"
+        android:layout_marginLeft="@dimen/main_page_buttom_margin"
+        android:layout_width="@dimen/battery_width"
+        android:layout_height="@dimen/battery_height"
+        android:background="@drawable/bettery_bg"/>
+    <LinearLayout
+        android:id="@+id/ll_aq"
+        android:layout_width="@dimen/air_quality_bg_size"
+        android:layout_height="@dimen/air_quality_bg_size"
+        android:layout_marginTop="@dimen/fan_controller_margin_top"
+        android:background="@drawable/img_aq_good"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/air_quality_font_size"
+            android:text="@string/air_quality"/>
+        <TextView
+            android:id="@+id/txt_air_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/air_quality_status_font_size"/>
+
+        <TextView
+            android:id="@+id/txt_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/schedule_time"
+            android:text="50 μg/m3"/>
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/ll_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/update_time_margin_top"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/air_quality_font_size"
+            android:text="@string/update_time_title"/>
+        <TextView
+            android:id="@+id/txt_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/update_time_font_size"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_below="@+id/ll_update_time">
+        <include android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:id="@+id/pm25_bottom"
+            layout="@layout/pm25_bottom"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_wifi_setup_title"
+            android:id="@+id/textView3"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/main_page_text_title_desc_size"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/change_wifi_top_margin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_wifi_setup_detail"
+            android:id="@+id/textView4"
+            android:textColor="@color/color_blue_light"
+            android:textSize="@dimen/main_page_text_title_desc_size"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/change_wifi_margin_start_end"
+            android:layout_marginRight="@dimen/change_wifi_margin_start_end"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/change_wifi_image_margin_top"
+            android:src="@drawable/img_change_ap"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wifi_setup_confirm_height"
+        android:background="@drawable/salmon_background_selector_lite"
+        android:id="@+id/btn_cancel"
+        android:textSize="@dimen/main_page_button_text_size"
+        android:textColor="@color/color_white"
+        android:text="@string/cancel"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wifi_setup_confirm_height"
+        android:background="@drawable/salmon_background_selector"
+        android:id="@+id/btn_confirm"
+        android:textSize="@dimen/main_page_button_text_size"
+        android:textColor="@color/color_white"
+        android:text="@string/change_wifi_confirm"
+        android:layout_above="@id/btn_cancel" />
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/notice_gap"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/pm25_advance_desc"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sensor_info_font_size"
+        android:textAllCaps="false"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/notice_gap1"
+        android:layout_marginBottom="@dimen/notice_gap"
+        android:background="@color/color_schedule_mode"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/notice_gap"
+        android:gravity="center_vertical"
+        android:text="@string/pm25_advance_warning_time_title"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sensor_info_font_size"
+        android:textAllCaps="false"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/notice_item_height"
+        android:layout_marginTop="@dimen/notice_gap1"
+        android:background="@color/color_advance_item"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_time_lower"
+            android:layout_width="@dimen/notice_lower_size"
+            android:layout_height="@dimen/notice_lower_size"
+            android:clickable="true"
+            android:src="@drawable/controller_temp_lower_selector"/>
+        <LinearLayout
+            android:layout_width="@dimen/notice_item_set_width"
+            android:layout_height="@dimen/notice_item_set_height"
+            android:layout_marginLeft="@dimen/notice_gap"
+            android:layout_marginRight="@dimen/notice_gap"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="@dimen/battery_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/color_blue_light"
+                    android:textSize="@dimen/notice_delta_font_size"
+                    android:background="@android:color/transparent"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/notice_time_unit"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/next_schedule_font_size"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_time_higher"
+            android:layout_width="@dimen/notice_lower_size"
+            android:layout_height="@dimen/notice_lower_size"
+            android:clickable="true"
+            android:src="@drawable/controller_temp_higher_selector"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_page_image_edit_height"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/salmon_background_selector"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/main_page_button_text_size"
+            android:text="@string/determine_machine" />
+    </RelativeLayout>
+</LinearLayout>

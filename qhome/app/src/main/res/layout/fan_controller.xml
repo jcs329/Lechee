@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/roomhub_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:text="@string/electric_fan"
+            android:textSize="@dimen/controller_type_font_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_fan"
+                android:layout_width="@dimen/controller_dehum_iv_width"
+                android:layout_height="@dimen/controller_dehum_iv_height"
+                android:src="@drawable/ani_fan"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_speed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fan_controller_margin_top"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/btn_lower"
+                android:layout_width="@dimen/controller_lower_btn_size"
+                android:layout_height="@dimen/controller_lower_btn_size"
+                android:clickable="true"
+                android:src="@drawable/controller_temp_lower_selector"/>
+            <android.widget.Space
+                android:layout_width="@dimen/controller_temp_gap"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/btn_higher"
+                android:layout_width="@dimen/controller_lower_btn_size"
+                android:layout_height="@dimen/controller_lower_btn_size"
+                android:clickable="true"
+                android:src="@drawable/controller_temp_higher_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_speed_switch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fan_controller_margin_top"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_speed"
+                android:layout_width="@dimen/fan_controller_btn_size"
+                android:layout_height="@dimen/fan_controller_btn_size"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/determine_pair_font_size"
+                android:text="@string/fan_controller_speed"
+                android:background="@drawable/suggest_temp_btn_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/fan_controller_margin_top"
+            android:orientation="vertical"
+            android:layout_gravity="right|bottom">
+            <Button
+                android:id="@+id/btn_eco"
+                android:layout_width="@dimen/fan_controller_btn_size"
+                android:layout_height="@dimen/fan_controller_btn_size"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sensor_info_font_size"
+                android:text="@string/fan_controller_eco"
+                android:background="@drawable/suggest_temp_btn_selector"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+    </LinearLayout>
+
+    <include android:layout_width="fill_parent"
+        android:layout_height="@dimen/controller_bottom_height"
+        android:layout_marginTop="@dimen/fan_controller_margin_top"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/fan_controller_bottom"
+        layout="@layout/fan_controller_bottom"/>
+
+</RelativeLayout>

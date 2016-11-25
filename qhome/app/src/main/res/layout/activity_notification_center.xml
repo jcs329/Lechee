@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notification_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/clearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wifi_setup_confirm_height"
+            android:background="@drawable/salmon_background_selector"
+            android:id="@+id/btnClearAll"
+            android:textSize="@dimen/main_page_button_text_size"
+            android:textColor="@color/color_white"
+            android:text="@string/notify_menu_delete_all"
+            android:layout_alignParentBottom="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@id/clearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+        <GridView
+            android:id="@+id/history_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="1"
+            android:verticalSpacing="@dimen/room_hub_list_verticalspacing"
+            android:stretchMode="columnWidth"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:listSelector="#00000000">
+        </GridView>
+    </LinearLayout>
+</RelativeLayout>

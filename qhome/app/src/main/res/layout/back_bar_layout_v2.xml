@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/ll_ActionBar"
+        android:layout_marginTop="@dimen/wifi_title_margin_top"
+        android:layout_marginBottom="@dimen/wifi_title_margin_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+<!--
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wifi_title_margin_left"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imgBack"
+            android:src="@drawable/btn_list"/>
+-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/main_page_text_main_title_size" />
+<!--            android:layout_toRightOf="@id/imgBack"-->
+
+    </RelativeLayout>
+
+</LinearLayout>

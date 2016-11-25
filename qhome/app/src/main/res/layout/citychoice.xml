@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/BackLayout"
+            layout="@layout/back_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtCityChoiceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_title"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/city_text_size"
+            android:layout_marginLeft="@dimen/city_choice_title_margin"
+            android:layout_marginBottom="@dimen/city_title_margin_bottom"/>
+
+        <ListView
+            android:id="@+id/listList"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/city_search_list_height"
+            android:textColor="@color/color_white"
+            android:background="@color/white_mask"
+            android:layout_gravity="center_vertical"
+            android:divider="@color/color_white"
+            android:dividerHeight="1dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnStartNow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/city_content_height"
+        android:textColor="@color/color_white"
+        android:background="@color/btn_color"
+        android:layout_marginTop="@dimen/city_button_margin"
+        android:textSize="@dimen/city_text_size"
+        android:text="@string/start_button_name"
+        android:visibility="invisible"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quantatw.myapplication">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- [START gcm_permission] -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- [END gcm_permission] -->
+
+    <!-- [START camera_permission] -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!-- [END camera_permission] -->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.quanta.livehd_v2.PERMISSION.READ"></uses-permission>
+    <permission-tree android:name="com.quanta.livehd_v2.PERMISSION.READ"></permission-tree>
+    <permission android:protectionLevel="dangerous" android:name="com.quanta.livehd_v2.PERMISSION.READ"></permission>
+
+    <application
+        android:name="com.quantatw.roomhub.ui.RoomHubApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".rs485Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name=".SettingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".MiscActivity"
+	    android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+        <activity
+            android:name=".IpcamActivity"
+	    android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+        <activity
+            android:name=".SipLoginActivity"
+            android:label="@string/title_activity_sip_login">
+        </activity>
+		<activity
+            android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.quantatw.myapplication.information_delivery.Package">
+        </activity>
+        <activity
+            android:name=".LampsPageActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:launchMode="singleTop">
+        </activity>
+
+        <!--<receiver android:name="com.quantatw.myapplication.MainActivity$NetworkReceiver">-->
+            <!--<intent-filter><action android:name="android.net.conn.CONNECTIVITY_CHANGE"></action></intent-filter>-->
+        <!--</receiver>-->
+
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.StartGuideActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.SignupActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.RoomHubMainPage"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:showAsAction="always"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.RoomHubControllerFlipper"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.reminder" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.SetupWifiActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.WifiList"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/wifi_list_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings">
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.WifiAPSetup"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/wifi_list_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings">
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.OnBoardingActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/onboarding_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.PreOnBoardingActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/onboarding_desc_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.CityChoiceActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.IRConfigActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.IRSettingActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.IRModelListActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.IRLearningActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.IRPairingActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.RenameActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/rename"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.EditProfileActivity"
+            android:label="@string/account"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.ScheduleListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.ScheduleSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.SettingsActivity"
+            android:label="@string/settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.AdvanceSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.LoginConfirmActivity"
+            android:label="@string/confirm_mail_sent"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.RoomHubShareHubActivity"
+            android:label="@string/share_hub"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.EditPeopleActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/add_people"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+        <activity
+            android:name="com.quantatw.roomhub.ui.MyListActivity"
+            android:label="@string/my_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.ShareHubInfoActivity"
+            android:label="@string/my_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomDialog" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.ChangePasswordActivity"
+            android:label="@string/change_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.ForgetPassActivity"
+            android:label="@string/forget_pass_str"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.AboutActivity"
+            android:label="@string/about_this_hub"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.NotificationCenterActivity"
+            android:label="@string/notification_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+            <intent-filter>
+                <action android:name="com.quantatw.roomhub.redirect.notification" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.NoticeSettingActivity"
+            android:label="@string/abnormal_notice"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.OTAActivity"
+            android:label="@string/ota_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.IRBrandSearchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.ElectricMgrActivity"
+            android:label="@string/manager_device"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.AddElectricActivity"
+            android:label="@string/add_electric"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.FANControllerV2"
+            android:label="@string/electric_fan"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.TVController"
+            android:label="@string/electric_tv"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.TVAdvFunctionActivity"
+            android:label="@string/electric_tv"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <activity
+            android:name="com.quantatw.roomhub.ui.LicenseActivity"
+            android:label="@string/license_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" >
+        </activity>
+
+
+
+		<activity android:name="com.quantatw.roomhub.ui.AirPurifierBTActivity"
+            android:label="@string/air_purifier_title"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity android:name="com.quantatw.roomhub.ui.AirPurifierIRActivity"
+            android:label="@string/air_purifier_title"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity android:name="com.quantatw.roomhub.ui.PMActivity"
+            android:label="@string/aerosol_sensor_title"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+            <!--android:theme="@style/Theme.Settings" />-->
+
+        <activity android:name="com.quantatw.roomhub.ui.PMAdvanceActivity"
+            android:label="@string/advance_setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" />
+
+        <activity android:name="com.quantatw.roomhub.ui.BulbController"
+            android:label="@string/electric_lamp"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" />
+
+        <activity android:name="com.quantatw.roomhub.ui.BulbGroupController"
+            android:label="@string/bulb_group_control_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" />
+
+        <activity android:name="com.quantatw.roomhub.ui.BulbAdvanceActivity"
+            android:label="@string/advance_setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" />
+
+        <activity android:name="com.quantatw.roomhub.ui.BulbRenameActivity"
+            android:label="@string/rename"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" />
+
+        <activity android:name="com.quantatw.roomhub.ui.APTransferActivity"
+            android:label="@string/change_wifi_setup"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" />
+
+        <activity android:name="com.quantatw.roomhub.ui.WindowTypeACController"
+            android:label="@string/electric_ac"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" />
+
+        <activity android:name="com.quantatw.roomhub.ui.bpm.BPMHistoryActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/bpm_history"
+            android:screenOrientation="portrait"
+            android:showAsAction="always"
+            android:theme="@style/Theme.Settings" />
+
+        <activity android:name="com.quantatw.roomhub.ui.AddHealthcareActivity"
+            android:label="@string/healthcare_add_device"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" />
+
+        <activity android:name="com.quantatw.roomhub.ui.AboutHealthcareActivity"
+            android:label="@string/manage_healthdevice"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Settings" />
+
+        <activity android:name="com.quantatw.roomhub.ui.BLEPairingActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/ble_pairing_title"
+            android:screenOrientation="portrait"
+            android:showAsAction="always"
+            android:theme="@style/Theme.Settings" />
+        <activity android:name="com.quantatw.roomhub.ui.BLEPairingWaitScanActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/ble_pairing_title"
+            android:screenOrientation="portrait"
+            android:showAsAction="always"
+            android:theme="@style/Theme.Settings" />
+        <activity android:name="com.quantatw.roomhub.ui.BLEPairingScaListActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/ble_pairing_title"
+            android:screenOrientation="portrait"
+            android:showAsAction="always"
+            android:theme="@style/Theme.Settings" />
+        <activity android:name="com.quantatw.roomhub.ui.BLEPairingMgrActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/ble_pairing_title"
+            android:screenOrientation="portrait"
+            android:showAsAction="always"
+            android:theme="@style/Theme.Settings" />
+        <activity android:name="com.quantatw.roomhub.ui.BLEPairingRenameActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/ble_pairing_title"
+            android:screenOrientation="portrait"
+            android:showAsAction="always"
+            android:theme="@style/Theme.Settings" />
+        <activity android:name="com.quantatw.roomhub.ui.BLEPairingDefaultUserActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|layoutDirection"
+            android:label="@string/ble_pairing_title"
+            android:screenOrientation="portrait"
+            android:showAsAction="always"
+            android:theme="@style/Theme.Settings" />
+		<activity android:name="com.quantatw.roomhub.ui.bpm.BPMGuideActivity"
+            android:label="@string/bulb_pairing"
+            android:screenOrientation="portrait"
+            android:showAsAction="never"
+            android:theme="@style/Theme.Settings" />
+        <activity android:name=".SipLogoutActivity"></activity>
+
+        <activity android:name="com.quantatw.roomhub.ui.BulbBLEPairingActivity"
+            android:label="@string/bulb_pairing"
+            android:screenOrientation="portrait"
+            android:showAsAction="never"
+            android:theme="@style/Theme.Settings" />
+        <activity android:name="com.quantatw.roomhub.ui.BulbBLEPairingWaitScanActivity"
+            android:label="@string/ble_pairing_title"
+            android:screenOrientation="portrait"
+            android:showAsAction="never"
+            android:theme="@style/Theme.Settings" />
+        <activity android:name="com.quantatw.roomhub.ui.BulbBLEPairingScaListActivity"
+            android:label="@string/bulb_pairing_list"
+            android:screenOrientation="portrait"
+            android:showAsAction="never"
+            android:theme="@style/Theme.Settings" />
+        <!--
+        <service android:name=".manager.MicroLocationService" />
+
+        <service android:name="com.quantatw.roomhub.manager.MicroLocationService" />
+        <service
+            android:name="com.radiusnetworks.ibeacon.service.IBeaconService"
+            android:enabled="true"
+            android:exported="true"
+            android:isolatedProcess="false"
+            android:label="iBeacon" >
+        </service>
+        <service
+            android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor"
+            android:enabled="true" >
+            <meta-data
+                android:name="background"
+                android:value="true" />
+
+            <intent-filter android:priority="1" >
+                <action android:name="com.radiusnetworks.ibeacon.DID_RANGING" />
+                <action android:name="com.radiusnetworks.ibeacon.DID_MONITORING" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.radiusnetworks.ibeacon.BeaconDetactorService"
+            android:enabled="true" >
+            <meta-data
+                android:name="background"
+                android:value="true" />
+        </service>
+        -->
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.quantatw.roomhub" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+		<service android:name="org.eclipse.paho.android.service.MqttService" />
+        <!-- [START gcm_listener] -->
+        <service
+            android:name="com.quantatw.roomhub.gcm.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name="com.quantatw.roomhub.gcm.MyInstanceIDListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+
+        <!--
+        <service android:name=".manager.ReminderService" />
+        -->
+
+        <service android:name="com.quantatw.roomhub.ui.RoomHubService"
+            android:exported="false"
+            android:enabled="true">
+        </service>
+
+        <service android:name="com.quantatw.roomhub.ui.BluetoothLeService" android:enabled="true"/>
+
+        <receiver
+            android:name="com.quantatw.roomhub.ui.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.quantatw.roomhub.ui.ChangeWIFIActivity"
+            android:screenOrientation="portrait"/>
+	<activity android:name=".ContactBookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name=".CameraViewActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name=".SnapshotActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name=".line_bot.SnapshotLineActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name=".PhotoGalleryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name=".PhotoViewerActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    </application>
+
+</manifest>

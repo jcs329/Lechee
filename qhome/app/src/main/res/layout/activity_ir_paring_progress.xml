@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_color">
+
+    <TextView
+        android:id="@+id/connect_status_text"
+        android:text="@string/ir_pairing_now"
+        android:textSize="@dimen/onboarding_scan_start_hint_size"
+        android:textColor="@color/color_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/connect_progress"
+        android:layout_centerHorizontal="true" />
+
+    <com.quantatw.roomhub.ui.circleprogress.ArcProgress
+        android:id="@+id/connect_progress"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/onboarding_progress_width"
+        android:layout_height="@dimen/onboarding_progress_width"
+        custom:arc_checked_margin_left="@dimen/onboarding_checked_margin_left"
+        custom:arc_checked_margin_top="@dimen/onboarding_checked_margin_top"
+        custom:arc_text_color="@color/color_white"
+        custom:arc_unfinished_color="@color/color_grey"
+        custom:arc_text_size="@dimen/onboarding_scan_start_hint_size"
+        custom:arc_finish_check_image="@drawable/icon_check_hub"/>
+
+</RelativeLayout>

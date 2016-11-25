@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/determine_pair_font_size"
+        android:text="@string/dev_name"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_people_btn_height"
+        android:background="@drawable/room_hub_item_selector"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/wifi_setup_title_gap">
+        <TextView
+            android:id="@+id/txt_dev_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:text="@string/ac_models"
+            android:textSize="@dimen/sensor_info_font_size"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+        <Button
+            android:id="@+id/btn_rename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/change_nickname_txt_selector"
+            android:textSize="@dimen/onboarding_setup_info_text_rename_size"
+            android:text="@string/rename"
+            android:background="@drawable/transparent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:text="@string/firmware_version"
+        android:textSize="@dimen/determine_pair_font_size"
+        android:layout_marginTop="@dimen/onboarding_setup_roomhub_margin"
+        android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_people_btn_height"
+        android:background="@drawable/room_hub_item_selector"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/wifi_setup_title_gap">
+
+            <TextView
+                android:id="@+id/txt_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:text="@string/firmware_version"
+                android:textSize="@dimen/sensor_info_font_size"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+
+            <Button
+                android:id="@+id/btn_checkNewVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ota_check_now"
+                android:textColor="@drawable/change_nickname_txt_selector"
+                android:textSize="@dimen/onboarding_setup_info_text_rename_size"
+                android:background="@drawable/transparent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="false"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/wifi_setup_title_gap">
+
+        <TextView
+            android:text="@string/network_connection"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/time_settings_title"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/color_blue"
+            android:textSize="@dimen/onboarding_setup_info_text_rename_size"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/add_people_btn_height">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:text="@string/auto_wifi_bridge"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/onboarding_setup_info_text_rename_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/auto_wifi_bridge_switch"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/color_blue"
+            android:textSize="@dimen/onboarding_setup_info_text_rename_size"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_change_wifi"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/change_wifi_settings"
+            android:background="@drawable/room_hub_item_selector"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/wifi_setup_title_gap"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_change_wifi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:text="@string/change_wifi_setup"
+                android:textSize="@dimen/sensor_info_font_size"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+            <TextView
+                android:id="@+id/txt_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white80"
+                android:textSize="@dimen/listview_item_size"
+                android:layout_below="@id/txt_change_wifi_title"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/onboarding_setup_roomhub_margin"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_reboot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_page_image_edit_height"
+            android:layout_gravity="center"
+            android:layout_above="@+id/btn_delete"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/salmon_background_selector"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/main_page_button_text_size"
+            android:textAllCaps="false"
+            android:text="@string/reboot_roomhub" />
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_page_image_edit_height"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="@drawable/salmon_background_selector"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/main_page_button_text_size"
+            android:textAllCaps="false"
+            android:text="@string/delete_device" />
+    </RelativeLayout>
+</LinearLayout>

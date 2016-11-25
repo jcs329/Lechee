@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_logo_poweron"
+            android:id="@+id/imgHome"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMainTitle"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/main_title"
+            android:textSize="@dimen/main_page_text_main_title_size"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/txtDesc"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/main_page_text_title_desc_size"
+            android:text="@string/main_desc" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.quantatw.roomhub.ui.ImageEditTextWidget
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_page_image_edit_height"
+            android:layout_marginBottom="@dimen/main_page_margin_bottom"
+            android:id="@+id/loginAccount" />
+        <com.quantatw.roomhub.ui.ImageEditTextWidget
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_page_image_edit_height"
+            android:layout_marginBottom="@dimen/main_page_margin_bottom"
+            android:id="@+id/loginPwd" />
+        <!--
+        <EditText
+            android:id="@+id/loginAccount"
+            android:layout_height="46dp"
+            android:layout_marginBottom="6.7dp"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/login_account_hint" />
+        <EditText
+            android:id="@+id/loginPwd"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="6.7dp"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:hint="@string/password_desc" />
+            -->
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtForgetPassword"
+        android:text="@string/forget_pass_str"
+        android:textColor="@drawable/btn_text_selector"
+        android:textSize="@dimen/main_page_text_title_desc_size"
+        android:layout_below="@id/ll_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_forget_string_margin"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_page_button_height"
+        android:layout_gravity="center"
+        android:id="@+id/btnLogin"
+        android:background="@drawable/salmon_background_selector"
+        android:textSize="@dimen/main_page_button_text_size"
+        android:textColor="@color/color_white"
+        android:text="@string/login_str"
+        android:layout_marginTop="@dimen/login_btn_margin" />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ui.RoomHubApplication="http://schemas.android.com/tools">
+    <item android:id="@+id/account"
+        android:icon="@drawable/icon_account_small"
+        android:title="@string/account"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/add_device"
+        android:icon="@drawable/icon_adddevice"
+        android:title="@string/add_device"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/settings"
+        android:icon="@drawable/icon_settings"
+        android:title="@string/settings"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/notification"
+        android:icon="@drawable/icon_notification"
+        android:title="@string/notification_title"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/feedback"
+        android:icon="@drawable/icon_question"
+        android:title="@string/feedback_title"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/close_all_device"
+        android:icon="@drawable/icon_power"
+        android:title="@string/close_all_device"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/ap_transfer"
+        android:title="@string/change_wifi_setup"
+        android:showAsAction="always"
+        />
+</menu>

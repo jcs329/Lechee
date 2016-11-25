@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/white_mask"
+    android:orientation="horizontal"
+    android:id="@+id/ll_tv_bottommenu">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"></LinearLayout>
+    <ImageView
+        android:id="@+id/btn_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/controller_power_btn_size"
+        android:maxWidth="@dimen/controller_power_btn_size"
+        android:src="@drawable/btn_tv_power_btn_selector"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"  >
+        <TextView
+            android:id="@+id/txt_advance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_20"
+            android:clickable="true"
+            android:text="@string/tv_controller_advance_function"/>
+    </LinearLayout>
+</LinearLayout>
